@@ -59,7 +59,7 @@ GitHub ofrece una vista gráfica de commits por integrante en la pestaña "Insig
 
 ### Cuál se usa como fuente oficial en este documento
 
-El conteo de **`git shortlog -sne HEAD` sobre un clon completo (1.411)**, por ser una lectura directa del historial real de Git, sin intermediarios ni caché, y por aplicar correctamente el `.mailmap` ya adoptado por el equipo.
+El conteo de **`git shortlog -sne HEAD` sobre un clon completo (1.441)**, por ser una lectura directa del historial real de Git, sin intermediarios ni caché, y por aplicar correctamente el `.mailmap` ya adoptado por el equipo.
 
 ---
 
@@ -145,4 +145,3 @@ El reparto de participación por días es razonablemente parejo entre los cinco 
 | Jamileth Estefanía Gamarra Zárate | Jamileth Gamarra | 12/09/2026 10:34 |
 | Thais Melanie Herrera Ramos | Herrera Thais | 12/09/2026 10:28 |
 | Mayummy Jailly Trujillo Vega | Trujillo Mayummy | 12/09/2026 10:31 |
-
