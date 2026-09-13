@@ -196,15 +196,16 @@ No representa SUS, satisfacción de participantes, precisión de IA, ni una segu
 
 # 🤖 Componente inteligente — requisitos no funcionales
 
-El único componente de IA identificado en el sistema es **RF-16 — Asistente virtual con IA (chat box)**. RF-02 y RF-13 (agendar cita, consultar disponibilidad) son consultas deterministas y no forman parte de este componente. Sobre RF-16 se definieron 5 requisitos no funcionales específicos, cada uno con métrica, umbral y método de verificación propios:
+El único componente de IA identificado en el sistema es **RF-16 — Asistente virtual con IA (chat box)**. RF-02 y RF-13 (agendar cita, consultar disponibilidad) son consultas deterministas y no forman parte de este componente. Sobre RF-16 se definieron 5 requisitos no funcionales específicos, cada uno con métrica, umbral y método de verificación propios. El sexto requisito que exige la guía de cierre para todo componente de IA —asignación o recomendación automática— no aplica a RF-02/RF-13 por ser deterministas; esa determinación queda documentada formalmente como ficha FDA-01 (ver `01_ERS/ERS_SRS_2B_V2.0.pdf`, Sección 3.4.1, y fila 75 de `04_Trazabilidad/matriz_trazabilidad_ACTUALIZADA.csv`):
 
-| RNF | Característica | Estado de validación |
+| RNF / Ficha | Característica | Estado de validación |
 |---|---|:---:|
 | RNF-18 | Explicabilidad | 🟡 Base normativa definida; validación de campo pendiente |
 | RNF-19 | Equidad en la resolución de consultas del asistente | 🟡 Requisito y métrica definidos; medición pendiente de datos en producción |
 | RNF-20 | Monitoreo posterior al despliegue | 🟡 Requisito e indicadores definidos; monitoreo pendiente de despliegue |
 | RNF-21 | Supervisión humana | 🟡 Mecanismo de anulación definido; medición pendiente de datos en producción |
 | RNF-22 | Clasificación del nivel de riesgo | 🟡 Niveles y método de verificación definidos; conjunto de prueba etiquetado pendiente |
+| FDA-01 | Determinación de no aplicabilidad — asignación/recomendación automática de cita | 🟢 Determinación completa, con evidencia técnica y responsable |
 
 ---
 
@@ -215,7 +216,7 @@ Fuente / necesidad → Requisito → Caso de uso / historia → Modelo UML
 → Interfaz / MVP → Observación de validación → Verificación
 ```
 
-Archivos en `04_Trazabilidad/` — matriz vigente: `matriz_trazabilidad_ACTUALIZADA.csv` (74 filas).
+Archivos en `04_Trazabilidad/` — matriz vigente: `matriz_trazabilidad_ACTUALIZADA.csv` (75 filas: 74 de RF/RNF más la fila FDA-01 de determinación de no aplicabilidad).
 
 ---
 

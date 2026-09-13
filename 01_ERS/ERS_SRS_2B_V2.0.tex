@@ -1787,6 +1787,27 @@
 	El único componente de IA/AA identificado en el SICM es \textbf{RF-16 --- Asistente virtual con IA (chat box)}. Todos los requisitos no funcionales de esta sección (RNF-18 a RNF-22) se definen exclusivamente sobre RF-16.
 	
 	En particular, se deja constancia expresa de que \textbf{RF-02 --- Agendar cita médica} y \textbf{RF-13 --- Consultar disponibilidad de horarios} \textbf{no son un componente de IA}: el paciente selecciona manualmente el área médica y el horario, y cuando no hay cupo el sistema responde con una consulta ordenada estándar (las próximas fechas disponibles), sin modelo predictivo, sin función de ranking ni métrica de acierto que optimizar. Por tanto, el requisito de ``asignación o recomendación automática de cita'' que exige la guía de cierre \textbf{no aplica a este sistema}, porque el SICM no incorpora ningún componente inteligente de agendamiento; el agendamiento es una funcionalidad determinista, ya cubierta y verificada como tal en RF-02 y RF-13 (Sección 3.2). Una versión anterior de este documento (RNF-19) describía la equidad en el agendamiento como si RF-02/RF-13 fueran ese componente inteligente; esa referencia se corrige a continuación para que quede alineada con el único componente de IA real del sistema.
+
+			Para que esta determinación quede especificada con el mismo rigor exigido a los cinco requisitos siguientes (RNF-18 a RNF-22), y no solo como una justificación en prosa, se documenta como ficha de determinación de aplicabilidad:
+	
+	\begin{longtable}{p{0.28\textwidth} p{0.67\textwidth}}
+		
+		\toprule
+		\textbf{Atributo} & \textbf{Detalle} \\
+		\midrule
+		\endhead
+		
+		Identificador & FDA-01 --- Ficha de Determinación de Aplicabilidad \\
+		Requisito evaluado & Asignación o recomendación automática de cita (exigido por la Sección 5.2 de la Guía de Desarrollo del 02/09/2026 para todo componente de IA) \\
+		Funcionalidad candidata & RF-02 --- Agendar cita médica; RF-13 --- Consultar disponibilidad de horarios \\
+		Criterio de aplicabilidad & Un requisito de IA aplica cuando la funcionalidad candidata usa un modelo entrenado, una función de ranking/optimización o cualquier salida no determinista para decidir qué opción presentar o priorizar al usuario \\
+		Evidencia técnica & RF-02/RF-13 implementan selección manual del área médica y horario por el paciente; ante falta de cupo, el sistema devuelve las próximas fechas disponibles ordenadas cronológicamente (orden fijo, sin modelo ni score de prioridad). Verificado sobre \texttt{05\_MVP/script.js} y confirmado en la comprobación técnica de RF-02/RF-13 (Sección 4, cobertura de RF Must) \\
+		Determinación & No aplica: RF-02/RF-13 no incorporan ningún componente de IA/AA; se excluyen del alcance de RNF-18 a RNF-22 por no cumplir el criterio de aplicabilidad anterior \\
+		Responsable de la determinación & Equipo de desarrollo (revisión técnica del código fuente citado como evidencia) \\
+		Fecha de determinación & 12/09/2026 \\
+		Vigencia y revisión & Esta determinación se revisa si RF-02/RF-13 incorporan en el futuro un componente de recomendación no determinista; hasta entonces permanece vigente sin necesidad de nueva medición \\
+		\bottomrule
+	\end{longtable}
 	
 	\subsubsection{ Requisito de explicabilidad (obligatorio --- componente de IA)}
 	
@@ -4032,7 +4053,7 @@
 	
 	\subsection{Matriz de trazabilidad extendida}
 	
-	La matriz canónica de cierre contiene 74 filas: una fila por cada uno de los 40 RF, una fila individual por cada uno de los 21 RNF activos (RNF-01 a RNF-16, RNF-18 a RNF-22), y filas adicionales que registran relaciones RF-caso de uso adicionales identificadas durante la segunda ronda de elicitación. Cada celda \texttt{ID-RF/RNF} contiene un único identificador; se eliminaron identificadores compuestos que impedían el contraste automático. Cuando un RNF es transversal y no posee CU, HU o mockup propio, se declara explícitamente \textit{No aplica} en lugar de inventar una asociación.
+	La matriz canónica de cierre contiene 75 filas: una fila por cada uno de los 40 RF, una fila individual por cada uno de los 21 RNF activos (RNF-01 a RNF-16, RNF-18 a RNF-22), y filas adicionales que registran relaciones RF-caso de uso adicionales identificadas durante la segunda ronda de elicitación. Cada celda \texttt{ID-RF/RNF} contiene un único identificador; se eliminaron identificadores compuestos que impedían el contraste automático. Cuando un RNF es transversal y no posee CU, HU o mockup propio, se declara explícitamente \textit{No aplica} en lugar de inventar una asociación.
 	
 	\begingroup
 	\scriptsize
@@ -4127,6 +4148,7 @@
 		72 & No aplica & Monitoreo posterior al despliegue del asistente IA & Paciente/Recepción & EV-01 & RNF-20 & No aplica — flujo definido en RF-16 & No aplica — RNF & Métrica RNF-20 & COMP-Paciente / asistente IA & MU-32 \\
 		73 & No aplica & Supervisión humana sobre decisiones del asistente IA & Personal de recepción/clínico & EV-01 & RNF-21 & No aplica — flujo definido en RF-16 & No aplica — RNF & Métrica RNF-21 & COMP-Paciente / asistente IA & MU-41 \\
 		74 & No aplica & Clasificación del nivel de riesgo de cada interacción del asistente IA & Paciente/Recepción/Clínico & EV-01 & RNF-22 & No aplica — flujo definido en RF-16 & No aplica — RNF & Métrica RNF-22 & COMP-Paciente / asistente IA & MU-09 \\
+		75 & No aplica & Determinación de no aplicabilidad — asignación o recomendación automática de cita & Paciente & EV-01 & FDA-01 & No aplica — RF-02/RF-13 son deterministas sin componente de IA & No aplica — no es RNF activo & Ficha FDA-01 (ERS Sección 3.4.1) & COMP-Agendamiento (RF-02/RF-13) & MU-01 \\
 		\bottomrule
 	\end{longtable}
 	\endgroup

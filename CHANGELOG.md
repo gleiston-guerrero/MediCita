@@ -7,6 +7,14 @@ y el proyecto utiliza [versionado semántico](https://semver.org/lang/es/).
 
 ### Resuelto
 
+- Requisito de "asignación o recomendación automática de cita" (Sección 5.2 de
+  la Guía de Desarrollo): en vez de dejarlo solo como párrafo justificativo,
+  se documenta como ficha formal de determinación de aplicabilidad (FDA-01),
+  con el mismo nivel de detalle exigido a RNF-18 a RNF-22 (evidencia técnica,
+  responsable, fecha). Fila 75 añadida a `matriz_trazabilidad_ACTUALIZADA.csv`
+  y a su tabla equivalente en el ERS/SRS; conteo de filas actualizado de 74 a
+  75 en el ERS y en el README; tabla de RNF del componente inteligente en el
+  README actualizada para incluir FDA-01 junto a RNF-18 a RNF-22.
 - `10_Autoria/correspondencia/` (ítem A8): depositados los 4 documentos reales
   de correspondencia institucional (solicitud del 28/05/2026, aval
   institucional del 22/07/2026, aval del establecimiento del 20/08/2026 y
