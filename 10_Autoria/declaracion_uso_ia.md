@@ -132,10 +132,10 @@ Fuente: [`06_Experimento/prompst_LLm/registro_uso_llm.csv`](../06_Experimento/pr
 
 ⚠️ **Esta declaración se amplió el 13/09/2026 (Sección 6️⃣) respecto a la versión firmada el 12/09/2026.** Se recomienda que los 5 integrantes revisen la sección nueva y vuelvan a firmar para que la fecha de firma respalde el contenido completo y actual del documento.
 
-| Integrante | Firma | Fecha |
-|---|---|---|
-| Paul Alexander Tigasi Sampedro | | |
+| Integrante - Firma | Fecha |
+|------|---|
+| Paul Alexander Tigasi Sampedro |  |
 | Steven Santiago Díaz Pontón | | |
 | Jamileth Estefanía Gamarra Zárate | | |
 | Thais Melanie Herrera Ramos | 13/09/2026  18:40 |
-| Mayummy Jailly Trujillo Vega | | |
+| Mayummy Jailly Trujillo Vega | 13/09/2026 18:41 |
