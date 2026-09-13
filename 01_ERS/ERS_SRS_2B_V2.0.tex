@@ -4053,7 +4053,7 @@
 	
 	\subsection{Matriz de trazabilidad extendida}
 	
-	La matriz canónica de cierre contiene 74 filas: una fila por cada uno de los 40 RF, una fila individual por cada uno de los 21 RNF activos (RNF-01 a RNF-16, RNF-18 a RNF-22), y filas adicionales que registran relaciones RF-caso de uso adicionales identificadas durante la segunda ronda de elicitación. Cada celda \texttt{ID-RF/RNF} contiene un único identificador; se eliminaron identificadores compuestos que impedían el contraste automático. Cuando un RNF es transversal y no posee CU, HU o mockup propio, se declara explícitamente \textit{No aplica} en lugar de inventar una asociación.
+	La matriz canónica de cierre contiene 75 filas: una fila por cada uno de los 40 RF, una fila individual por cada uno de los 21 RNF activos (RNF-01 a RNF-16, RNF-18 a RNF-22), y filas adicionales que registran relaciones RF-caso de uso adicionales identificadas durante la segunda ronda de elicitación. Cada celda \texttt{ID-RF/RNF} contiene un único identificador; se eliminaron identificadores compuestos que impedían el contraste automático. Cuando un RNF es transversal y no posee CU, HU o mockup propio, se declara explícitamente \textit{No aplica} en lugar de inventar una asociación.
 	
 	\begingroup
 	\scriptsize
@@ -4148,6 +4148,7 @@
 		72 & No aplica & Monitoreo posterior al despliegue del asistente IA & Paciente/Recepción & EV-01 & RNF-20 & No aplica — flujo definido en RF-16 & No aplica — RNF & Métrica RNF-20 & COMP-Paciente / asistente IA & MU-32 \\
 		73 & No aplica & Supervisión humana sobre decisiones del asistente IA & Personal de recepción/clínico & EV-01 & RNF-21 & No aplica — flujo definido en RF-16 & No aplica — RNF & Métrica RNF-21 & COMP-Paciente / asistente IA & MU-41 \\
 		74 & No aplica & Clasificación del nivel de riesgo de cada interacción del asistente IA & Paciente/Recepción/Clínico & EV-01 & RNF-22 & No aplica — flujo definido en RF-16 & No aplica — RNF & Métrica RNF-22 & COMP-Paciente / asistente IA & MU-09 \\
+		75 & No aplica & Determinación de no aplicabilidad — asignación o recomendación automática de cita & Paciente & EV-01 & FDA-01 & No aplica — RF-02/RF-13 son deterministas sin componente de IA & No aplica — no es RNF activo & Ficha FDA-01 (ERS Sección 3.4.1) & COMP-Agendamiento (RF-02/RF-13) & MU-01 \\
 		\bottomrule
 	\end{longtable}
 	\endgroup
