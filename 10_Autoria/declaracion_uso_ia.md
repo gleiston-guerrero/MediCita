@@ -6,7 +6,7 @@
 
 ![Estado](https://img.shields.io/badge/Estado-Completado-Green?style=for-the-badge)
 ![Herramientas](https://img.shields.io/badge/Herramientas-GPT--5.6_Sol_%2B_Claude_Sonnet_5-6e56cf?style=for-the-badge)
-![Actualizado](https://img.shields.io/badge/Actualizado-12/09/2026-informational?style=for-the-badge)
+![Actualizado](https://img.shields.io/badge/Actualizado-13/09/2026-informational?style=for-the-badge)
 
 </div>
 
@@ -106,14 +106,36 @@ Fuente: [`06_Experimento/prompst_LLm/registro_uso_llm.csv`](../06_Experimento/pr
 
 ---
 
+## 6️⃣ Repaso exhaustivo de cierre — categorías adicionales no listadas en las secciones anteriores
+
+> Esta sección se agrega tras un repaso sistemático completo de todas las sesiones de trabajo con Claude Sonnet 5 a lo largo de todo el proyecto (agosto-septiembre 2026), para asegurar cobertura total conforme al criterio P9 de la rúbrica de cierre. **Sobre la columna "Quién verificó":** igual que en las secciones 3️⃣ y 5️⃣, la interacción directa con la IA la realizó Paul Alexander Tigasi Sampedro; los cambios se discutieron y validaron en conjunto con el equipo antes de aceptarlos como definitivos.
+
+| Tarea | Para qué se usó | Quién verificó | Método de verificación |
+|---|---|---|---|
+| Diseño del script `calcular_kappa.py` y cálculo del acuerdo intercodificador (A7, `10_Autoria/doble_codificacion/`) | Cumplir el ítem A7 de la Guía de Desarrollo: coeficiente de acuerdo entre dos codificadores independientes, con intervalo de confianza, generado por script | Paul Alexander Tigasi Sampedro (interacción directa) — validado en conjunto con el equipo | El script se ejecutó realmente sobre las hojas de ambos codificadores; el resultado (κ=0,6997) se contrastó contra un cálculo manual de verificación de la fórmula de Cohen |
+| Redacción del guion, resumen narrativo y acta formal de la sesión de Member Checking (`02_Evidencias/Member_Checking/`) | Documentar la sesión de miembro-verificación exigida por el ítem C4 de la rúbrica, con los 7 bloques temáticos reales trabajados por el equipo | Paul Alexander Tigasi Sampedro (interacción directa) — validado en conjunto con el equipo | Contraste de cada bloque y resultado contra lo que el equipo reportó verbalmente haber ocurrido en la sesión real; ningún hallazgo ni cita fue generado por IA |
+| Incorporación al manuscrito de los resultados de Kappa (A7) y de la sesión de Member Checking, y del intervalo de confianza bootstrap para la V de Cramér | Corregir que el manuscrito reportaba estos dos controles como "trabajo futuro" cuando ya se habían ejecutado; agregar el IC faltante en el análisis estadístico principal | Paul Alexander Tigasi Sampedro (interacción directa) — validado en conjunto con el equipo | Recompilación real del manuscrito (xelatex+bibtex×2), confirmando 15 páginas sin errores; el IC se generó ejecutando la función de bootstrap agregada a `run_all.py`, no calculado a mano |
+| Reestructuración del guion de defensa oral, la presentación (PPTX) y el folleto de una hoja para incorporar los resultados de Kappa, Member Checking y el estado real de Software Heritage | Actualizar los 3 materiales de defensa (`09_Defensa/`), que estaban desactualizados respecto al estado final del repositorio | Paul Alexander Tigasi Sampedro (interacción directa) — validado en conjunto con el equipo | Verificación de que cada cifra citada en los 3 materiales coincidiera exactamente con los archivos fuente (`resultado_kappa.md`, `resultados_estadisticos.json`); reparto de tiempo de exposición revisado para quedar parejo entre los 5 integrantes |
+| Elaboración del documento `verificacion_previa.docx/pdf` (Sección 11 de la Guía de Desarrollo) y verificación técnica de sus 12 puntos | La carpeta `10_Autoria` no tenía este documento, exigido explícitamente antes del cierre | Paul Alexander Tigasi Sampedro (interacción directa) — validado en conjunto con el equipo; firma final de conformidad por Jamileth Estefanía Gamarra Zárate | Cada uno de los 12 puntos se verificó contra evidencia real del repositorio (fecha de commits, existencia de archivos, compilación) antes de marcarlo como cumplido |
+| Redacción de `Fe_de_Erratas_Adenda_Walkthrough.md` y de la aclaración sobre la composición real de participantes (16 externos distintos) en `07_Datos/desviaciones.md` y `06_Experimento/osf_deviations.tex` | Corregir una discrepancia real entre lo declarado en la adenda y lo que muestran las transcripciones de las sesiones 07 y 10 de validación | Paul Alexander Tigasi Sampedro (interacción directa) — validado en conjunto con el equipo | Lectura directa de ambas transcripciones para confirmar quién habla en cada una, antes de redactar la corrección |
+| Corrección de `CHANGELOG.md` (registro de versiones) y activación del identificador real de Software Heritage en `CITATION.cff` | Mantener el historial de cambios sincronizado con el estado real, e incorporar el SWHID obtenido tras el archivado del repositorio espejo | Paul Alexander Tigasi Sampedro (interacción directa) — validado en conjunto con el equipo | El SWHID se copió textualmente de la página de Software Heritage tras confirmar el estado "succeeded" del archivado; se validó que el YAML de `CITATION.cff` siguiera siendo válido tras el cambio |
+| Reformateo de decenas de archivos `README.md`/`Readme.md` de subcarpetas de todo el repositorio al formato visual estándar (insignias y tablas) adoptado por el equipo | Unificar la presentación de toda la documentación del repositorio | Paul Alexander Tigasi Sampedro (interacción directa) — validado en conjunto con el equipo | En cada caso, el contenido factual ya existente se conservó sin alterarlo; solo se le aplicó el formato visual ya usado en el resto del repositorio |
+| Actualización recurrente de `10_Autoria/bitacora_sesiones.csv` y `10_Autoria/aporte_individual.md` conforme avanzaba el proyecto (conteo de commits, días de participación, detalle cualitativo por integrante) | Mantener estos 2 documentos (A1 y A10) reflejando el estado real del historial de Git en cada etapa del cierre | Paul Alexander Tigasi Sampedro (interacción directa) — validado en conjunto con el equipo | Cada actualización se generó ejecutando `git shortlog`/`git log` directamente sobre un clon completo del repositorio, nunca estimado ni copiado de una versión anterior sin verificar |
+| Redacción de la nota de transparencia sobre el campo de cédula (CI) sin completar en 2 consentimientos (`02_Evidencias/Consentimientos/Readme.md`) | Documentar honestamente una omisión real del firmante, en vez de dejarla sin explicar o completarla sin respaldo | Paul Alexander Tigasi Sampedro (interacción directa) — validado en conjunto con el equipo | Verificación visual directa de los 2 documentos PDF para confirmar que el campo seguía vacío antes de redactar la nota |
+| Actualización de `07_Datos/registro_deposito.md` con el detalle verificado del origen de la evidencia audiovisual (19 videos, 18 audios, por ronda) y confirmación de que ningún archivo de audio/video está referenciado en los 3 depósitos abiertos | Responder con precisión a una consulta directa del equipo sobre cuántos videos existen y de dónde salen | Paul Alexander Tigasi Sampedro (interacción directa) — validado en conjunto con el equipo | Conteo directo sobre `fichas_tecnicas.csv` con Python; búsqueda de texto directa en los 3 paquetes de depósito para confirmar la ausencia de referencias |
+
+> **Nota:** en ninguna de las tareas anteriores la IA generó un juicio de campo, una cifra experimental, una cita textual de un participante, ni una decisión ética o de contenido — su función fue exclusivamente de redacción de formato, verificación cruzada de consistencia entre documentos ya existentes, y ejecución de scripts sobre datos ya reales y verificados por el equipo.
+
+---
+
 ## ✍️ Firma de los integrantes
 
-
+⚠️ **Esta declaración se amplió el 13/09/2026 (Sección 6️⃣) respecto a la versión firmada el 12/09/2026.** Se recomienda que los 5 integrantes revisen la sección nueva y vuelvan a firmar para que la fecha de firma respalde el contenido completo y actual del documento.
 
 | Integrante | Firma | Fecha |
 |---|---|---|
-| Paul Alexander Tigasi Sampedro | Alexander Sampedro | 12/09/2026 0:18 |
-| Steven Santiago Díaz Pontón | Steven Diaz | 12/09/2026 0:14 |
-| Jamileth Estefanía Gamarra Zárate | Jamileth Gamarra | 12/09/2026 0:17 |
-| Thais Melanie Herrera Ramos | Herrera Thais | 12/09/2026 0:16|
-| Mayummy Jailly Trujillo Vega |Trujillo Mayummy |12/09/2026 0:15 |
+| Paul Alexander Tigasi Sampedro | | |
+| Steven Santiago Díaz Pontón | | |
+| Jamileth Estefanía Gamarra Zárate | | |
+| Thais Melanie Herrera Ramos | 13/09/2026  18:40 |
+| Mayummy Jailly Trujillo Vega | | |
