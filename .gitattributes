@@ -1,0 +1,27 @@
+# Evita que Git convierta finales de línea dentro de archivos binarios.
+# Sin este archivo, la corrupción depende de la configuración local de
+# cada integrante (core.autocrlf) y puede variar entre máquinas o al
+# volver a clonar el repositorio (por ejemplo, para evaluación).
+
+*.pdf   -text binary
+*.7z    -text binary
+*.mp4   -text binary
+*.mov   -text binary
+*.avi   -text binary
+*.mkv   -text binary
+*.mp3   -text binary
+*.wav   -text binary
+*.m4a   -text binary
+*.ogg   -text binary
+*.flac  -text binary
+*.png   -text binary
+*.jpg   -text binary
+*.jpeg  -text binary
+*.gif   -text binary
+*.webp  -text binary
+*.svg   -text binary
+*.pptx  -text binary
+*.docx  -text binary
+*.xlsx  -text binary
+*.drawio -text binary
+*.sha256 -text binary
