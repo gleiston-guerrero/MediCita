@@ -136,6 +136,6 @@ Fuente: [`06_Experimento/prompst_LLm/registro_uso_llm.csv`](../06_Experimento/pr
 |------|---|
 | Paul Alexander Tigasi Sampedro |  |
 | Steven Santiago Díaz Pontón | | |
-| Jamileth Estefanía Gamarra Zárate | | |
+| Jamileth Estefanía Gamarra Zárate | 13/09/2026 18:42 |
 | Thais Melanie Herrera Ramos | 13/09/2026  18:40 |
 | Mayummy Jailly Trujillo Vega | 13/09/2026 18:41 |
