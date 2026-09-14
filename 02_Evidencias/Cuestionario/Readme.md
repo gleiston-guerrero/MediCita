@@ -129,7 +129,7 @@ Si arroja error de decodificación, el CSV también necesita conversión a UTF-8
 
 ## 🤖 Instrucción para revisión por IA
 
-> "Clona `https://github.com/ptigasis-Alexander/MediCita_ISR401`, entra a `02_Evidencias/Cuestionario/`, y sigue los Pasos 1 a 6 de `Guia_Verificacion_Cuestionario.md`. Confírmame si `Fotos_Aplicacion` y `Respuestas` ya están anidadas dentro de `Cuestionario/`, si hay archivos vacíos, si las fotos de aplicación existen, si el conteo de respuestas del CSV coincide con lo declarado, y si hay problemas de codificación de caracteres en los archivos de texto."
+> "Clona `https://github.com/gleiston-guerrero/MediCita_ISR401`, entra a `02_Evidencias/Cuestionario/`, y sigue los Pasos 1 a 6 de `Guia_Verificacion_Cuestionario.md`. Confírmame si `Fotos_Aplicacion` y `Respuestas` ya están anidadas dentro de `Cuestionario/`, si hay archivos vacíos, si las fotos de aplicación existen, si el conteo de respuestas del CSV coincide con lo declarado, y si hay problemas de codificación de caracteres en los archivos de texto."
 
 ---
 
