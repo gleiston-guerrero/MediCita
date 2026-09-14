@@ -1,4 +1,3 @@
-
 <div align="center">
 
 # 🔐 00_Restringido — Evidencia Audiovisual Restringida
@@ -19,7 +18,7 @@
 Este repositorio contiene un historial de commits extenso. Para clonarlo de forma rápida y liviana (~366 MB), use un clon superficial:
 
 ```bash
-git clone --depth 1 https://github.com/ptigasis-Alexander/MediCita_ISR401.git
+git clone --depth 1 https://github.com/gleiston-guerrero/MediCita_ISR401.git
 ```
 
 Un `git clone` normal (sin `--depth 1`) descargará el historial completo de versiones, incluyendo evidencia audiovisual ya migrada a GitHub Releases, lo que puede superar 14 GB.
@@ -28,7 +27,7 @@ Un `git clone` normal (sin `--depth 1`) descargará el historial completo de ver
 
 Los archivos `.7z` de video/audio se movieron a un GitHub Release para reducir el peso de clonado:
 
-**https://github.com/ptigasis-Alexander/MediCita_ISR401/releases/tag/evidencia-restringida-v1**
+**https://github.com/gleiston-guerrero/MediCita_ISR401/releases/tag/evidencia-restringida-v1**
 
 El movimiento no modificó el contenido de los archivos: los hashes SHA-256 declarados en `fichas_tecnicas.csv` corresponden exactamente a los archivos publicados en ese Release.
 
