@@ -26,7 +26,7 @@ pendiente contiene contenido inventado.**
 |---|---|:---:|---|
 | A1 | [`bitacora_sesiones.csv`](bitacora_sesiones.csv) | 🟢 Completo | 21 días con sus campos completos y actualizados. |
 | A2 | [`Capturas/`](Capturas/Capturas.md) | 🟢 Completo | 15 capturas subidas; los 5 integrantes con mínimo 3 cada uno. |
-| A3 | Fuentes editables de diagramas | 🟢 Completo | `.drawio` + `.png` para todo el UML; mockups con fuente real en `05_MVP/`. |
+| A3 | [`fuentes_editables/README.md`](fuentes_editables/README.md) | 🟢 Completo | 117 de 117 fuentes (.drawio/.puml) referenciadas 1 a 1 con la imagen que generan; se mantienen en `03_Modelado/` para no duplicar contenido. |
 | A4 | [`grabaciones/`](grabaciones/grabaciones.md) | 🟢 Completo | 2 de 2 grabaciones mínimas. |
 | A5 | [`notas_campo/`](notas_campo/notas_campo.md) | 🟢 Completo | 8 de 8 notas manuscritas escaneadas, una por entrevista de elicitación. |
 | A6 | [`Fotos_equipos/`](Fotos_equipos/Fotos_equipos.md) | 🟢 Completo | 3 fotos con EXIF real verificado, 2 integrantes identificables. |
