@@ -201,8 +201,8 @@ pendiente.
   publicación y ética.
 - Archivos README iniciales para documentar el contenido de cada sección.
 
-[No publicado]: https://github.com/ptigasis-Alexander/MediCita_ISR401/compare/v4.0.0...HEAD
-[4.0.0]: https://github.com/ptigasis-Alexander/MediCita_ISR401/releases/tag/v4.0.0
-[3.0.0]: https://github.com/ptigasis-Alexander/MediCita_ISR401/releases/tag/v3.0.0
-[2.0.0]: https://github.com/ptigasis-Alexander/MediCita_ISR401/releases/tag/v2.0.0
-[1.0.0]: https://github.com/ptigasis-Alexander/MediCita_ISR401/releases/tag/v1.0.0
+[No publicado]: https://github.com/gleiston-guerrero/MediCita_ISR401/compare/v4.0.0...HEAD
+[4.0.0]: https://github.com/gleiston-guerrero/MediCita_ISR401/releases/tag/v4.0.0
+[3.0.0]: https://github.com/gleiston-guerrero/MediCita_ISR401/releases/tag/v3.0.0
+[2.0.0]: https://github.com/gleiston-guerrero/MediCita_ISR401/releases/tag/v2.0.0
+[1.0.0]: https://github.com/gleiston-guerrero/MediCita_ISR401/releases/tag/v1.0.0
