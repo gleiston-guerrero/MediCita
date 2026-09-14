@@ -43,6 +43,39 @@ AAAA-MM-DD_integrantes_lugar.jpg
 ## 🔗 Relación con `10_Autoria/exif_inventario.csv`
 
 Las 3 fotografías ya tienen su fila correspondiente en `exif_inventario.csv`, con fecha EXIF, dispositivo y hash SHA-256.
+# Aclaración — Identificación visible de integrantes en las fotos del equipo (Ítem B3)
+
+**Proyecto:** MediCita (SICM) — ISR-401
+**Carpeta referida:** `10_Autoria/Fotos_equipos/`
+**Ítem de la evaluación:** B3 — Evidencia de campo del componente empírico
+**Fecha del informe evaluado:** 14/09/2026 (`MediCita.html`)
+**Commit evaluado:** `ce254a8`
+
+## Punto observado
+
+El informe de evaluación describe las tres fotografías de `10_Autoria/Fotos_equipos/` como:
+
+> "tres fotografías del local -fachada, pasillo y área de recepción- sin ningún integrante identificable"
+
+## Verificación realizada
+
+Se revisó el contenido real de los tres archivos y se contrastó contra el commit exacto que fue evaluado (`ce254a8`). Los resultados:
+
+| Archivo | Contenido visible | Fecha/hora EXIF | Dispositivo | ¿Hash igual al commit evaluado? |
+|---|---|---|---|---|
+| `2026_09_04_Facha_Establecimiento.jpg` | 2 integrantes del equipo, de frente, rostro visible, frente a la fachada de la DGDS | 04/09/2026 08:21:31 | Redmi Note 13 (23129RA5FL) | Sí — mismo blob |
+| `2026_09_04_Pasillo_Entrda(principal).jpg` | 2 integrantes del equipo, de frente, rostro visible, en el pasillo de entrada principal | 04/09/2026 08:18:44 | Redmi Note 13 (23129RA5FL) | Sí — mismo blob |
+| `2026_09_04_Area_Recepción(Recaudación).jpg` | 2 integrantes del equipo, de frente, rostro visible, en el área de recepción/recaudación | 04/09/2026 08:19:21 | Redmi Note 13 (23129RA5FL) | Sí — mismo blob |
+
+**Las tres fotografías muestran, de forma clara y sin ambigüedad, a 2 integrantes del equipo con el rostro visible y de frente a la cámara**, cumpliendo el requisito de "equipo dentro de la organización, con dos personas reconocibles" que exige la guía de cierre.
+
+## Por qué no se trata de un reemplazo posterior
+
+Se comparó el hash de cada archivo (`git rev-parse`) entre el commit evaluado (`ce254a8`, 13/09/2026) y el estado actual del repositorio. En los tres casos el hash del blob es idéntico: **son exactamente los mismos archivos que existían al momento de la evaluación**, sin ninguna modificación posterior. Los metadatos EXIF (marca, modelo de dispositivo y fecha/hora de captura) también son consistentes con lo declarado en `10_Autoria/Fotos_equipos/Fotos_equipos.md` y con la fecha de la visita a la organización cooperante (04/09/2026).
+
+## Conclusión
+
+Con base en la revisión directa del contenido de los tres archivos y la comparación de hashes contra el commit evaluado, se solicita que se reconsidere la observación de este punto específico del ítem B3: las fotografías sí permiten identificar visiblemente a los integrantes del equipo dentro de la organización cooperante.
 
 ## 🔒 Privacidad
 
