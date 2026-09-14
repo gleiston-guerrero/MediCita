@@ -134,7 +134,7 @@ Debe ser mayor a unos pocos bytes y explicar: qué son estos archivos, cómo se 
 
 ## 🤖 Instrucción para revisión por IA
 
-> "Clona `https://github.com/ptigasis-Alexander/MediCita_ISR401`, entra a `02_Evidencias/Transcripcion/`, y sigue los Pasos 1 a 6 de `Guia_Verificacion_Transcripcion.md`. Confírmame si están los 8 participantes (P01 a P08), si algún nombre de archivo tiene espacios sueltos, si hay problemas de codificación UTF-8, si algún archivo contiene datos personales sin anonimizar (cédula, teléfono), y si el README de la carpeta tiene contenido real."
+> "Clona `https://github.com/gleiston-guerrero/MediCita_ISR401`, entra a `02_Evidencias/Transcripcion/`, y sigue los Pasos 1 a 6 de `Guia_Verificacion_Transcripcion.md`. Confírmame si están los 8 participantes (P01 a P08), si algún nombre de archivo tiene espacios sueltos, si hay problemas de codificación UTF-8, si algún archivo contiene datos personales sin anonimizar (cédula, teléfono), y si el README de la carpeta tiene contenido real."
 
 ---
 
