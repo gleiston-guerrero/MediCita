@@ -303,7 +303,7 @@ Antes de ejecutar el prototipo, debe estar instalado:
 ### Clonar el repositorio
 
 ```bash
-git clone https://github.com/ptigasis-Alexander/MediCita_ISR401.git
+git clone https://github.com/gleiston-guerrero/MediCita_ISR401.git
 ```
 
 ### Ingresar a la carpeta del MVP
