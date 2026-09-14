@@ -64,7 +64,7 @@ def generar(procesado: dict[str, object]) -> dict[str, object]:
         "v_cramer": round(cramer_v, 6),
         "v_cramer_ic95_inferior": round(procesado["cramer_v_ic_inf"], 6),
         "v_cramer_ic95_superior": round(procesado["cramer_v_ic_sup"], 6),
-        "v_cramer_ic95_metodo": "bootstrap no paramétrico, 10000 réplicas, semilla 42, percentiles 2.5/97.5",
+        "v_cramer_ic95_metodo": "bootstrap no paramétrico, 10000 réplicas, semilla 42, percentiles 2.5/97.5. Nota: V de Cramér está acotada en [0,1] y este intervalo nunca incluye el cero por construcción; no se usa para inferir significancia, solo describe la precisión de la estimación. La prueba de significancia es la de permutación (p_permutacion).",
         "rf_must_aprobados": passed,
         "rf_must_total": total,
         "cobertura_rf_must_porcentaje": round(coverage_percent, 2),
