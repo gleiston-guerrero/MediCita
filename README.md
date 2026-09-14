@@ -49,7 +49,7 @@ El repositorio integra la línea base final del proyecto **SICM / MediCita**, in
 https://github.com/ptigasis-Alexander/PFC_IR_AVANCES_TIGASI_GAMARRA-ZARATE_DIAZ_THAIS_TRUJILLO
 
 **Repositorio vigente — desde 2A hasta Entrega 4 (2B):**
-https://github.com/ptigasis-Alexander/MediCita_ISR401
+https://github.com/gleiston-guerrero/MediCita_ISR401
 
 Para la **Entrega Final** prevalece el contenido vigente de este repositorio.
 
@@ -62,7 +62,7 @@ Para la **Entrega Final** prevalece el contenido vigente de este repositorio.
 ### Clonación recomendada (rápida y liviana, ~370 MB)
 
 ```bash
-git clone --depth 1 https://github.com/ptigasis-Alexander/MediCita_ISR401.git
+git clone --depth 1 https://github.com/gleiston-guerrero/MediCita_ISR401.git
 cd MediCita_ISR401
 ```
 
@@ -71,7 +71,7 @@ Esto trae **todo el contenido actual del proyecto**, en todas sus carpetas, sin 
 ### Clonación completa (incluye todo el historial, mucho más pesada)
 
 ```bash
-git clone https://github.com/ptigasis-Alexander/MediCita_ISR401.git
+git clone https://github.com/gleiston-guerrero/MediCita_ISR401.git
 cd MediCita_ISR401
 ```
 
@@ -81,7 +81,7 @@ Use esta opción únicamente si necesita auditar el historial completo de commit
 
 Los archivos `.7z` de video/audio de `02_Evidencias/00_Restringido/` se publican como assets de GitHub Release, para no inflar el peso del repositorio:
 
-**https://github.com/ptigasis-Alexander/MediCita_ISR401/releases/tag/evidencia-restringida-v1**
+**https://github.com/gleiston-guerrero/MediCita_ISR401/releases/tag/evidencia-restringida-v1**
 
 Los hashes SHA-256 de cada archivo, declarados en `fichas_tecnicas.csv`, corresponden exactamente a los archivos publicados en ese Release — el traslado no modificó ningún contenido.
 
@@ -154,7 +154,7 @@ El sistema contempla procesos de: registro de pacientes, gestión de citas, agen
 | 📝 Registro OSF | [10.17605/OSF.IO/DTYNC](https://doi.org/10.17605/OSF.IO/DTYNC) | 🟢 |
 | 📑 Manuscrito final | [`07_Publicacion/manuscrito_final.pdf`](07_Publicacion/manuscrito_final.pdf) | 🟢 |
 | 📦 Dataset Zenodo | [10.5281/zenodo.22236373](https://doi.org/10.5281/zenodo.22236373) | 🟢 |
-| 🎬 Evidencia audiovisual restringida | [GitHub Release](https://github.com/ptigasis-Alexander/MediCita_ISR401/releases/tag/evidencia-restringida-v1) | 🟢 |
+| 🎬 Evidencia audiovisual restringida | [GitHub Release](https://github.com/gleiston-guerrero/MediCita_ISR401/releases/tag/evidencia-restringida-v1) | 🟢 |
 | 🧾 Evidencia de autoría | [`10_Autoria/Readme.md`](10_Autoria/Readme.md) | 🟢 |
 | 🎓 Defensa final | [`09_Defensa/`](09_Defensa/) | 🟢 |
 | 📜 Citación | [`CITATION.cff`](CITATION.cff) | 🟢 |
