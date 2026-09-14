@@ -4,7 +4,7 @@
 
 ### Proyecto MediCita (SICM) — ISR-401
 
-![Estado](https://img.shields.io/badge/Estado-116_de_117_renderizadas-yellow?style=for-the-badge)
+![Estado](https://img.shields.io/badge/Estado-117_de_117_renderizadas-success?style=for-the-badge)
 ![Elemento](https://img.shields.io/badge/Elemento-A3-informational?style=for-the-badge)
 ![Fuentes](https://img.shields.io/badge/Fuentes-117-informational?style=for-the-badge)
 
@@ -16,7 +16,7 @@
 
 Los archivos fuente editables de cada diagrama UML (`.drawio`, `.puml`) **no se duplican aquí** para evitar dos copias divergentes del mismo artefacto: se mantienen en `03_Modelado/`, junto a la imagen que cada uno genera, y en este archivo se referencian uno a uno con su ruta exacta y el nombre de la imagen que producen — la alternativa que la guía de cierre permite frente a depositar copias físicas en esta carpeta.
 
-**Total de fuentes editables identificadas: 117** (116 con imagen renderizada correspondiente, 1 pendiente de exportar).
+**Total de fuentes editables identificadas: 117** (117 con imagen renderizada correspondiente — 100 %).
 
 ## 🧩 Diagramas_UML (PlantUML, numerados por módulo) (12)
 
@@ -131,7 +131,7 @@ Los archivos fuente editables de cada diagrama UML (`.drawio`, `.puml`) **no se 
 | `03_Modelado/Diagramas_UML_Corregidos/Diagramas_Casos_Uso_drawio/CU-32_Recuperar_contraseña.drawio` | `03_Modelado/Diagramas_UML_Corregidos/Diagramas_Casos_Uso_png/CU-32_Recuperar_contraseña.drawio.png` |
 | `03_Modelado/Diagramas_UML_Corregidos/Diagramas_Casos_Uso_drawio/CU-33_Cerrar_sesión.drawio` | `03_Modelado/Diagramas_UML_Corregidos/Diagramas_Casos_Uso_png/CU-33_Cerrar_sesión.drawio.png` |
 
-## ⏱️ Diagramas_Secuencias_drawio (33)
+## ⏱️ Diagramas_Secuencias_drawio (34)
 
 | Fuente editable | Imagen que genera |
 |---|---|
@@ -168,15 +168,8 @@ Los archivos fuente editables de cada diagrama UML (`.drawio`, `.puml`) **no se 
 | `03_Modelado/Diagramas_UML_Corregidos/Diagramas_Secuencias_drawio/Diagrama_Secuencia_31_Gestionar_usuarios.drawio` | `03_Modelado/Diagramas_UML_Corregidos/Diagramas_Secuencias_png/Diagrama_Secuencia_31_Gestionar_usuarios.drawio.png` |
 | `03_Modelado/Diagramas_UML_Corregidos/Diagramas_Secuencias_drawio/Diagrama_Secuencia_32_Recuperar_contrasena.drawio` | `03_Modelado/Diagramas_UML_Corregidos/Diagramas_Secuencias_png/Diagrama_Secuencia_32_Recuperar_contrasena.drawio.png` |
 | `03_Modelado/Diagramas_UML_Corregidos/Diagramas_Secuencias_drawio/Diagrama_Secuencia_33_Cerrar_sesion.drawio` | `03_Modelado/Diagramas_UML_Corregidos/Diagramas_Secuencias_png/Diagrama_Secuencia_33_Cerrar_sesion.drawio.png` |
-
-## ⚠️ Pendiente de exportar (1)
-
-El siguiente archivo fuente existe pero todavía no tiene su imagen renderizada en el repositorio. Debe exportarse con draw.io Desktop (`-x -f png`) para completar la correspondencia 1 a 1:
-
-- `03_Modelado/Diagramas_UML_Corregidos/Diagramas_Secuencias_drawio/Diagrama_Secuencia_00_Proceso_general_del_SICM.drawio` → **falta** `Diagrama_Secuencia_00_Proceso_general_del_SICM.png` en `03_Modelado/Diagramas_UML_Corregidos/Diagramas_Secuencias_png/`
-
----
+| `03_Modelado/Diagramas_UML_Corregidos/Diagramas_Secuencias_drawio/Diagrama_Secuencia_00_Proceso_general_del_SICM.drawio` | `03_Modelado/Diagramas_UML_Corregidos/Diagramas_Secuencias_png/Diagrama_Secuencia_00_Proceso_general_del_SICM.drawio.png` |
 
 ## ✅ Estado
 
-116 de 117 fuentes con su imagen correspondiente ya verificada 1 a 1. Pendiente exportar la única fuente que falta antes de marcar este elemento como 100 % completo.
+117 de 117 fuentes con su imagen correspondiente verificada 1 a 1 — 100 % completo.
