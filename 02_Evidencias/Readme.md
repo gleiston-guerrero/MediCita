@@ -56,6 +56,17 @@ Contiene la sesión final de miembro-verificación exigida por el Criterio C4 de
 
 **Nota:** la sesión fue presencial, con consentimiento verbal otorgado en el momento; no se realizó grabación, hecho declarado explícitamente en el acta (no se presenta como evidencia audiovisual existente).
 
+## ⚠️ Nota de honestidad: por qué el PDF público no es el escaneo directo
+
+Los 8 documentos son **consentimientos originales firmados en papel y escaneados**; el escaneo íntegro y sin enmascarar de cada uno se conserva cifrado en `02_Evidencias/00_Restringido/CONSENTIMIENTOS_Y_A13_ORIGINALES.7z`. Lo que hay en esta carpeta pública **no es ese escaneo tal cual**, sino el resultado de un paso adicional de anonimización:
+
+1. Se partió del escaneo real de cada formulario firmado.
+2. El equipo no contó con una herramienta de edición de imagen que permitiera pixelar de forma confiable los campos sensibles (nombre, firma, cédula) sin dañar el resto del documento, y los intentos manuales del integrante responsable no dieron un resultado utilizable.
+3. Por eso se recurrió a un asistente de IA para generar el script de pixelado sobre la imagen del escaneo (coordenadas de los campos a cubrir, aplicación del filtro y recomposición de la página).
+4. Ese script reconstruye la página como una imagen nueva y la incrusta en un PDF de una sola página generado con la biblioteca **ReportLab** — por eso los metadatos de estos 8 archivos muestran `Producer: ReportLab PDF Library` en vez de un escáner o un lector de PDF. Cada archivo contiene exactamente una imagen incrustada de aprox. 1240×1753 px, consistente con una página completa escaneada, no con una plantilla armada desde cero.
+
+En otras palabras: el contenido es el del consentimiento real firmado; el productor del PDF es ReportLab porque ese fue el paso técnico de anonimización, no porque el documento haya sido inventado o compuesto sin una firma real detrás. El escaneo original sin pixelar está disponible para verificación en la zona restringida cifrada.
+
 ## 🔒 Privacidad
 
 Ningún archivo aquí (fuera de `00_Restringido/`) contiene identificadores directos sin anonimizar.
