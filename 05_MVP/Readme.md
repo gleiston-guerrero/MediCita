@@ -371,7 +371,7 @@ docker compose up --build
 | [`index.html`](index.html) | Estructura de la demostración guiada |
 | [`style.css`](style.css) | Diseño visual, componentes y animaciones |
 | [`script.js`](script.js) | Reproducción automática, escenas, narración y controles |
-| [`05_MVP_.md`](05_MVP_.md) | Documentación del MVP y de la versión revisada |
+| [`Readme.md`](Readme.md) | Documentación del MVP y de la versión revisada |
 | [`MediCita_prototipo_final_actualizado.html`](MediCita_prototipo_final_actualizado.html) | Prototipo final revisado después de la Validación Walkthrough |
 | [`Dockerfile`](Dockerfile) | Construcción de la imagen del MVP mediante Nginx |
 | [`docker-compose.yml`](docker-compose.yml) | Configuración para iniciar el despliegue reproducible |
