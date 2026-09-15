@@ -28,16 +28,16 @@ La tabla de días cuenta en cuántas fechas distintas aparece cada integrante, *
 
 ## ✅ Conteo total de commits — confirmado con clon completo (`git shortlog -sne HEAD`)
 
-| Integrante | Commits totales | % del total (1.682) |
+| Integrante | Commits totales | % del total (1.705) |
 |---|---:|---:|
-| Paul Alexander Tigasi Sampedro | 341 | 20,27 % |
-| Thais Melanie Herrera Ramos | 340 | 20,21 % |
-| Jamileth Estefanía Gamarra Zárate | 337 | 20,04 % |
-| Steven Santiago Díaz Pontón | 335 | 19,92 % |
-| Mayummy Jailly Trujillo Vega | 329 | 19,56 % |
-| **Total** | **1.682** | **100 %** |
+| Paul Alexander Tigasi Sampedro | 345 | 20,23 % |
+| Thais Melanie Herrera Ramos | 344 | 20,18 % |
+| Jamileth Estefanía Gamarra Zárate | 342 | 20,06 % |
+| Steven Santiago Díaz Pontón | 340 | 19,94 % |
+| Mayummy Jailly Trujillo Vega | 334 | 19,59 % |
+| **Total** | **1.705** | **100 %** |
 
-El reparto se mantiene parejo entre los cinco integrantes (19,56 % a 20,27 %). Verificado el 15/09/2026 (cierre del examen suspenso) sobre `git shortlog -sne HEAD` sobre un clon completo, con `.mailmap` aplicado.
+El reparto se mantiene parejo entre los cinco integrantes (19,60 % a 20,25 %). Verificado el 15/09/2026 (cierre del examen suspenso) sobre `git shortlog -sne HEAD` sobre un clon completo, con `.mailmap` aplicado. **Nota:** este número sube con cada commit posterior (incluida la propia subida de esta corrección); recontar con `git shortlog -sne HEAD` si se sube algo más después de esta fecha, idealmente como el último paso antes de la defensa.
 
 ## 🔍 Comparación con la vista "Contributors" de GitHub
 
@@ -59,7 +59,7 @@ GitHub ofrece una vista gráfica de commits por integrante en la pestaña "Insig
 
 ### Cuál se usa como fuente oficial en este documento
 
-El conteo de **`git shortlog -sne HEAD` sobre un clon completo (1.682)**, por ser una lectura directa del historial real de Git, sin intermediarios ni caché, y por aplicar correctamente el `.mailmap` ya adoptado por el equipo.
+El conteo de **`git shortlog -sne HEAD` sobre un clon completo (1.705)**, por ser una lectura directa del historial real de Git, sin intermediarios ni caché, y por aplicar correctamente el `.mailmap` ya adoptado por el equipo.
 
 ---
 
