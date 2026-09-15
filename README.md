@@ -22,7 +22,9 @@
 
 Este repositorio corresponde a la **Entrega 4 (2B / Defensa Final)** del Proyecto Fin de Curso de la asignatura **Ingeniería de Requerimientos (ISR-401)** de la Universidad Técnica Estatal de Quevedo (UTEQ).
 
-**Etiqueta de línea base vigente:** `cierre-examen-suspenso`, anotada sobre el commit final del examen suspenso (15/09/2026). Las etiquetas anteriores (`vFinal`, etc.) quedan como referencia histórica y no representan el estado evaluable final.
+**Etiqueta de línea base vigente:** `vFinal`, anotada sobre el commit final del examen suspenso (15/09/2026). Las etiquetas anteriores (`evidencia-restringida-v1`, etc.) corresponden a releases de evidencia distintos y no son la línea base.
+
+**Sobre las notas de campo y la bitácora (evitar una lectura cruzada errónea):** `10_Autoria/notas_campo/` tiene 18 sesiones de campo completas (8 de elicitación + 10 de validación por walkthrough). `10_Autoria/bitacora_sesiones.csv` tiene 28 filas, pero registra sesiones internas de trabajo del equipo (días con commits), no sesiones de campo — son dos registros distintos y no deben compararse entre sí.
 
 La evaluación de esta entrega debe considerar los artefactos organizados en las carpetas `01_ERS/` a `10_Autoria/`, junto con los archivos de documentación, integridad y reproducibilidad ubicados en la raíz del repositorio.
 
@@ -320,7 +322,7 @@ pdflatex -interaction=nonstopmode manuscrito_final.tex
 ## 📊 Reproducir el análisis y el paquete de datos
 
 ```bash
-python 07_Datos/scripts/generar_paquete_datos.py
+python 07_Datos/scripts/run_all.py
 ```
 
 Este script ejecuta el pipeline real (`06_Experimento/scripts_analisis/run_all.py`) y sincroniza sus salidas hacia `07_Datos/datos_procesados/` y `07_Datos/resultados/`, para que ambas copias provengan siempre del mismo código.
