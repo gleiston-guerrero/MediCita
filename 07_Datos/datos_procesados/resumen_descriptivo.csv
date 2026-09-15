@@ -1,13 +1,13 @@
-metrica;valor
-sesiones_validacion_con_transcripcion;10
-observaciones_totales;46
-completada_con_observacion;39
-no_completada;5
-completada;2
-relaciones_observacion_requisito;72
-p_permutacion_monte_carlo;0.413086
-v_cramer;0.166337
-v_cramer_ic95;"[0.083918, 0.262176]"
-rf_must_verificacion_tecnica_aprobados;20
-rf_must_total;22
-cobertura_rf_must_porcentaje;90.91
+metrica,valor
+"sesiones_validacion_con_transcripcion","10"
+"observaciones_totales","46"
+"completada_con_observacion","39"
+"no_completada","5"
+"completada","2"
+"relaciones_observacion_requisito","72"
+"p_permutacion_monte_carlo","0.413086"
+"v_cramer","0.166337"
+"v_cramer_ic95","[0.083918, 0.262176]"
+"rf_must_verificacion_tecnica_aprobados","20"
+"rf_must_total","22"
+"cobertura_rf_must_porcentaje","90.91"
