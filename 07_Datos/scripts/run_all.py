@@ -27,8 +27,11 @@ Qué hace este script, en orden:
 Si algún archivo falta, el script se detiene con un mensaje claro en
 lugar de fallar a mitad de camino con un traceback de Python.
 
-Uso (desde la raíz del repositorio):
-    python 07_Datos/scripts/generar_paquete_datos.py
+Uso (funciona igual desde la raíz del repositorio o desde 07_Datos/,
+porque localiza la raíz por la ubicación de este archivo, no por el
+directorio de trabajo):
+    python 07_Datos/scripts/run_all.py
+    (o, parado dentro de 07_Datos/)  python scripts/run_all.py
 """
 
 from __future__ import annotations
