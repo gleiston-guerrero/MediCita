@@ -12,7 +12,11 @@ y el proyecto utiliza [versionado semántico](https://semver.org/lang/es/).
 
 - 10 notas de campo manuscritas escaneadas de las sesiones de validación
   por walkthrough (`V01` a `V10`, 2026-08-28/30), depositadas en
-  `10_Autoria/notas_campo/`.
+  `10_Autoria/notas_campo/`. **Nota:** las 18 sesiones de campo (8 de
+  elicitación + 10 de validación) están completas; las 28 filas de
+  `10_Autoria/bitacora_sesiones.csv` son sesiones internas de trabajo del
+  equipo (commits) y no representan sesiones de campo — no se comparan
+  entre sí.
 - Cobertura técnica de RF Must (20 de 22, 90,91 %) incorporada como
   resultado explícito en el manuscrito (`07_Publicacion/manuscrito_final.tex`).
 - Retrospectiva del equipo (`10_Autoria/retrospectiva_equipo.md`).
@@ -21,7 +25,7 @@ y el proyecto utiliza [versionado semántico](https://semver.org/lang/es/).
 
 - Reproducibilidad byte a byte del paquete de datos: `resumen_descriptivo.csv`
   (en `07_Datos/datos_procesados/` y `07_Publicacion/dataset_zenodo/`) se
-  regeneró con la orden única (`python 07_Datos/scripts/generar_paquete_datos.py`)
+  regeneró con la orden única (`python 07_Datos/scripts/run_all.py`)
   para que coincida con la salida real del script; `checksums_datos.sha256`
   actualizado en consecuencia. `sha256sum -c checksums_datos.sha256 --quiet`
   ya no reporta discrepancias.
@@ -129,7 +133,7 @@ pendiente.
   responsable definidos.
 - Paquete de datos reproducible completo en `07_Datos/` (datos crudos,
   procesados, resultados, diccionario de datos, licencia CC BY 4.0, script
-  orquestador `generar_paquete_datos.py`).
+  orquestador `run_all.py`).
 - Evidencia de autoría completa en `10_Autoria/`: bitácora de sesiones (19
   días, historial completo del repositorio), capturas de pantalla de los 5
   integrantes, grabaciones de sesión de equipo, notas de campo manuscritas
