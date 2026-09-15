@@ -4,6 +4,25 @@ Todos los cambios relevantes del proyecto se documentan en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/)
 y el proyecto utiliza [versionado semántico](https://semver.org/lang/es/).
 
+## [No publicado] - 2026-09-15 — examen suspenso
+
+### Añadido
+
+- 10 notas de campo manuscritas escaneadas de las sesiones de validación
+  por walkthrough (`V01` a `V10`, 2026-08-28/30), depositadas en
+  `10_Autoria/notas_campo/`.
+- Cobertura técnica de RF Must (20 de 22, 90,91 %) incorporada como
+  resultado explícito en el manuscrito (`07_Publicacion/manuscrito_final.tex`).
+- Retrospectiva del equipo (`10_Autoria/retrospectiva_equipo.md`).
+
+### Corregido
+
+- Reproducibilidad byte a byte del paquete de datos: `resumen_descriptivo.csv`
+  (en `07_Datos/datos_procesados/` y `07_Publicacion/dataset_zenodo/`) se
+  regeneró con la orden única (`python 07_Datos/scripts/generar_paquete_datos.py`)
+  para que coincida con la salida real del script; `checksums_datos.sha256`
+  actualizado en consecuencia. `sha256sum -c checksums_datos.sha256 --quiet`
+  ya no reporta discrepancias.
 
 ### Resuelto
 
