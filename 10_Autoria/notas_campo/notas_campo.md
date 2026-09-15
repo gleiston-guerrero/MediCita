@@ -16,19 +16,35 @@
 
 Notas manuscritas escaneadas de cada sesión de elicitación, con la fecha visible.
 
-## 📊 Notas subidas (8 de 8 entrevistas)
+## 📊 Notas subidas (18 de 18 sesiones de elicitación y validación)
 
-| Archivo | Entrevista |
+| Archivo | Sesión |
 |---|---|
-| `2026-06-04_P01_psicologia_notas-campo.pdf` | Psicología |
-| `2026-06-05_P02_medicina-general_notas-campo.pdf` | Medicina General |
-| `2026-06-04_P03_terapia-fisica_notas-campo.pdf` | Terapia Física |
-| `2026-06-04_P04_nutricion_notas-campo.pdf` | Nutrición |
-| `2026-06-04_P05_odontologia_notas-campo.pdf` | Odontología |
-| `2026-07-07_P06_enfermeria_notas-campo.pdf` | Enfermería |
-| `2026-07-07_P07_recepcion-recaudacion_notas-campo.pdf` | Recepción/Recaudación |
-| `2026-07-22_P08_paciente_notas-campo.pdf` | Paciente |
+| `2026-06-04_P01_psicologia_notas-campo.pdf` | Elicitación — Psicología |
+| `2026-06-05_P02_medicina-general_notas-campo.pdf` | Elicitación — Medicina General |
+| `2026-06-04_P03_terapia-fisica_notas-campo.pdf` | Elicitación — Terapia Física |
+| `2026-06-04_P04_nutricion_notas-campo.pdf` | Elicitación — Nutrición |
+| `2026-06-04_P05_odontologia_notas-campo.pdf` | Elicitación — Odontología |
+| `2026-07-07_P06_enfermeria_notas-campo.pdf` | Elicitación — Enfermería |
+| `2026-07-07_P07_recepcion-recaudacion_notas-campo.pdf` | Elicitación — Recepción/Recaudación |
+| `2026-07-22_P08_paciente_notas-campo.pdf` | Elicitación — Paciente |
+| `2026-08-28_V01_enfermeria_notas-campo.pdf` | Validación walkthrough — Enfermería |
+| `2026-08-28_V02_medicina-general_notas-campo.pdf` | Validación walkthrough — Medicina General |
+| `2026-08-28_V03_nutricion_notas-campo.pdf` | Validación walkthrough — Nutrición |
+| `2026-08-28_V04_coordinacion_notas-campo.pdf` | Validación walkthrough — Coordinación |
+| `2026-08-28_V05_odontologia-coordinacion_notas-campo.pdf` | Validación walkthrough — Odontología/Coordinación |
+| `2026-08-28_V06_recepcion-recaudacion_notas-campos.pdf` | Validación walkthrough — Recepción/Recaudación |
+| `2026-08-28_V07_simulacion-paciente_notas-campo.pdf` | Validación walkthrough — Simulación de paciente |
+| `2026-08-28_V08_terapia-fisica_notas-campo.pdf` | Validación walkthrough — Terapia Física |
+| `2026-08-28_V09_psicologia_notas-campos.pdf` | Validación walkthrough — Psicología |
+| `2026-08-30_V10_simulacion-paciente02_notas-campo.pdf` | Validación walkthrough — Simulación de paciente (02) |
 
 ## ✅ Estado
 
-Completo — 8 de 8 sesiones de elicitación con nota manuscrita escaneada.
+Completo — 8 sesiones de elicitación (P01–P08) y 10 sesiones de validación
+por walkthrough (V01–V10) con nota manuscrita escaneada. Nota:
+`10_Autoria/bitacora_sesiones.csv` registra únicamente las sesiones de
+trabajo interno del equipo derivadas de commits (programación,
+organización, redacción); las sesiones de campo aquí listadas son
+sesiones con participantes externos y no están duplicadas en esa
+bitácora, por lo que no se contrastan una a una contra ella.
