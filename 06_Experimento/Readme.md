@@ -30,7 +30,7 @@
 ## ⚙️ Cómo reproducir
 
 ```bash
-python 07_Datos/scripts/generar_paquete_datos.py
+python 07_Datos/scripts/run_all.py
 ```
 
 ## ✅ Estado
