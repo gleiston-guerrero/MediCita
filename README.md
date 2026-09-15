@@ -149,7 +149,7 @@ El sistema contempla procesos de: registro de pacientes, gestión de citas, agen
 | 📄 ERS/SRS 2A | [`01_ERS/ERS_SRS_2A_V1.0.pdf`](01_ERS/ERS_SRS_2A_V1.0.pdf) | 🟢 |
 | 📄 ERS/SRS 2B final (119 pág., 40 RF, 21 RNF) | [`01_ERS/ERS_SRS_2B_V2.0.pdf`](01_ERS/ERS_SRS_2B_V2.0.pdf) | 🟢 |
 | 📝 Fuente LaTeX ERS 2B | [`01_ERS/ERS_SRS_2B_V2.0.tex`](01_ERS/ERS_SRS_2B_V2.0.tex) | 🟢 |
-| 💻 MVP funcional | [GitHub Pages](https://ptigasis-alexander.github.io/MediCita_ISR401/) | 🟢 |
+| 💻 MVP funcional | [GitHub Pages](https://gleiston-guerrero.github.io/MediCita_ISR401/) | 🟢 |
 | 📦 Paquete de datos reproducible | [`07_Datos/README_datos.md`](07_Datos/README_datos.md) | 🟢 |
 | 📝 Registro OSF | [10.17605/OSF.IO/DTYNC](https://doi.org/10.17605/OSF.IO/DTYNC) | 🟢 |
 | 📑 Manuscrito final | [`07_Publicacion/manuscrito_final.pdf`](07_Publicacion/manuscrito_final.pdf) | 🟢 |
