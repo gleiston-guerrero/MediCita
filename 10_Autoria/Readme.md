@@ -38,7 +38,7 @@ qué hizo cada integrante y qué se corrigió en esta ronda de cierre.
 | — | [`doble_observacion_sesiones/`](doble_observacion_sesiones/) | 🟢 Completo | Requisito adicional de la Sección 5 de la Guía de Desarrollo: doble observación independiente de 2 de 8 sesiones de validación (25%, sobre el mínimo del 20%). Kappa = -0,0714 (sin acuerdo por desbalance de categorías, explicado en detalle en `resultado_kappa_observacion.md`); acuerdo bruto real 70%. No sustituye a A7 — es un elemento distinto, sobre sesiones de validación, no sobre codificación temática de transcripciones. |
 | A8 | [`correspondencia/README.md`](correspondencia/README.md) | 🟢 Completo | Las 4 comunicaciones confirmadas y firmadas. |
 | A9 | [`declaracion_uso_ia.md`](declaracion_uso_ia.md) | 🟢 Completo | Firmado por los 5 integrantes (03-05/09/2026). |
-| A10 | [`aporte_individual.md`](aporte_individual.md) | 🟢 Completo | Conteo real de commits (1.682 totales) y detalle cualitativo por integrante, basado en la bitácora A1. |
+| A10 | [`aporte_individual.md`](aporte_individual.md) | 🟢 Completo | Conteo real de commits (1.705 totales) y detalle cualitativo por integrante, basado en la bitácora A1. |
 | A11 | [`exif_inventario.csv`](exif_inventario.csv) | 🟢 Completo | 29 de 29 fotos reales del expediente (Fotos_Entorno, Fotos_Aplicacion, Fotos_equipos), con EXIF real, inferido por contexto, o marcado explícitamente `SIN_EXIF` cuando no aplica (p. ej. capturas de pantalla). |
 | A12 | `.mailmap` | 🟢 Completo | Atribuye los 8 commits de `MediCita Team` a Thais Melanie Herrera Ramos. |
 
@@ -71,11 +71,11 @@ Fuente: `git shortlog -sne HEAD` sobre un clon completo (historial íntegro, fil
 
 | Integrante | Commits | % del total |
 |---|---:|---:|
-| Paul Alexander Tigasi Sampedro | 341 | 20,27 % |
-| Thais Melanie Herrera Ramos | 340 | 20,21 % |
-| Jamileth Estefanía Gamarra Zárate | 337 | 20,04 % |
-| Steven Santiago Díaz Pontón | 335 | 19,92 % |
-| Mayummy Jailly Trujillo Vega | 329 | 19,56 % |
-| **Total** | **1.682** | **100 %** |
+| Paul Alexander Tigasi Sampedro | 345 | 20,23 % |
+| Thais Melanie Herrera Ramos | 344 | 20,18 % |
+| Jamileth Estefanía Gamarra Zárate | 342 | 20,06 % |
+| Steven Santiago Díaz Pontón | 340 | 19,94 % |
+| Mayummy Jailly Trujillo Vega | 334 | 19,59 % |
+| **Total** | **1.705** | **100 %** |
 
 El reparto es notablemente parejo entre los cinco integrantes (19,50 % a 20,41 %).
