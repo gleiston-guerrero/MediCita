@@ -22,7 +22,7 @@
 
 <div align="center">
 
-### 👉 [Abrir demostración del MVP](https://ptigasis-alexander.github.io/MediCita_ISR401/)
+### 👉 [Abrir demostración del MVP](https://gleiston-guerrero.github.io/MediCita_ISR401/)
 
 </div>
 
@@ -265,14 +265,14 @@ Por tratarse de un prototipo académico:
 
 Si se desea realizar una revisión asistida por IA, puede utilizarse la siguiente instrucción:
 
-> "Abre `https://ptigasis-alexander.github.io/MediCita_ISR401/`, revisa la demostración guiada del sistema SICM e identifica los módulos y funcionalidades representados. Contrasta la demostración y el prototipo final revisado con las evidencias de Validación Walkthrough del repositorio, indicando qué observaciones fueron incorporadas y verificando que la página cargue correctamente sin errores 404 ni recursos CSS/JS rotos."
+> "Abre `https://gleiston-guerrero.github.io/MediCita_ISR401/`, revisa la demostración guiada del sistema SICM e identifica los módulos y funcionalidades representados. Contrasta la demostración y el prototipo final revisado con las evidencias de Validación Walkthrough del repositorio, indicando qué observaciones fueron incorporadas y verificando que la página cargue correctamente sin errores 404 ni recursos CSS/JS rotos."
 
 ---
 
 ## 🧪 Cómo verificar que está correctamente publicado
 
 ```bash
-curl -I https://ptigasis-alexander.github.io/MediCita_ISR401/
+curl -I https://gleiston-guerrero.github.io/MediCita_ISR401/
 ```
 
 La respuesta esperada es:
