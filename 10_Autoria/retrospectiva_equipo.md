@@ -36,7 +36,7 @@ cambios efectivamente aplicados al repositorio.
 
 ## 🛠️ Qué corregimos puntualmente en el cierre
 
-**Reproducibilidad del paquete de datos (§12).** `resumen_descriptivo.csv` había sido reformateado a mano (de punto y coma con BOM, la salida real del script, a comas sin BOM) el 2026-09-15 a las 00:21, lo que rompía la verificación `sha256sum -c checksums_datos.sha256 --quiet` aunque los valores numéricos fueran correctos. Se regeneró el archivo ejecutando la orden única (`python 07_Datos/scripts/generar_paquete_datos.py`) y se actualizó el manifiesto para que coincida con la salida real del pipeline.
+**Reproducibilidad del paquete de datos (§12).** `resumen_descriptivo.csv` había sido reformateado a mano (de punto y coma con BOM, la salida real del script, a comas sin BOM) el 2026-09-15 a las 00:21, lo que rompía la verificación `sha256sum -c checksums_datos.sha256 --quiet` aunque los valores numéricos fueran correctos. Se regeneró el archivo ejecutando la orden única (`python 07_Datos/scripts/run_all.py`) y se actualizó el manifiesto para que coincida con la salida real del pipeline.
 
 **Cobertura de RF Must y cálculo de potencia (§16).** Se incorporó al manuscrito el cálculo de potencia a priori (Cohen's *d* = 0,5, α = 0,05, potencia = 0,80, *n* = 128) como referencia de diseño frente a las diez sesiones de validación disponibles, y se reforzó la sección de amenazas a la validez con esa comparación explícita. El manuscrito se recompiló desde el `.tex` versionado.
 
