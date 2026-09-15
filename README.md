@@ -22,6 +22,8 @@
 
 Este repositorio corresponde a la **Entrega 4 (2B / Defensa Final)** del Proyecto Fin de Curso de la asignatura **Ingeniería de Requerimientos (ISR-401)** de la Universidad Técnica Estatal de Quevedo (UTEQ).
 
+**Etiqueta de línea base vigente:** `cierre-examen-suspenso`, anotada sobre el commit final del examen suspenso (15/09/2026). Las etiquetas anteriores (`vFinal`, etc.) quedan como referencia histórica y no representan el estado evaluable final.
+
 La evaluación de esta entrega debe considerar los artefactos organizados en las carpetas `01_ERS/` a `10_Autoria/`, junto con los archivos de documentación, integridad y reproducibilidad ubicados en la raíz del repositorio.
 
 El repositorio integra la línea base final del proyecto **SICM / MediCita**, incluyendo:
