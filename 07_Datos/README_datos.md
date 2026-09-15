@@ -70,13 +70,27 @@ Todos los datos de `datos_procesados/` y `resultados/` provienen del pipeline re
 
 ## 🔁 Cómo se reproduce
 
-Desde la raíz del repositorio, con Python 3 y las dependencias del proyecto instaladas (`matplotlib`, `scipy`):
+Con Python 3 y las dependencias del proyecto instaladas (`matplotlib`, `scipy`), de cualquiera de estas dos formas (el script ubica la raíz del repositorio por su propia ubicación, no por el directorio de trabajo):
 
 ```bash
-python 07_Datos/scripts/generar_paquete_datos.py
+# Desde la raíz del repositorio
+python 07_Datos/scripts/run_all.py
+
+# O parado dentro de 07_Datos/
+cd 07_Datos && python scripts/run_all.py
 ```
 
 Esto ejecuta el pipeline real y sincroniza sus salidas hacia `07_Datos/datos_procesados/` y `07_Datos/resultados/`. Los archivos de `datos_crudos/` no se regeneran (son el punto de partida, no una salida del análisis).
+
+## ✅ Cómo se verifica la integridad
+
+`checksums_datos.sha256` usa rutas relativas a esta carpeta, por lo que la verificación se corre **parado dentro de `07_Datos/`**:
+
+```bash
+cd 07_Datos && sha256sum -c checksums_datos.sha256 --quiet
+```
+
+No debe imprimir nada si el paquete está íntegro.
 
 ## 📄 Licencia de los datos
 
