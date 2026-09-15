@@ -77,6 +77,25 @@ Se comparó el hash de cada archivo (`git rev-parse`) entre el commit evaluado (
 
 Con base en la revisión directa del contenido de los tres archivos y la comparación de hashes contra el commit evaluado, se solicita que se reconsidere la observación de este punto específico del ítem B3: las fotografías sí permiten identificar visiblemente a los integrantes del equipo dentro de la organización cooperante.
 
+## 🔎 Verificación objetiva por software (no depende de apreciación visual)
+
+Para que esto no dependa de que alguien mire la foto y esté de acuerdo, se corrió un detector
+de rostros por software (OpenCV, algoritmo Viola-Jones) sobre los tres archivos originales.
+El script y las tres imágenes con los rostros marcados están en
+[`verificacion_automatica/`](verificacion_automatica/):
+
+| Archivo | Rostros detectados por software |
+|---|---|
+| `2026_09_04_Facha_Establecimiento.jpg` | 2 |
+| `2026_09_04_Pasillo_Entrda(principal).jpg` | 2 |
+| `2026_09_04_Area_Recepción(Recaudación).jpg` | 3 (2 rostros reales + 1 falso positivo del detector sobre la tela del pantalón — se deja el resultado crudo sin filtrar a mano, visible en la imagen anotada) |
+
+Cualquiera puede repetir la verificación:
+```bash
+pip install opencv-python-headless
+python3 verificacion_automatica/detectar_rostros.py
+```
+
 ## 🔒 Privacidad
 
 Estas fotos son del **equipo investigador**, no de participantes ni pacientes — no requieren enmascarar rostros.
