@@ -1,4 +1,3 @@
-
 <div align="center">
 
 # 🔍 Guía de Verificación — Carpeta Codificacion_Tematica
@@ -113,7 +112,7 @@ Si ves símbolos rotos en vez de letras acentuadas, el PDF fue generado con una 
 
 ## 🤖 Instrucción para revisión por IA
 
-> "Clona `https://github.com/ptigasis-Alexander/MediCita_ISR401`, entra a `02_Evidencias/Codificacion_Tematica/`, y sigue los Pasos 1 a 5 de `Guia_Verificacion_Codificacion_Tematica.md`. Extrae el texto de los dos PDFs con `pdftotext`, confírmame si los 8 participantes (P01–P08) están codificados, si hay códigos que aparecen en un documento pero no en el otro, y si el README de la carpeta tiene contenido real."
+> "Clona `https://github.com/gleiston-guerrero/MediCita_ISR401`, entra a `02_Evidencias/Codificacion_Tematica/`, y sigue los Pasos 1 a 5 de `Guia_Verificacion_Codificacion_Tematica.md`. Extrae el texto de los dos PDFs con `pdftotext`, confírmame si los 8 participantes (P01–P08) están codificados, si hay códigos que aparecen en un documento pero no en el otro, y si el README de la carpeta tiene contenido real."
 
 ---
 
