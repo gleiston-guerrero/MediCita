@@ -4,7 +4,7 @@
 
 ### Proyecto MediCita (SICM) — ISR-401
 
-![Progreso](https://img.shields.io/badge/Progreso-12_de_12_completos-success?style=for-the-badge)
+![Progreso](https://img.shields.io/badge/Progreso-11_de_12_completos-yellow?style=for-the-badge)
 ![Criterio](https://img.shields.io/badge/Criterio_de_piso-P7-success?style=for-the-badge)
 ![Actualizado](https://img.shields.io/badge/Actualizado-09/09/2026-informational?style=for-the-badge)
 
@@ -24,11 +24,11 @@ pendiente contiene contenido inventado.**
 
 | Cód. | Elemento | Estado | Notas |
 |---|---|:---:|---|
-| A1 | [`bitacora_sesiones.csv`](bitacora_sesiones.csv) | 🟢 Completo | 21 días con sus campos completos y actualizados. |
+| A1 | [`bitacora_sesiones.csv`](bitacora_sesiones.csv) | 🟢 Completo | 27 días con sus campos completos y actualizados, hasta el 14/09/2026 inclusive. |
 | A2 | [`Capturas/`](Capturas/Capturas.md) | 🟢 Completo | 15 capturas subidas; los 5 integrantes con mínimo 3 cada uno. |
 | A3 | [`fuentes_editables/README.md`](fuentes_editables/README.md) | 🟢 Completo | 117 de 117 fuentes (.drawio/.puml) referenciadas 1 a 1 con la imagen que generan; se mantienen en `03_Modelado/` para no duplicar contenido. |
 | A4 | [`grabaciones/`](grabaciones/grabaciones.md) | 🟢 Completo | 2 de 2 grabaciones mínimas. |
-| A5 | [`notas_campo/`](notas_campo/notas_campo.md) | 🟢 Completo | 8 de 8 notas manuscritas escaneadas, una por entrevista de elicitación. |
+| A5 | [`notas_campo/`](notas_campo/notas_campo.md) | 🟡 Parcial | 8 de 8 de elicitación completo; 0 de 10 de la ronda de validación (walkthrough) — ver detalle en el propio archivo. |
 | A6 | [`Fotos_equipos/`](Fotos_equipos/Fotos_equipos.md) | 🟢 Completo | 3 fotos con EXIF real verificado, 2 integrantes identificables. |
 | A7 | [`doble_codificacion/`](doble_codificacion/) | 🟢 Completo | 38 segmentos codificados por 2 integrantes independientes. **Kappa = 0,6997 (acuerdo sustancial)**, IC 95% [0,5255–0,8739]. Resultado generado por script (`resultado_kappa.md`). |
 | — | [`doble_observacion_sesiones/`](doble_observacion_sesiones/) | 🟢 Completo | Requisito adicional de la Sección 5 de la Guía de Desarrollo: doble observación independiente de 2 de 8 sesiones de validación (25%, sobre el mínimo del 20%). Kappa = -0,0714 (sin acuerdo por desbalance de categorías, explicado en detalle en `resultado_kappa_observacion.md`); acuerdo bruto real 70%. No sustituye a A7 — es un elemento distinto, sobre sesiones de validación, no sobre codificación temática de transcripciones. |
