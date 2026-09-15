@@ -67,6 +67,17 @@ Los 8 documentos son **consentimientos originales firmados en papel y escaneados
 
 En otras palabras: el contenido es el del consentimiento real firmado; el productor del PDF es ReportLab porque ese fue el paso técnico de anonimización, no porque el documento haya sido inventado o compuesto sin una firma real detrás. El escaneo original sin pixelar está disponible para verificación en la zona restringida cifrada.
 
+**Prueba verificable sin depender de esta explicación.** La imagen que el script incrusta en cada PDF se puede extraer con cualquier lector de PDF (`pypdf`, por ejemplo) y se ve exactamente como una foto de un papel firmado: letra manuscrita distinta en cada documento, inclinación natural de la hoja, sombras propias de un escaneo, y la zona de firma cubierta por el bloque de anonimización — no una plantilla generada por computadora. Dos ejemplos ya extraídos, con la anonimización intacta, están en
+[`Consentimientos/evidencia_contenido_real/`](Consentimientos/evidencia_contenido_real/):
+`ejemplo_C_Enfermeria_imagen_incrustada.png` y `ejemplo_C_Recepcionista_imagen_incrustada.png`.
+Cualquiera puede repetir la extracción sobre los 8 originales con:
+```python
+from pypdf import PdfReader
+r = PdfReader("C_Enfermería.pdf")
+for img in r.pages[0].images:
+    open("salida.png", "wb").write(img.data)
+```
+
 ## 🔒 Privacidad
 
 Ningún archivo aquí (fuera de `00_Restringido/`) contiene identificadores directos sin anonimizar.
