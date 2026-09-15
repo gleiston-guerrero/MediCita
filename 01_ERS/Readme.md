@@ -17,7 +17,7 @@
 | Archivo | Descripción |
 |---|---|
 | `ERS_SRS_2B_V2.0.tex` / `.pdf` | Versión final vigente para la Entrega 4 (2B). 117 páginas, 40 RF, 19 RNF activos. |
-| `ERS_SRS_2A_v1.0.pdf` | Versión anterior (Entrega 2A), conservada para mostrar la evolución del proyecto. |
+| `ERS_SRS_2A_V1.0.pdf` | Versión anterior (Entrega 2A), conservada para mostrar la evolución del proyecto. |
 | `referencias.bib` / `referencias_usadas.bib` | Bibliografía citada en el documento. |
 | `Imagenes_IR_PFC/`, `Imagenes_DCF_IR_LATEX/` | Figuras incluidas en el ERS/SRS. |
 
