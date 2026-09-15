@@ -264,7 +264,7 @@ Diagramas UML y mockups/interfaces relacionados con los requisitos del proyecto.
 Matrices que relacionan requisitos, fuentes, modelos, evidencias, interfaces y elementos de verificación.
 
 ## 📁 `05_MVP/`
-Prototipo funcional. Versión pública: https://ptigasis-alexander.github.io/MediCita_ISR401/
+Prototipo funcional. Versión pública: https://gleiston-guerrero.github.io/MediCita_ISR401/
 
 ## 📁 `06_Experimento/`
 Protocolo, registro OSF, desviaciones, instrumentos, prompts LLM y scripts de análisis (`run_all.py`).
