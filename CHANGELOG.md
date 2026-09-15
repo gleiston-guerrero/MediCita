@@ -4,7 +4,9 @@ Todos los cambios relevantes del proyecto se documentan en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/)
 y el proyecto utiliza [versionado semántico](https://semver.org/lang/es/).
 
-## [No publicado] - 2026-09-15 — examen suspenso
+## [No publicado]
+
+### Cierre del examen suspenso — 2026-09-15
 
 ### Añadido
 
