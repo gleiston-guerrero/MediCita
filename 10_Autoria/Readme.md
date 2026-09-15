@@ -4,7 +4,7 @@
 
 ### Proyecto MediCita (SICM) — ISR-401
 
-![Progreso](https://img.shields.io/badge/Progreso-11_de_12_completos-yellow?style=for-the-badge)
+![Progreso](https://img.shields.io/badge/Progreso-12_de_12_completos-success?style=for-the-badge)
 ![Criterio](https://img.shields.io/badge/Criterio_de_piso-P7-success?style=for-the-badge)
 ![Actualizado](https://img.shields.io/badge/Actualizado-15/09/2026-informational?style=for-the-badge)
 
@@ -18,24 +18,28 @@
 la Guía de Desarrollo del 02/09/2026. **Ningún elemento marcado como
 pendiente contiene contenido inventado.**
 
+**Cierre del examen suspenso (15/09/2026):** ver
+[`retrospectiva_equipo.md`](retrospectiva_equipo.md) para el detalle de
+qué hizo cada integrante y qué se corrigió en esta ronda de cierre.
+
 ---
 
 ## 📋 Estado por elemento
 
 | Cód. | Elemento | Estado | Notas |
 |---|---|:---:|---|
-| A1 | [`bitacora_sesiones.csv`](bitacora_sesiones.csv) | 🟢 Completo | 27 días con sus campos completos y actualizados, hasta el 14/09/2026 inclusive. |
+| A1 | [`bitacora_sesiones.csv`](bitacora_sesiones.csv) | 🟢 Completo | 28 días con sus campos completos y actualizados, hasta el 14/09/2026 inclusive. Registra sesiones de trabajo interno del equipo (derivadas de commits); no incluye las sesiones de campo con participantes externos, que se documentan aparte en A5. |
 | A2 | [`Capturas/`](Capturas/Readme.md) | 🟢 Completo | 15 capturas subidas; los 5 integrantes con mínimo 3 cada uno. |
 | A3 | [`fuentes_editables/README.md`](fuentes_editables/README.md) | 🟢 Completo | 117 de 117 fuentes (.drawio/.puml) referenciadas 1 a 1 con la imagen que generan; se mantienen en `03_Modelado/` para no duplicar contenido. |
 | A4 | [`grabaciones/`](grabaciones/grabaciones.md) | 🟢 Completo | 2 de 2 grabaciones mínimas. |
-| A5 | [`notas_campo/`](notas_campo/notas_campo.md) | 🟡 Parcial | 8 de 8 de elicitación completo; 0 de 10 de la ronda de validación (walkthrough) — ver detalle en el propio archivo. |
+| A5 | [`notas_campo/`](notas_campo/notas_campo.md) | 🟢 Completo | 18 de 18 sesiones: 8 de elicitación (P01–P08) y 10 de la ronda de validación por walkthrough (V01–V10) — ver detalle en el propio archivo. |
 | A6 | [`Fotos_equipos/`](Fotos_equipos/Fotos_equipos.md) | 🟢 Completo | 3 fotos con EXIF real verificado, 2 integrantes identificables. |
 | A7 | [`doble_codificacion/`](doble_codificacion/) | 🟢 Completo | 38 segmentos codificados por 2 integrantes independientes. **Kappa = 0,6997 (acuerdo sustancial)**, IC 95% [0,5255–0,8739]. Resultado generado por script (`resultado_kappa.md`). |
 | — | [`doble_observacion_sesiones/`](doble_observacion_sesiones/) | 🟢 Completo | Requisito adicional de la Sección 5 de la Guía de Desarrollo: doble observación independiente de 2 de 8 sesiones de validación (25%, sobre el mínimo del 20%). Kappa = -0,0714 (sin acuerdo por desbalance de categorías, explicado en detalle en `resultado_kappa_observacion.md`); acuerdo bruto real 70%. No sustituye a A7 — es un elemento distinto, sobre sesiones de validación, no sobre codificación temática de transcripciones. |
 | A8 | [`correspondencia/README.md`](correspondencia/README.md) | 🟢 Completo | Las 4 comunicaciones confirmadas y firmadas. |
 | A9 | [`declaracion_uso_ia.md`](declaracion_uso_ia.md) | 🟢 Completo | Firmado por los 5 integrantes (03-05/09/2026). |
 | A10 | [`aporte_individual.md`](aporte_individual.md) | 🟢 Completo | Conteo real de commits (1.656 totales) y detalle cualitativo por integrante, basado en la bitácora A1. |
-| A11 | [`exif_inventario.csv`](exif_inventario.csv) | 🟢 Completo | Fotos con EXIF real, inferido por contexto, o marcado explícitamente sin dato. |
+| A11 | [`exif_inventario.csv`](exif_inventario.csv) | 🟢 Completo | 29 de 29 fotos reales del expediente (Fotos_Entorno, Fotos_Aplicacion, Fotos_equipos), con EXIF real, inferido por contexto, o marcado explícitamente `SIN_EXIF` cuando no aplica (p. ej. capturas de pantalla). |
 | A12 | `.mailmap` | 🟢 Completo | Atribuye los 8 commits de `MediCita Team` a Thais Melanie Herrera Ramos. |
 
 **Leyenda:** 🟢 Completo · 🟡 En progreso · 🔴 Pendiente/vacío
