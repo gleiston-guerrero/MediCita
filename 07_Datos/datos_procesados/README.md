@@ -24,7 +24,7 @@ Datos obtenidos **únicamente mediante scripts versionados** — nunca editados 
 
 ## ⚙️ Generado por
 
-`06_Experimento/scripts_analisis/run_all.py`, orquestado desde `07_Datos/scripts/generar_paquete_datos.py`.
+`06_Experimento/scripts_analisis/run_all.py`, orquestado desde `07_Datos/scripts/run_all.py`.
 
 ## ✅ Estado
 
