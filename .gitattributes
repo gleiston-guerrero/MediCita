@@ -25,3 +25,11 @@
 *.xlsx  -text binary
 *.drawio -text binary
 *.sha256 -text binary
+
+# El paquete de datos de 07_Datos/ se genera con Python (csv.writer, que
+# escribe CRLF por defecto). Se fija como binario para que ningún clon,
+# en ninguna máquina o sistema operativo, altere un solo byte —
+# necesario para que la verificación de checksums sea reproducible
+# sin importar quién o desde dónde se clone el repositorio.
+07_Datos/**/*.csv -text binary
+07_Publicacion/dataset_zenodo/*.csv -text binary
