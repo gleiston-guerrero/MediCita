@@ -28,7 +28,7 @@ qué hizo cada integrante y qué se corrigió en esta ronda de cierre.
 
 | Cód. | Elemento | Estado | Notas |
 |---|---|:---:|---|
-| A1 | [`bitacora_sesiones.csv`](bitacora_sesiones.csv) | 🟢 Completo | 28 días con sus campos completos y actualizados, hasta el 14/09/2026 inclusive. Registra sesiones de trabajo interno del equipo (derivadas de commits); no incluye las sesiones de campo con participantes externos, que se documentan aparte en A5. |
+| A1 | [`bitacora_sesiones.csv`](bitacora_sesiones.csv) | 🟢 Completo | 46 filas: 28 días de trabajo interno del equipo (derivadas de commits, hasta el 14/09/2026) + 18 sesiones de campo con participante externo (8 entrevistas + 10 walkthroughs), cada una con columna `tipo` y enlace directo en `ruta_nota_campo` a su nota manuscrita en A5. |
 | A2 | [`Capturas/`](Capturas/Readme.md) | 🟢 Completo | 15 capturas subidas; los 5 integrantes con mínimo 3 cada uno. |
 | A3 | [`fuentes_editables/README.md`](fuentes_editables/README.md) | 🟢 Completo | 117 de 117 fuentes (.drawio/.puml) referenciadas 1 a 1 con la imagen que generan; se mantienen en `03_Modelado/` para no duplicar contenido. |
 | A4 | [`grabaciones/`](grabaciones/grabaciones.md) | 🟢 Completo | 2 de 2 grabaciones mínimas. |
