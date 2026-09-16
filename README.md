@@ -22,7 +22,7 @@
 
 Este repositorio corresponde a la **Entrega 4 (2B / Defensa Final)** del Proyecto Fin de Curso de la asignatura **Ingeniería de Requerimientos (ISR-401)** de la Universidad Técnica Estatal de Quevedo (UTEQ).
 
-**Etiqueta de línea base vigente:** `vFinal`, anotada sobre el commit final del examen suspenso (15/09/2026). Las etiquetas anteriores (`evidencia-restringida-v1`, etc.) corresponden a releases de evidencia distintos y no son la línea base.
+**Etiqueta de línea base vigente:** `cierre-examen-suspenso-20260915`, anotada sobre el commit final del examen suspenso (15/09/2026). `vFinal` se conserva como referencia histórica del primer intento de cierre; las demás etiquetas anteriores (`evidencia-restringida-v1`, etc.) corresponden a releases de evidencia distintos y tampoco son la línea base.
 
 **Sobre las notas de campo y la bitácora:** `10_Autoria/bitacora_sesiones.csv` tiene 46 filas — 28 de trabajo interno del equipo y 18 de sesiones de campo con participante externo (8 entrevistas + 10 validaciones por walkthrough), estas últimas con columna `tipo` y con enlace directo en `ruta_nota_campo` a su nota manuscrita en `10_Autoria/notas_campo/` (que tiene, en efecto, sus 18 notas completas).
 
