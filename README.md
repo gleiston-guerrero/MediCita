@@ -113,7 +113,7 @@ Los hashes SHA-256 de cada archivo, declarados en `fichas_tecnicas.csv`, corresp
 | Autoevaluación FAIR | Evaluación de principios FAIR (F-UJI, 88%) | 🟢 Confirmado (v1.0.0, 01/09/2026) |
 
 
-> **Nota — `02_Evidencias/`:**  los 8 consentimientos originales están pixeleados para manter la privadiad de datos sencibles como los nombre y firmas.
+> **Nota — `02_Evidencias/`:**  los 9 consentimientos originales están pixelados para mantener la privacidad de datos sensibles como los nombres y firmas.
 
 ---
 
@@ -151,7 +151,7 @@ El sistema contempla procesos de: registro de pacientes, gestión de citas, agen
 | Recurso | Enlace | Estado |
 |---|---|:---:|
 | 📄 ERS/SRS 2A | [`01_ERS/ERS_SRS_2A_V1.0.pdf`](01_ERS/ERS_SRS_2A_V1.0.pdf) | 🟢 |
-| 📄 ERS/SRS 2B final (119 pág., 40 RF, 21 RNF) | [`01_ERS/ERS_SRS_2B_V2.0.pdf`](01_ERS/ERS_SRS_2B_V2.0.pdf) | 🟢 |
+| 📄 ERS/SRS 2B final (120 pág., 40 RF, 21 RNF) | [`01_ERS/ERS_SRS_2B_V2.0.pdf`](01_ERS/ERS_SRS_2B_V2.0.pdf) | 🟢 |
 | 📝 Fuente LaTeX ERS 2B | [`01_ERS/ERS_SRS_2B_V2.0.tex`](01_ERS/ERS_SRS_2B_V2.0.tex) | 🟢 |
 | 💻 MVP funcional | [GitHub Pages](https://gleiston-guerrero.github.io/MediCita_ISR401/) | 🟢 |
 | 📦 Paquete de datos reproducible | [`07_Datos/README_datos.md`](07_Datos/README_datos.md) | 🟢 |
