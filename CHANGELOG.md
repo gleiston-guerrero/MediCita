@@ -4,6 +4,52 @@ Todos los cambios relevantes del proyecto se documentan en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/)
 y el proyecto utiliza [versionado semántico](https://semver.org/lang/es/).
 
+## [4.2.0] - 2026-09-16 — Cierre final tras revisión del docente (7,12/10)
+
+Publicado bajo la etiqueta anotada `cierre-examen-suspenso-20260916`, sobre
+el último commit de esta serie de correcciones. Responde punto por punto al
+`Informe de evaluación del examen suspenso` del docente (16/09/2026, 19:30,
+nota 7,12/10 sobre la entrega `[4.1.0]`), que dejó §2, §3 y §15 en "Por
+modificar". Reemplaza a `[4.1.0]` como línea base vigente; esa etiqueta y
+`vFinal` se conservan como referencia histórica de los dos intentos de
+cierre anteriores.
+
+### Corregido (respuesta al informe del 16/09)
+
+- §2 CHANGELOG: la entrada de `[4.1.0]` ya indicaba quién hizo cada cambio,
+  ya no estaba bajo "[No publicado]" y `vFinal` ya tenía su propia entrada
+  (`[4.0.1]`) — los tres puntos que el informe marcó como pendientes en esa
+  revisión. — *Mayummy Trujillo Vega* (`a3478c9`).
+- §3 Etiqueta de línea base: `evidencia-restringida-v1` se convirtió de
+  etiqueta ligera a anotada, sobre el mismo commit (`b320145`), tal como
+  pedía el informe. — *Paul Tigasi Sampedro* (recreación de la etiqueta,
+  verificada con `git cat-file -t evidencia-restringida-v1` → `tag`).
+- §15 Notas de campo: se agregó a `10_Autoria/notas_campo/notas_campo.md`
+  la declaración por escrito de cuándo se redactó cada nota V01–V10 y dónde
+  está el original en papel, incluyendo la aclaración específica sobre por
+  qué el campo "duración" coincide con la grabación (se verificó ese dato
+  puntual contra la grabación después de la sesión; el contenido de la nota
+  se escribió a mano el mismo día). — *Jamileth Gamarra Zárate* (`74684b6`,
+  `84ce5de`, `848582e`), aclaración final de *Paul Tigasi Sampedro*
+  (`b180e5b`).
+- §15 Inventario EXIF: se añadieron a `10_Autoria/exif_inventario.csv` las
+  5 filas faltantes de `10_Autoria/correspondencia/evidencia_entrevista/`,
+  completando 34 de 34 fotografías reales del expediente.
+  — *Jamileth Gamarra Zárate* (`a01b93f`).
+- Recompilación del PDF de `01_ERS/ERS_SRS_2B_V2.0.pdf` con XeLaTeX+BibTeX
+  (el depositado antes se había generado por error con pdfTeX, que no
+  soporta el paquete `fontspec` que usa la fuente). — *Thais Herrera Ramos*
+  (`dd0fad0`).
+- Corrección de tres README desactualizados detectados en auditoría
+  posterior al informe (no señalados explícitamente por el docente, pero
+  inconsistentes con el resto del repositorio): `01_ERS/Readme.md` (117→120
+  páginas, 19→21 RNF activos), `10_Autoria/Readme.md` (29→34 fotos en el
+  inventario EXIF) y `04_Trazabilidad/Readme.md` (72→75 filas de la
+  matriz). — *Mayummy Trujillo Vega* (`86f4148`), *Thais Herrera Ramos*
+  (`da4febe`), *Paul Tigasi Sampedro* (`3ae8324`).
+- Manifiesto raíz `checksums.sha256` regenerado con `generar_checksums.sh`
+  para reflejar los 7 archivos corregidos en este cierre.
+
 ## [4.1.0] - 2026-09-16 — Cierre del examen suspenso (versión final)
 
 Publicado bajo la etiqueta anotada `cierre-examen-suspenso-20260915`, sobre el
@@ -275,6 +321,7 @@ final evaluado. Ver `[4.1.0]` para el cierre completo.
   publicación y ética.
 - Archivos README iniciales para documentar el contenido de cada sección.
 
+[4.2.0]: https://github.com/gleiston-guerrero/MediCita_ISR401/releases/tag/cierre-examen-suspenso-20260916
 [4.1.0]: https://github.com/gleiston-guerrero/MediCita_ISR401/releases/tag/cierre-examen-suspenso-20260915
 [4.0.1]: https://github.com/gleiston-guerrero/MediCita_ISR401/releases/tag/vFinal
 [4.0.0]: https://github.com/gleiston-guerrero/MediCita_ISR401/releases/tag/v4.0.0
