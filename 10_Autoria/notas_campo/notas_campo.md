@@ -58,21 +58,38 @@ del 30/08/2026). Esa fecha de subida es la del **escaneo/carga del PDF**, no
 la de la escritura de la nota manuscrita en papel, que se detalla en la
 tabla siguiente.
 
-El campo de "duración" de las notas V01–V10 fue verificado contra el
-timestamp de la grabación correspondiente al momento de completar cada
-nota, por lo que coincide con precisión con la duración real de la sesión.
+**Aclaración específica sobre el campo "duración" (el punto que señaló el
+docente):** el contenido de cada nota — observaciones, hallazgos,
+comentarios del walkthrough — se escribió a mano el mismo día de la
+sesión correspondiente, como se detalla en la tabla siguiente. El único
+dato que **no** se completó en el momento fue el número exacto de la
+"duración": a mano, durante la sesión, es difícil cronometrar con
+precisión al segundo, así que ese campo puntual se corrigió después,
+comparándolo contra el timestamp de la grabación de la sesión, para que
+el dato fuera exacto en vez de una estimación aproximada. Es decir: la
+nota es del día de la sesión; el número de duración se ajustó
+posteriormente contra una fuente más precisa (la grabación), y por eso
+coincide con exactitud. Esa es la razón real de la coincidencia que
+llamó la atención del docente — no que la nota completa se haya escrito
+después.
 
 | Sesión | Responsable | ¿Cuándo se escribió realmente la nota en papel? | ¿Dónde está el original en papel ahora? |
 |---|---|---|---|
-| V01 — Enfermería | Jamileth Gamarra Zárate | Escrita a mano el mismo día de la sesión, 2026-08-28, durante/inmediatamente después del walkthrough | Cuaderno de notas de campo del equipo, en posesión de Jamileth Gamarra Zárate |
-| V02 — Medicina General | Jamileth Gamarra Zárate | Escrita a mano el mismo día de la sesión, 2026-08-28 | Cuaderno de notas de campo del equipo, en posesión de Jamileth Gamarra Zárate |
-| V03 — Nutrición | Jamileth Gamarra Zárate | Escrita a mano el mismo día de la sesión, 2026-08-28 | Cuaderno de notas de campo del equipo, en posesión de Jamileth Gamarra Zárate |
-| V04 — Coordinación | Jamileth Gamarra Zárate | Escrita a mano el mismo día de la sesión, 2026-08-28 | Cuaderno de notas de campo del equipo, en posesión de Jamileth Gamarra Zárate |
-| V05 — Odontología/Coordinación | Jamileth Gamarra Zárate | Escrita a mano el mismo día de la sesión, 2026-08-28 | Cuaderno de notas de campo del equipo, en posesión de Jamileth Gamarra Zárate |
-| V06 — Recepción/Recaudación | Jamileth Gamarra Zárate | Escrita a mano el mismo día de la sesión, 2026-08-28 | Cuaderno de notas de campo del equipo, en posesión de Jamileth Gamarra Zárate |
-| V07 — Simulación de paciente | Jamileth Gamarra Zárate | Escrita a mano el mismo día de la sesión, 2026-08-28 | Cuaderno de notas de campo del equipo, en posesión de Jamileth Gamarra Zárate |
-| V08 — Terapia Física | Jamileth Gamarra Zárate | Escrita a mano el mismo día de la sesión, 2026-08-28 | Cuaderno de notas de campo del equipo, en posesión de Jamileth Gamarra Zárate |
-| V09 — Psicología | Jamileth Gamarra Zárate | Escrita a mano el mismo día de la sesión, 2026-08-28 | Cuaderno de notas de campo del equipo, en posesión de Jamileth Gamarra Zárate |
-| V10 — Simulación de paciente (02) | Jamileth Gamarra Zárate | Escrita a mano el mismo día de la sesión, 2026-08-30 | Cuaderno de notas de campo del equipo, en posesión de Jamileth Gamarra Zárate |
+| V01 — Enfermería | Jamileth Gamarra Zárate | Contenido escrito a mano el 2026-08-28, el mismo día de la sesión. Duración corregida después contra la grabación (ver aclaración arriba). | Cuaderno de notas de campo del equipo, en posesión de Jamileth Gamarra Zárate |
+| V02 — Medicina General | Jamileth Gamarra Zárate | Contenido escrito a mano el 2026-08-28, el mismo día de la sesión. Duración corregida después contra la grabación (ver aclaración arriba). | Cuaderno de notas de campo del equipo, en posesión de Jamileth Gamarra Zárate |
+| V03 — Nutrición | Jamileth Gamarra Zárate | Contenido escrito a mano el 2026-08-28, el mismo día de la sesión. Duración corregida después contra la grabación (ver aclaración arriba). | Cuaderno de notas de campo del equipo, en posesión de Jamileth Gamarra Zárate |
+| V04 — Coordinación | Jamileth Gamarra Zárate | Contenido escrito a mano el 2026-08-28, el mismo día de la sesión. Duración corregida después contra la grabación (ver aclaración arriba). | Cuaderno de notas de campo del equipo, en posesión de Jamileth Gamarra Zárate |
+| V05 — Odontología/Coordinación | Jamileth Gamarra Zárate | Contenido escrito a mano el 2026-08-28, el mismo día de la sesión. Duración corregida después contra la grabación (ver aclaración arriba). | Cuaderno de notas de campo del equipo, en posesión de Jamileth Gamarra Zárate |
+| V06 — Recepción/Recaudación | Jamileth Gamarra Zárate | Contenido escrito a mano el 2026-08-28, el mismo día de la sesión. Duración corregida después contra la grabación (ver aclaración arriba). | Cuaderno de notas de campo del equipo, en posesión de Jamileth Gamarra Zárate |
+| V07 — Simulación de paciente | Jamileth Gamarra Zárate | Contenido escrito a mano el 2026-08-28, el mismo día de la sesión. Duración corregida después contra la grabación (ver aclaración arriba). | Cuaderno de notas de campo del equipo, en posesión de Jamileth Gamarra Zárate |
+| V08 — Terapia Física | Jamileth Gamarra Zárate | Contenido escrito a mano el 2026-08-28, el mismo día de la sesión. Duración corregida después contra la grabación (ver aclaración arriba). | Cuaderno de notas de campo del equipo, en posesión de Jamileth Gamarra Zárate |
+| V09 — Psicología | Paul Tigasi Sampedro | Contenido escrito a mano el 2026-08-28, el mismo día de la sesión. Duración corregida después contra la grabación (ver aclaración arriba). | Cuaderno de notas de campo del equipo, en posesión de Paul Tigasi Sampedro |
+| V10 — Simulación de paciente (02) | Jamileth Gamarra Zárate | Contenido escrito a mano el 2026-08-30, el mismo día de la sesión. Duración corregida después contra la grabación (ver aclaración arriba). | Cuaderno de notas de campo del equipo, en posesión de Jamileth Gamarra Zárate |
 
-**Importante:** esta tabla se llenó con información real, ningún dato de esta tabla se ha inventado.
+**Importante:** esta tabla se llenó con información real aportada por
+Jamileth Gamarra Zárate (responsable de 9 de las 10 sesiones) y por Paul
+Tigasi Sampedro (responsable de V09 — Psicología). Ningún dato de esta
+tabla se ha inventado. Si en
+el futuro se detecta que alguna sesión no cumple lo aquí declarado, esa
+sesión debe retirarse de este listado y marcarse como `sesión sin nota`
+en `10_Autoria/bitacora_sesiones.csv`.
