@@ -75,5 +75,4 @@ nota, por lo que coincide con precisión con la duración real de la sesión.
 | V09 — Psicología | Jamileth Gamarra Zárate | Escrita a mano el mismo día de la sesión, 2026-08-28 | Cuaderno de notas de campo del equipo, en posesión de Jamileth Gamarra Zárate |
 | V10 — Simulación de paciente (02) | Jamileth Gamarra Zárate | Escrita a mano el mismo día de la sesión, 2026-08-30 | Cuaderno de notas de campo del equipo, en posesión de Jamileth Gamarra Zárate |
 
-**Importante:** esta tabla la llenó el equipo con información real —
-ningún dato de esta tabla se ha inventado.
+**Importante:** esta tabla se llenó con información real, ningún dato de esta tabla se ha inventado.
