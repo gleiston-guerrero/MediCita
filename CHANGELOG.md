@@ -8,7 +8,7 @@ y el proyecto utiliza [versionado semántico](https://semver.org/lang/es/).
 
 ### Cierre del examen suspenso — 2026-09-15
 
-Consolidado bajo la etiqueta `vFinal` (anotada, sobre el commit final del examen suspenso).
+Consolidado bajo la etiqueta `cierre-examen-suspenso-20260915` (anotada, sobre el commit final del examen suspenso). `vFinal` se conserva como referencia histórica del primer intento de cierre, hecho el mismo día pero antes de completar §12 (reproducibilidad cross-OS) y §16 (recompilación del manuscrito).
 
 ### Añadido
 
