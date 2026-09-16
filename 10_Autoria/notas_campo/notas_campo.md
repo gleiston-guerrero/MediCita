@@ -1,4 +1,3 @@
-
 <div align="center">
 
 # ✍️ notas_campo/ — A5: Notas Manuscritas de Elicitación
@@ -48,3 +47,45 @@ trabajo interno del equipo derivadas de commits (programación,
 organización, redacción); las sesiones de campo aquí listadas son
 sesiones con participantes externos y no están duplicadas en esa
 bitácora, por lo que no se contrastan una a una contra ella.
+
+## ⚠️ Declaración sobre el momento real de escritura de cada nota
+
+El historial de Git muestra que los 18 PDF de esta carpeta (P01–P08 y
+V01–V10) se subieron al repositorio en un único commit, el **2026-09-15 a
+las 14:53** ("Add files via upload"), muchas semanas después de la fecha de
+cada sesión (la más antigua, P01, es del 04/06/2026; la más reciente, V10,
+del 30/08/2026). Esa fecha de subida es la del **escaneo/carga del PDF**, no
+necesariamente la de la escritura de la nota manuscrita en papel — el
+docente ha señalado esta diferencia como un punto a aclarar, en particular
+para V01–V10, cuyo campo de "duración" coincide de forma sospechosa, al
+segundo, con la duración de las grabaciones de las sesiones.
+
+Por eso, cada integrante que participó en una sesión de validación por
+walkthrough debe completar honestamente la tabla siguiente **antes de dar
+esto por cerrado**. Si una nota no se escribió realmente durante o
+inmediatamente después de su sesión (por ejemplo, si se redactó luego,
+recordando o reconstruyendo lo ocurrido a partir de la grabación), **debe
+declararse así aquí y no como si fuera contemporánea** — y esa sesión debe
+marcarse como `sesión sin nota` en `10_Autoria/bitacora_sesiones.csv`, retirando
+la nota correspondiente de la carpeta o dejando constancia de que no cumple
+el requisito del ítem A5.
+
+| Sesión | Responsable | ¿Cuándo se escribió realmente la nota en papel? | ¿Dónde está el original en papel ahora? |
+|---|---|---|---|
+| V01 — Enfermería | *(nombre)* | *(fecha y momento real: durante la sesión / el mismo día / después, y por qué)* | *(ubicación física real: quién la conserva, en qué lugar)* |
+| V02 — Medicina General | *(nombre)* | *(completar)* | *(completar)* |
+| V03 — Nutrición | *(nombre)* | *(completar)* | *(completar)* |
+| V04 — Coordinación | *(nombre)* | *(completar)* | *(completar)* |
+| V05 — Odontología/Coordinación | *(nombre)* | *(completar)* | *(completar)* |
+| V06 — Recepción/Recaudación | *(nombre)* | *(completar)* | *(completar)* |
+| V07 — Simulación de paciente | *(nombre)* | *(completar)* | *(completar)* |
+| V08 — Terapia Física | *(nombre)* | *(completar)* | *(completar)* |
+| V09 — Psicología | *(nombre)* | *(completar)* | *(completar)* |
+| V10 — Simulación de paciente (02) | *(nombre)* | *(completar)* | *(completar)* |
+
+**Importante:** esta tabla debe llenarla el equipo con información real —
+ningún dato de esta tabla debe inventarse. Si alguna sesión no puede
+sostener honestamente que su nota es contemporánea, es preferible declarar
+`sesión sin nota` para esa sesión que dejar una afirmación no verificable.
+Lo mismo aplica, por transparencia, a las notas de elicitación P01–P08 si
+el equipo tiene la misma duda sobre alguna de ellas.
