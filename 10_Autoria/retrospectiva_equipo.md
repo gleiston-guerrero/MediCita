@@ -47,3 +47,27 @@ cambios efectivamente aplicados al repositorio.
 - Un archivo puede tener el valor correcto y aun así fallar la verificación de integridad: reformatear a mano una salida generada por script (aunque sea solo el separador o la codificación) rompe la reproducibilidad byte a byte que el propio repositorio declara. La lección para el resto del proyecto es no tocar a mano ningún archivo bajo `resultados/` o `datos_procesados/`: si el formato necesita cambiar, el cambio va en el script generador, no en la salida.
 - Reportar un resultado (como la cobertura de RF Must) no basta si el cálculo que lo acompaña —en este caso, la potencia estadística— se queda solo en el archivo de datos y no llega al manuscrito: el evaluador lee el informe, no el JSON.
 - Cerrar entregables de a uno, verificando con el comando exacto de la guía antes de pasar al siguiente, evitó reabrir trabajo ya dado por terminado.
+- Verificar en la propia máquina de desarrollo no basta cuando la evaluación se hace en otro sistema operativo: una ruta con `\` en vez de `/` es invisible al ojo pero rompe un hash. La lección es regenerar el manifiesto raíz como el último paso, después de cualquier otro cambio de contenido — no antes.
+
+---
+
+## Correcciones finales — 2026-09-15 (noche)
+
+Después del primer cierre bajo `vFinal`, se detectó que `checksums_datos.sha256`
+no coincidía con la salida real de `resumen_descriptivo.csv`. Se corrigió el
+formato de varios CSV, se regeneró `resumen_descriptivo.csv` y sus derivados
+desde el pipeline real (`07_Datos/scripts/run_all.py`), se corrigieron rutas
+no compatibles entre sistemas operativos en `resultados_estadisticos.json`
+(el script guardaba las rutas de origen con `str(Path(...))`, que produce `\`
+en Windows y `/` en Linux; se corrigió con `.as_posix()`, estable en cualquier
+sistema operativo), y se recompiló `07_Publicacion/manuscrito_final.pdf` para
+que su commit quedara posterior a esta última regeneración de resultados.
+
+Se actualizó también la etiqueta de línea base declarada en el README para
+que apunte al commit final real de este segundo cierre (`cierre-examen-suspenso-20260915`),
+dejando `vFinal` como referencia histórica del primer intento. Se corrigió
+`generar_checksums.sh`, que solo cubría imágenes, video, audio, PDF y `.7z`
+y dejaba fuera del manifiesto raíz cerca de 290 archivos de código y datos
+(`.py`, `.md`, `.csv`, `.drawio`, `.tex`, entre otros) presentes en
+`checksums.sha256`. Se corrigieron además dos datos desactualizados en el
+README (páginas del ERS y número de consentimientos pixelados).
