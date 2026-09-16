@@ -24,7 +24,7 @@ Este repositorio corresponde a la **Entrega 4 (2B / Defensa Final)** del Proyect
 
 **Etiqueta de línea base vigente:** `vFinal`, anotada sobre el commit final del examen suspenso (15/09/2026). Las etiquetas anteriores (`evidencia-restringida-v1`, etc.) corresponden a releases de evidencia distintos y no son la línea base.
 
-**Sobre las notas de campo y la bitácora (evitar una lectura cruzada errónea):** `10_Autoria/notas_campo/` tiene 18 sesiones de campo completas (8 de elicitación + 10 de validación por walkthrough). `10_Autoria/bitacora_sesiones.csv` tiene 28 filas, pero registra sesiones internas de trabajo del equipo (días con commits), no sesiones de campo — son dos registros distintos y no deben compararse entre sí.
+**Sobre las notas de campo y la bitácora:** `10_Autoria/bitacora_sesiones.csv` tiene 46 filas — 28 de trabajo interno del equipo y 18 de sesiones de campo con participante externo (8 entrevistas + 10 validaciones por walkthrough), estas últimas con columna `tipo` y con enlace directo en `ruta_nota_campo` a su nota manuscrita en `10_Autoria/notas_campo/` (que tiene, en efecto, sus 18 notas completas).
 
 La evaluación de esta entrega debe considerar los artefactos organizados en las carpetas `01_ERS/` a `10_Autoria/`, junto con los archivos de documentación, integridad y reproducibilidad ubicados en la raíz del repositorio.
 
