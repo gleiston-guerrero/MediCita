@@ -1,4 +1,3 @@
-
 <div align="center">
 
 # 🔗 04_Trazabilidad — Matrices de Trazabilidad
@@ -16,7 +15,7 @@
 
 | Archivo | Descripción |
 |---|---|
-| `matriz_trazabilidad_ACTUALIZADA.csv` | Matriz vigente: 72 filas (40 RF + 19 RNF + flujos adicionales). |
+| `matriz_trazabilidad_ACTUALIZADA.csv` | Matriz vigente: 75 filas (40 RF + 21 RNF + FDA-01 + flujos adicionales). |
 | `priorizacion_moscow_kano.csv` | Priorización MoSCoW y Kano. |
 
 ## 🔄 Qué conecta esta matriz
