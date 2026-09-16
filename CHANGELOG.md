@@ -15,10 +15,10 @@ Consolidado bajo la etiqueta `vFinal` (anotada, sobre el commit final del examen
 - 10 notas de campo manuscritas escaneadas de las sesiones de validación
   por walkthrough (`V01` a `V10`, 2026-08-28/30), depositadas en
   `10_Autoria/notas_campo/`. **Nota:** las 18 sesiones de campo (8 de
-  elicitación + 10 de validación) están completas; las 28 filas de
-  `10_Autoria/bitacora_sesiones.csv` son sesiones internas de trabajo del
-  equipo (commits) y no representan sesiones de campo — no se comparan
-  entre sí.
+  elicitación + 10 de validación) están completas y ahora enlazadas
+  1 a 1 desde `10_Autoria/bitacora_sesiones.csv` (columnas `tipo` y
+  `ruta_nota_campo`, agregadas hoy), junto a las 28 filas de trabajo
+  interno del equipo ya existentes — 46 filas en total.
 - Cobertura técnica de RF Must (20 de 22, 90,91 %) incorporada como
   resultado explícito en el manuscrito (`07_Publicacion/manuscrito_final.tex`).
 - Retrospectiva del equipo (`10_Autoria/retrospectiva_equipo.md`).
