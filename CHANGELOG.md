@@ -4,11 +4,14 @@ Todos los cambios relevantes del proyecto se documentan en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/)
 y el proyecto utiliza [versionado semántico](https://semver.org/lang/es/).
 
-## [No publicado]
+## [4.1.0] - 2026-09-16 — Cierre del examen suspenso (versión final)
 
-### Cierre del examen suspenso — 2026-09-15
-
-Consolidado bajo la etiqueta `cierre-examen-suspenso-20260915` (anotada, sobre el commit final del examen suspenso). `vFinal` se conserva como referencia histórica del primer intento de cierre, hecho el mismo día pero antes de completar §12 (reproducibilidad cross-OS) y §16 (recompilación del manuscrito).
+Publicado bajo la etiqueta anotada `cierre-examen-suspenso-20260915`, sobre el
+commit `d0a0195`. Reemplaza a `vFinal` (ver la entrada `[4.0.1]` más abajo):
+agrega la corrección de reproducibilidad cross-OS (§12) y la recompilación
+correcta del manuscrito final (§16) que `vFinal` todavía no tenía. `vFinal`
+se conserva en el repositorio únicamente como referencia histórica del primer
+intento de cierre, hecho el mismo día pero antes de completar esos dos puntos.
 
 ### Añadido
 
@@ -19,9 +22,13 @@ Consolidado bajo la etiqueta `cierre-examen-suspenso-20260915` (anotada, sobre e
   1 a 1 desde `10_Autoria/bitacora_sesiones.csv` (columnas `tipo` y
   `ruta_nota_campo`, agregadas hoy), junto a las 28 filas de trabajo
   interno del equipo ya existentes — 46 filas en total.
+  — *Steven Díaz Pontón* (`8e0f8165`), con aportes de *Jamileth Gamarra
+  Zárate* (`1582c816`) y *Mayummy Trujillo Vega* (`83890702`).
 - Cobertura técnica de RF Must (20 de 22, 90,91 %) incorporada como
   resultado explícito en el manuscrito (`07_Publicacion/manuscrito_final.tex`).
+  — *Steven Díaz Pontón* (`8e0f8165`).
 - Retrospectiva del equipo (`10_Autoria/retrospectiva_equipo.md`).
+  — *Steven Díaz Pontón* (`8e0f8165`).
 
 ### Corregido
 
@@ -31,6 +38,11 @@ Consolidado bajo la etiqueta `cierre-examen-suspenso-20260915` (anotada, sobre e
   para que coincida con la salida real del script; `checksums_datos.sha256`
   actualizado en consecuencia. `sha256sum -c checksums_datos.sha256 --quiet`
   ya no reporta discrepancias.
+  — *Steven Díaz Pontón* (`8e0f8165`), con una corrección de *Jamileth
+  Gamarra Zárate* (`1582c816`). La causa raíz (rutas con separador de
+  Windows en `generar_resultados.py`) fue corregida por *Paul Tigasi
+  Sampedro* en el commit `3b3cace` ("Fix reproducibilidad cross-OS: rutas
+  POSIX en resultados_estadisticos.json"), posterior a esta entrada.
 
 ### Resuelto
 
@@ -42,6 +54,7 @@ Consolidado bajo la etiqueta `cierre-examen-suspenso-20260915` (anotada, sobre e
   y a su tabla equivalente en el ERS/SRS; conteo de filas actualizado de 74 a
   75 en el ERS y en el README; tabla de RNF del componente inteligente en el
   README actualizada para incluir FDA-01 junto a RNF-18 a RNF-22.
+  — *Mayummy Trujillo Vega* (`14e04d59`).
 - `10_Autoria/correspondencia/` (ítem A8): depositados los 4 documentos reales
   de correspondencia institucional (solicitud del 28/05/2026, aval
   institucional del 22/07/2026, aval del establecimiento del 20/08/2026 y
@@ -60,7 +73,7 @@ Consolidado bajo la etiqueta `cierre-examen-suspenso-20260915` (anotada, sobre e
 - Corrección de rutas rotas en `07_Datos/desviaciones.md` (carpeta
   `evidencia_entrevistas` mal escrita, debía ser `evidencia_entrevista`; un
   nombre de archivo con letra faltante).
-
+  — *(los 4 puntos anteriores)* *Thais Herrera Ramos* (`002808ff`).
 - Fragmento roto de evidencia audiovisual (`VIDEOS_Validacion.7z.206`, 2 bytes)
   reparado y republicado en el Release `evidencia-restringida-v1` con su
   tamaño e integridad correctos.
@@ -113,9 +126,12 @@ Consolidado bajo la etiqueta `cierre-examen-suspenso-20260915` (anotada, sobre e
   `Mockups_Prototipo_Final/`) completados con su descripción real o
   eliminados, para eliminar el riesgo de cero directo por el criterio de
   piso P3.
+  — *(los 12 puntos anteriores, desde "Fragmento roto de evidencia
+  audiovisual" hasta este)* *Thais Herrera Ramos* (`48dd7e60`).
 - Repositorio espejo (`MediCita_ISR401-archive`) archivado en Software
   Heritage; SWHID real (`swh:1:dir:6fbdc09760140cb9d176d33621b1262e1b9de2c2`)
   incorporado en `CITATION.cff` (09/09/2026).
+  — *Mayummy Trujillo Vega* (`4d87c346`).
 
 ### Nota sobre firmas del expediente ético
 
@@ -125,9 +141,40 @@ docente responsable por decisión explícita de este, comunicada al equipo:
 sirven como constancia del proceso realizado, ya que los documentos
 originales firmados se conservan en el comité de ética. No se trata de un
 pendiente.
+— *Mayummy Trujillo Vega* (`8541d631`).
+
+### Atribución — cierre final (2026-09-15/16, posterior a esta entrada)
+
+Los siguientes cambios se hicieron después del contenido anterior (que ya
+estaba en `vFinal`) para llegar de `vFinal` a `cierre-examen-suspenso-20260915`:
+
+- Corrección de reproducibilidad cross-OS en `generar_resultados.py` (rutas
+  POSIX) y regeneración de `resumen_descriptivo.csv` y de
+  `checksums_datos.sha256` — *Paul Tigasi Sampedro* (`3b3cace`, `2988519`,
+  `81de1c0`, y las correcciones de formato previas en `d1a09e0`, `d039a2e`).
+- Subida de archivos y regeneración del manifiesto raíz `checksums.sha256`
+  tras las correcciones — *Jamileth Gamarra Zárate* (`a5fb14d`, `0688bac`,
+  `529670d`, `12276e4`).
+- Corrección del conteo de consentimientos y de páginas del ERS/SRS 2B en el
+  README, y ajuste de la referencia de la etiqueta en este CHANGELOG —
+  *Mayummy Trujillo Vega* (`908670b`, `0d694c1`, `f3769e1`).
+- Subida de archivos del cierre (incluido el manuscrito final recompilado) —
+  *Thais Herrera Ramos* (`bda5ccf`, `bd89422`, `87a0e1d`, `6c012fe`).
+- Creación y corrección de la etiqueta anotada final, y subida de archivos de
+  cierre — *Paul Tigasi Sampedro* (`d0a0195`).
+
+## [4.0.1] - 2026-09-15 — vFinal (cierre incompleto, superado por 4.1.0)
+
+Publicado bajo la etiqueta anotada `vFinal`, sobre el commit `8389070`.
+Primer intento de cierre del examen suspenso: incluye todo el contenido de
+`[4.1.0]` **excepto** la corrección de reproducibilidad cross-OS (§12,
+corregida después en el commit `3b3cace`) y la recompilación correcta del
+manuscrito final (§16, resuelta después en los commits de subida de
+*Thais Herrera Ramos* del 2026-09-15 22:27–22:53). Se conserva en el
+repositorio únicamente como referencia histórica; no representa el estado
+final evaluado. Ver `[4.1.0]` para el cierre completo.
 
 ## [4.0.0] - 2026-09-07 — Entrega 4 (2B) / Defensa Final
-
 ### Añadido
 
 - RNF-19 (equidad en el acceso a la cita) y RNF-20 (monitoreo posterior al
@@ -228,7 +275,8 @@ pendiente.
   publicación y ética.
 - Archivos README iniciales para documentar el contenido de cada sección.
 
-[No publicado]: https://github.com/gleiston-guerrero/MediCita_ISR401/compare/v4.0.0...HEAD
+[4.1.0]: https://github.com/gleiston-guerrero/MediCita_ISR401/releases/tag/cierre-examen-suspenso-20260915
+[4.0.1]: https://github.com/gleiston-guerrero/MediCita_ISR401/releases/tag/vFinal
 [4.0.0]: https://github.com/gleiston-guerrero/MediCita_ISR401/releases/tag/v4.0.0
 [3.0.0]: https://github.com/gleiston-guerrero/MediCita_ISR401/releases/tag/v3.0.0
 [2.0.0]: https://github.com/gleiston-guerrero/MediCita_ISR401/releases/tag/v2.0.0
