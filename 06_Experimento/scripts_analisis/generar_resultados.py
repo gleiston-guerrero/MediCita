@@ -49,8 +49,8 @@ def generar(procesado: dict[str, object]) -> dict[str, object]:
     power_n = procesado["power_n"]
 
     result = {
-        "fuente_observaciones": str((DATA / "observaciones_validacion_procesadas.csv").relative_to(ROOT)),
-        "fuente_relaciones": str((DATA / "observacion_requisito_long.csv").relative_to(ROOT)),
+        "fuente_observaciones": (DATA / "observaciones_validacion_procesadas.csv").relative_to(ROOT).as_posix(),
+        "fuente_relaciones": (DATA / "observacion_requisito_long.csv").relative_to(ROOT).as_posix(),
         "observaciones": len(observations),
         "relaciones_observacion_requisito": len(relations),
         "estados_observacion": dict(states),
