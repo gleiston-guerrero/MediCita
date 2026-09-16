@@ -1,6 +1,6 @@
 {
-  "fuente_observaciones": "07_Datos/datos_procesados/observaciones_validacion_procesadas.csv",
-  "fuente_relaciones": "07_Datos/datos_procesados/observacion_requisito_long.csv",
+  "fuente_observaciones": "07_Datos\\datos_procesados\\observaciones_validacion_procesadas.csv",
+  "fuente_relaciones": "07_Datos\\datos_procesados\\observacion_requisito_long.csv",
   "observaciones": 46,
   "relaciones_observacion_requisito": 72,
   "estados_observacion": {
