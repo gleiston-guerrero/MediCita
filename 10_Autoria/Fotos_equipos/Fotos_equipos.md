@@ -40,6 +40,8 @@ AAAA-MM-DD_integrantes_lugar.jpg
 
 ✅ **3 de 3 fotografías cumplen los requisitos**: EXIF real verificado, 2 integrantes identificables, en la organización cooperante.
 
+**Nota sobre la cantidad:** la guía de cierre menciona una referencia de 8 fotografías del equipo entre las 35 del expediente total. El equipo únicamente tomó 3 fotografías durante la visita presencial del 04/09/2026 a la DGDS (fachada, pasillo de entrada, área de recepción/recaudación); no existen más fotografías del equipo en ninguna otra carpeta del repositorio. Las 3 cumplen individualmente los requisitos (EXIF real, 2 integrantes identificables cada una, verificación por software en `verificacion_automatica/`), por lo que se prioriza la calidad y verificabilidad de la evidencia disponible antes que completar un número con capturas que no correspondan a una visita real.
+
 ## 🔗 Relación con `10_Autoria/exif_inventario.csv`
 
 Las 3 fotografías ya tienen su fila correspondiente en `exif_inventario.csv`, con fecha EXIF, dispositivo y hash SHA-256.
