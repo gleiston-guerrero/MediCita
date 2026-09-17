@@ -59,7 +59,7 @@ GitHub ofrece una vista gráfica de commits por integrante en la pestaña "Insig
 
 ### Cuál se usa como fuente oficial en este documento
 
-El conteo de **`git shortlog -sne HEAD` sobre un clon completo (1.705)**, por ser una lectura directa del historial real de Git, sin intermediarios ni caché, y por aplicar correctamente el `.mailmap` ya adoptado por el equipo.
+El conteo de **`git shortlog -sne HEAD` sobre un clon completo (1.778)**, por ser una lectura directa del historial real de Git, sin intermediarios ni caché, y por aplicar correctamente el `.mailmap` ya adoptado por el equipo.
 
 ---
 
