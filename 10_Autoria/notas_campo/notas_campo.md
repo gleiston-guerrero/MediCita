@@ -83,12 +83,14 @@ después.
 | V06 — Recepción/Recaudación | Jamileth Gamarra Zárate | Contenido escrito a mano el 2026-08-28, el mismo día de la sesión. Duración corregida después contra la grabación (ver aclaración arriba). | Cuaderno de notas de campo del equipo, en posesión de Jamileth Gamarra Zárate |
 | V07 — Simulación de paciente | Jamileth Gamarra Zárate | Contenido escrito a mano el 2026-08-28, el mismo día de la sesión. Duración corregida después contra la grabación (ver aclaración arriba). | Cuaderno de notas de campo del equipo, en posesión de Jamileth Gamarra Zárate |
 | V08 — Terapia Física | Jamileth Gamarra Zárate | Contenido escrito a mano el 2026-08-28, el mismo día de la sesión. Duración corregida después contra la grabación (ver aclaración arriba). | Cuaderno de notas de campo del equipo, en posesión de Jamileth Gamarra Zárate |
-| V09 — Psicología | Paul Tigasi Sampedro | Contenido escrito a mano el 2026-08-28, el mismo día de la sesión. Duración corregida después contra la grabación (ver aclaración arriba). | Cuaderno de notas de campo del equipo, en posesión de Paul Tigasi Sampedro |
+| V09 — Psicología | No consta (ver `bitacora_sesiones.csv`) | Contenido escrito a mano el 2026-08-28, el mismo día de la sesión; el campo de responsable está vacío en el escaneo original. Duración corregida después contra la grabación (ver aclaración arriba). | No consta |
 | V10 — Simulación de paciente (02) | Jamileth Gamarra Zárate | Contenido escrito a mano el 2026-08-30, el mismo día de la sesión. Duración corregida después contra la grabación (ver aclaración arriba). | Cuaderno de notas de campo del equipo, en posesión de Jamileth Gamarra Zárate |
 
 **Importante:** esta tabla se llenó con información real aportada por
-Jamileth Gamarra Zárate (responsable de 9 de las 10 sesiones) y por Paul
-Tigasi Sampedro (responsable de V09 — Psicología). Ningún dato de esta
+Jamileth Gamarra Zárate (responsable de 9 de las 10 sesiones). Para V09 —
+Psicología, el campo de responsable de la nota manuscrita está vacío en
+el escaneo, y `10_Autoria/bitacora_sesiones.csv` también declara que no
+consta; por eso esta tabla tampoco lo afirma. Ningún otro dato de esta
 tabla se ha inventado. Si en
 el futuro se detecta que alguna sesión no cumple lo aquí declarado, esa
 sesión debe retirarse de este listado y marcarse como `sesión sin nota`
