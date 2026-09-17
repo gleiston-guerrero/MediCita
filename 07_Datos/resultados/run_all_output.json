@@ -1,6 +1,6 @@
 {
-  "fuente_observaciones": "06_Experimento/datos_procesados/observaciones_validacion_procesadas.csv",
-  "fuente_relaciones": "06_Experimento/datos_procesados/observacion_requisito_long.csv",
+  "fuente_observaciones": "07_Datos/datos_procesados/observaciones_validacion_procesadas.csv",
+  "fuente_relaciones": "07_Datos/datos_procesados/observacion_requisito_long.csv",
   "observaciones": 46,
   "relaciones_observacion_requisito": 72,
   "estados_observacion": {
@@ -33,6 +33,9 @@
   "semilla": 42,
   "p_permutacion": 0.413086,
   "v_cramer": 0.166337,
+  "v_cramer_ic95_inferior": 0.083918,
+  "v_cramer_ic95_superior": 0.262176,
+  "v_cramer_ic95_metodo": "bootstrap no paramétrico, 10000 réplicas, semilla 42, percentiles 2.5/97.5. Nota: V de Cramér está acotada en [0,1] y este intervalo nunca incluye el cero por construcción; no se usa para inferir significancia, solo describe la precisión de la estimación. La prueba de significancia es la de permutación (p_permutacion).",
   "rf_must_aprobados": 20,
   "rf_must_total": 22,
   "cobertura_rf_must_porcentaje": 90.91,
