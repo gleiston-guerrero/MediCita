@@ -5,6 +5,121 @@ Todos los cambios relevantes del proyecto se documentan en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/)
 y el proyecto utiliza [versionado semántico](https://semver.org/lang/es/).
 
+## [4.3.8] - 2026-09-17 — Reproducibilidad real de `resultados_estadisticos.json` (§12), y alcance del inventario EXIF (§15), y nueva etiqueta `cierre-examen-suspenso-20260917f`
+
+Esta entrada se agrega **después** de `cierre-examen-suspenso-20260917e` (`[4.3.7]`).
+
+### Corregido
+
+- `06_Experimento/scripts_analisis/generar_resultados.py`: `resultados_estadisticos.json` se
+  escribía con `Path.write_text(...)` sin fijar `newline`, así que Python usaba el separador de
+  línea del sistema operativo donde se ejecutara el pipeline (`\r\n` en Windows, `\n` en Linux).
+  El archivo depositado en el repositorio se generó en Windows (`\r\n`); al regenerar el pipeline
+  en una copia limpia sobre Linux (la orden única exigida por la guía,
+  `python 07_Datos/scripts/run_all.py`), el resultado era byte a byte idéntico en contenido pero
+  distinto en fin de línea, y `sha256sum -c checksums_datos.sha256 --quiet` marcaba
+  `resultados_estadisticos.json: FAILED` de forma reproducible — el único archivo del manifiesto
+  de `07_Datos/` con este problema. Se corrigió fijando `newline="\n"` explícitamente en el
+  script (para que el resultado sea idéntico sin importar el sistema operativo de quien lo
+  ejecute), se normalizó a `\n` el archivo ya depositado, y se añadió
+  `07_Datos/resultados/resultados_estadisticos.json -text binary` a `.gitattributes` como segunda
+  defensa (mismo mecanismo que ya protegía a los `.csv` de `07_Datos/` desde el cierre del
+  15/09). Se regeneraron `07_Datos/checksums_datos.sha256` y el manifiesto raíz
+  `checksums.sha256` en consecuencia. Verificado corriendo la orden única dos veces seguidas
+  desde cero: ambas veces `sha256sum -c checksums_datos.sha256 --quiet` no imprime nada.
+
+### Nota — alcance de `10_Autoria/exif_inventario.csv` (§15)
+
+Se revisó si existen fotografías reales fuera de las 34 catalogadas en `exif_inventario.csv`.
+Hay exactamente 14 archivos de imagen en el repositorio que no están en ese inventario:
+
+- 3 archivos `*_DETECCION.jpg` en `10_Autoria/Fotos_equipos/verificacion_automatica/`: salida
+  generada automáticamente por `detectar_rostros.py` (overlay de detección facial) a partir de
+  las 3 fotos que sí están catalogadas — no son evidencia primaria, son un artefacto derivado.
+  Correctamente fuera del inventario.
+- 2 archivos `ejemplo_*_imagen_incrustada.png` en `02_Evidencias/Consentimientos/evidencia_contenido_real/`:
+  imágenes de ejemplo/ilustrativas (lo dice su propio nombre de archivo) sobre cómo se ve una
+  foto incrustada en una plantilla de consentimiento, no evidencia fotográfica real de una
+  sesión. Correctamente fuera del inventario.
+- 9 archivos `consentimiento_*_pixelado.png` en
+  `02_Evidencias/Validacion_Walkthrough/Consentimientos_validacion/`: escaneos pixelados/anonimizados
+  de los consentimientos firmados de las 9 sesiones de validación por walkthrough. A diferencia
+  de los dos casos anteriores, **esto es evidencia real** (documenta el consentimiento de cada
+  sesión), y no hay una razón metodológica tan clara para excluirla del inventario EXIF como la
+  hay para un artefacto derivado o un ejemplo ilustrativo — queda fuera únicamente porque
+  `10_Autoria/Readme.md` declaró el alcance del inventario como
+  "Fotos_Entorno, Fotos_Aplicacion, Fotos_equipos y correspondencia/evidencia_entrevista" y estos
+  9 archivos viven en una carpeta distinta. No se agregan a `exif_inventario.csv` en esta
+  entrada porque el pixelado probablemente ya eliminó cualquier metadato EXIF real que hubiera
+  (habría que verificarlo archivo por archivo), y ampliar el alcance de un inventario cerrado sin
+  ese análisis podría introducir filas con datos EXIF incorrectos en vez de dejarlas fuera. Se
+  documenta aquí para que quede visible en el CHANGELOG y no como una omisión silenciosa.
+
+### Corregido — recuento de commits
+
+- `10_Autoria/aporte_individual.md` y `10_Autoria/Readme.md`: la corrección de
+  `resultados_estadisticos.json` y de `generar_checksums.sh` se subió en un commit propio
+  (`6a464a6a83bb3e7338303eeb38689102c8442f88`) antes de esta entrada, así que el conteo de
+  `[4.3.6]` (1.804 commits, sobre `9ac5854`) quedó desactualizado por ese commit. Recontado sobre
+  `git shortlog -sne HEAD` en un clon completo con `.mailmap` aplicado, en el commit
+  `6a464a6a83bb3e7338303eeb38689102c8442f88` (verificado contra `origin/main`): **1.818 commits
+  totales**. A diferencia de `[4.3.6]`, esta cifra no se declara "recuento final" — se declara
+  vigente a partir de ese commit específico, para no quedar falsa en cuanto el repositorio reciba
+  el siguiente commit (el de esta misma entrada de documentación).
+
+### Línea base
+
+Esta entrada se publica bajo la nueva etiqueta anotada `cierre-examen-suspenso-20260917f`, creada
+sobre el commit de esta entrada, que reemplaza a `cierre-examen-suspenso-20260917e` como línea
+base vigente. `cierre-examen-suspenso-20260917e` y todas las etiquetas de cierre anteriores se
+conservan sin modificar como referencia histórica.
+
+## [4.3.7] - 2026-09-17 — Fe de erratas post-etiqueta: `[4.3.6]` no era el recuento final, reproducibilidad de figuras, y nueva etiqueta `cierre-examen-suspenso-20260917e`
+
+Esta entrada se agrega **después** de haber creado `cierre-examen-suspenso-20260917d`. Se
+documenta honestamente que dos afirmaciones hechas en `[4.3.6]` eran falsas para el momento en
+que ese tag se creó, y se corrige el contenido real. **Corrección respecto a lo dicho en un
+borrador anterior de esta misma entrada:** no basta con agregar este commit sin mover la
+etiqueta — la propia guía de evaluación exige que la etiqueta de cierre apunte exactamente al
+commit vigente (`git rev-parse <tag>^{commit}` debe coincidir con "la cabecera" del repositorio).
+Dejar `cierre-examen-suspenso-20260917d` apuntando a `a0fcc55` mientras el HEAD avanza un commit
+más con esta fe de erratas reproduciría el mismo defecto de etiqueta desincronizada ya señalado y
+corregido en `[4.3.1]`–`[4.3.5]`. Por eso esta entrada **sí crea una nueva etiqueta anotada**,
+`cierre-examen-suspenso-20260917e`, sobre el commit que la contiene, y actualiza el README para
+declararla como línea base vigente en su lugar.
+
+### Corregido
+
+- `10_Autoria/aporte_individual.md` y `10_Autoria/Readme.md`: **la cifra de `[4.3.6]` (1.804
+  commits, "recuento final") era incorrecta.** Entre el commit citado (`9ac5854`) y el commit al
+  que realmente apunta la etiqueta `cierre-examen-suspenso-20260917d` (`a0fcc55`) hubo 8 commits
+  más — incluidas ediciones al propio README, al CHANGELOG y a la retrospectiva. Recontado sobre
+  `git shortlog -sne HEAD` con `.mailmap` aplicado, sobre un clon completo del commit `a0fcc55`
+  (el commit real del tag): **1.812 commits totales**, no 1.804.
+- `generar_checksums.sh`: **la exclusión de las dos figuras no reproducibles, detectada y
+  documentada horas antes de crear el tag, nunca se aplicó al script que quedó en el
+  repositorio.** Verificado de nuevo sobre el commit del tag (`a0fcc55`): al ejecutar la orden
+  única (`python 07_Datos/scripts/run_all.py`) y correr `sha256sum -c checksums.sha256 --quiet`,
+  `07_Publicacion/figuras/estado_tareas_validacion.png` y `cobertura_rf_must.png` siguen
+  quedando `FAILED` de forma reproducible (el render de matplotlib no es idéntico entre
+  ejecuciones aunque los datos sean los mismos). Se agrega ahora la exclusión de esas dos
+  figuras al script y se regenera `checksums.sha256` en consecuencia.
+
+### Línea base
+
+Esta entrada se publica bajo la nueva etiqueta anotada `cierre-examen-suspenso-20260917e`, creada
+sobre el commit de esta entrada, que reemplaza a `cierre-examen-suspenso-20260917d` como línea
+base vigente. `cierre-examen-suspenso-20260917d` se conserva sin modificar como referencia
+histórica del cierre anterior (igual que `c`, el `20260917` original, `20260916`, `20260915` y
+`vFinal`). Ningún archivo de contenido se edita después de crear esta nueva etiqueta.
+
+### Nota
+
+El contenido y los resultados de la investigación (datos, análisis, manuscrito) no cambian en
+esta entrada — lo único corregido es la exactitud de dos documentos que describen el propio
+repositorio (el conteo de commits y el alcance real del manifiesto de integridad), y la
+sincronización de la etiqueta de cierre con el commit vigente.
+
 ## [4.3.6] - 2026-09-17 — Última ronda: evidencia de fecha en EXIF y recuento final de commits
 
 ### Corregido
