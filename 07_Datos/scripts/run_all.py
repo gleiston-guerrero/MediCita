@@ -65,7 +65,6 @@ PROCESADOS_GENERADOS_POR_PIPELINE = [
 
 # Resultados que run_all.py sí calcula y escribe en RESULTS:
 RESULTADOS_GENERADOS_POR_PIPELINE = [
-    "cobertura_RF_Must_final.csv",
     "resultados_estadisticos.json",
     "power_calculation.csv",
 ]
@@ -75,6 +74,7 @@ RESULTADOS_GENERADOS_POR_PIPELINE = [
 # se ejecuta y se documenta aparte; power_calculation_justificacion.md
 # es texto redactado, no una salida de script):
 RESULTADOS_ESTATICOS_ESPERADOS = [
+    "cobertura_RF_Must_final.csv",
     "run_all_output.json",
     "verificacion_tecnica_RF_Must.json",
     "trazabilidad_observacion_correccion.csv",
