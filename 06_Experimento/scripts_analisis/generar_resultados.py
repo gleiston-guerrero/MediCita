@@ -80,7 +80,9 @@ def generar(procesado: dict[str, object]) -> dict[str, object]:
     }
     RESULTS.mkdir(parents=True, exist_ok=True)
     (RESULTS / "resultados_estadisticos.json").write_text(
-        json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        json.dumps(result, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+        newline="\n",
     )
 
     summary_rows = [
