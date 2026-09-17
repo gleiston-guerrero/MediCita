@@ -39,7 +39,7 @@ qué hizo cada integrante y qué se corrigió en esta ronda de cierre.
 | A8 | [`correspondencia/README.md`](correspondencia/README.md) | 🟢 Completo | Las 4 comunicaciones confirmadas y firmadas. |
 | A9 | [`declaracion_uso_ia.md`](declaracion_uso_ia.md) | 🟢 Completo | Firmado por los 5 integrantes (03-05/09/2026). |
 | A10 | [`aporte_individual.md`](aporte_individual.md) | 🟢 Completo | Conteo real de commits (1.705 totales) y detalle cualitativo por integrante, basado en la bitácora A1. |
-| A11 | [`exif_inventario.csv`](exif_inventario.csv) | 🟢 Completo | 34 de 34 fotos reales del expediente (Fotos_Entorno, Fotos_Aplicacion, Fotos_equipos, correspondencia/evidencia_entrevista), con EXIF real, inferido por contexto, o marcado explícitamente `SIN_EXIF` cuando no aplica (p. ej. capturas de pantalla o fotos sin metadato tras compartirse por WhatsApp). |
+| A11 | [`exif_inventario.csv`](exif_inventario.csv) | 🟢 Completo | 34 de 34 elementos del expediente (29 fotografías y 5 capturas de pantalla), distribuidos en Fotos_Entorno, Fotos_Aplicacion, Fotos_equipos y correspondencia/evidencia_entrevista, con EXIF real, inferido por contexto, o marcado explícitamente `SIN_EXIF` cuando no aplica (p. ej. capturas de pantalla o fotos sin metadato tras compartirse por WhatsApp). |
 | A12 | `.mailmap` | 🟢 Completo | Atribuye los 8 commits de `MediCita Team` a Thais Melanie Herrera Ramos. |
 
 **Leyenda:** 🟢 Completo · 🟡 En progreso · 🔴 Pendiente/vacío
