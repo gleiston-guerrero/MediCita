@@ -28,16 +28,16 @@ La tabla de días cuenta en cuántas fechas distintas aparece cada integrante, *
 
 ## ✅ Conteo total de commits — confirmado con clon completo (`git shortlog -sne HEAD`)
 
-| Integrante | Commits totales | % del total (1.818) |
+| Integrante | Commits totales | % del total (1.822) |
 |---|---:|---:|
-| Paul Alexander Tigasi Sampedro | 375 | 20,63 % |
-| Thais Melanie Herrera Ramos | 373 | 20,52 % |
-| Jamileth Estefanía Gamarra Zárate | 369 | 20,30 % |
-| Mayummy Jailly Trujillo Vega | 361 | 19,86 % |
-| Steven Santiago Díaz Pontón | 340 | 18,70 % |
-| **Total** | **1.818** | **100 %** |
+| Paul Alexander Tigasi Sampedro | 375 | 20,58 % |
+| Thais Melanie Herrera Ramos | 373 | 20,47 % |
+| Jamileth Estefanía Gamarra Zárate | 370 | 20,31 % |
+| Mayummy Jailly Trujillo Vega | 364 | 19,98 % |
+| Steven Santiago Díaz Pontón | 340 | 18,66 % |
+| **Total** | **1.822** | **100 %** |
 
-El reparto se mantiene parejo entre los cinco integrantes (18,70 % a 20,63 %). Recontado el 17/09/2026 sobre `git shortlog -sne HEAD` sobre un clon completo, con `.mailmap` aplicado, sobre el commit `6a464a6a83bb3e7338303eeb38689102c8442f88` (`origin/main`, verificado), con el manifiesto raíz (`checksums.sha256`) regenerado sobre ese mismo commit. Esta cifra es correcta a partir de ese commit; si el repositorio recibe commits nuevos después, deja de ser el total vigente — no se declara aquí como "recuento final" para no repetir el error de `[4.3.6]`, donde esa palabra quedó falsa en cuanto se subió el siguiente cierre correctivo.
+El reparto se mantiene parejo entre los cinco integrantes (18,66 % a 20,58 %). Recontado el 17/09/2026 sobre `git shortlog -sne HEAD` sobre un clon completo, con `.mailmap` aplicado, sobre el commit `6db08a192c1946d4af5561f08c23f64caa77cb10` (`origin/main`, verificado), con el manifiesto raíz (`checksums.sha256`) regenerado sobre ese mismo commit — el último commit antes de crear la etiqueta `cierre-examen-suspenso-20260917f`. Esta cifra es correcta a partir de ese commit; no se declara aquí como "recuento final" para no repetir el error de `[4.3.6]`. (Nota: el recuento de `[4.3.8]`, 1.818 sobre `6a464a6`, quedó desactualizado por los 4 commits de las subidas de documentación posteriores — esta es la cifra vigente para la etiqueta `f`.)
 
 ## 🔍 Comparación con la vista "Contributors" de GitHub
 
