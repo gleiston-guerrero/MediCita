@@ -123,10 +123,12 @@
 	\subsection{Instrumentos}
 	Se utilizaron guiones de walkthrough por rol y una ficha estructurada de observación con los campos: código, área, tarea/función, requisito relacionado, estado de tarea, dificultad/incidente, comentario del participante, observación del investigador y recomendación. Los instrumentos completos se conservan en \texttt{06\_Experimento/instrumentos/}.
 	
-	\subsection{Procedimiento de análisis}
+	\subsection{Procedimiento de análisis}\label{sec:procedimiento-analisis}
 	Las ocho entrevistas de la fase 1 fueron transcritas y codificadas para sustentar la elicitación y la formulación del ERS/SRS. De forma separada, las diez sesiones de walkthrough de la fase 2 fueron transcritas y codificadas siguiendo el procedimiento de análisis temático de seis fases de Braun y Clarke \cite{braunclarke2006}: familiarización con las transcripciones, generación de códigos iniciales, búsqueda de categorías, revisión de temas, definición de temas y elaboración del reporte. Tras corregir cinco asociaciones erróneas entre hallazgos de legibilidad y RNF-04, el conjunto procesado de la fase 2 contiene 46 observaciones y 72 relaciones observación-requisito, todas con un área codificada y un estado de tarea válidos para el análisis cuantitativo.
 	
-	El análisis humano es principalmente descriptivo: se contabilizan estados de tarea y se identifican requisitos que requieren revisión o refinamiento. No se aplicó SUS y, por tanto, no se reporta ninguna puntuación SUS. Como comprobación cuantitativa complementaria de P1, se construyó una tabla de contingencia 3$\times$2 (grupo de área $\times$ presencia de hallazgo) sobre las 72 relaciones codificadas por área. Se verificó el supuesto de frecuencia esperada mínima $\geq 5$ requerido por la prueba $\chi^2$ de Pearson asintótica; al no cumplirse (frecuencia esperada mínima = 0,5), se aplicó como alternativa una prueba de permutación Monte Carlo con 100\,000 réplicas sobre el mismo estadístico $\chi^2$, semilla aleatoria fija (42) para reproducibilidad, y se reportó el tamaño del efecto mediante la V de Cramér, con su precisión estimada mediante bootstrap no paramétrico (10\,000 réplicas, semilla 42, percentiles 2,5/97,5); por estar acotada en $[0,1]$, este intervalo no se usa como prueba de significancia, papel que cumple la prueba de permutación. Para P2, un RF Must se contabiliza como cubierto únicamente cuando la prueba técnica automatizada correspondiente pasa sobre la versión final del MVP con datos sintéticos. El script y la salida en formato JSON se conservan en \texttt{06\_Experimento/scripts\_analisis/} y \texttt{06\_Experimento/resultados/}. El protocolo fue prerregistrado en OSF (DOI: 10.17605/OSF.IO/DTYNC); las desviaciones de ejecución respecto del plan prerregistrado, incluida la presente, se documentan en \texttt{osf\_deviations.pdf}.
+	El análisis humano es principalmente descriptivo: se contabilizan estados de tarea y se identifican requisitos que requieren revisión o refinamiento. No se aplicó SUS y, por tanto, no se reporta ninguna puntuación SUS. Como comprobación cuantitativa complementaria de P1, se construyó una tabla de contingencia 3$\times$2 (grupo de área $\times$ presencia de hallazgo) sobre las 72 relaciones codificadas por área. Se verificó el supuesto de frecuencia esperada mínima $\geq 5$ requerido por la prueba $\chi^2$ de Pearson asintótica; al no cumplirse (frecuencia esperada mínima = 0,5), se aplicó como alternativa una prueba de permutación Monte Carlo con 100\,000 réplicas sobre el mismo estadístico $\chi^2$, semilla aleatoria fija (42) para reproducibilidad, y se reportó el tamaño del efecto mediante la V de Cramér, con su precisión estimada mediante bootstrap no paramétrico (10\,000 réplicas, semilla 42, percentiles 2,5/97,5); por estar acotada en $[0,1]$, este intervalo no se usa como prueba de significancia, papel que cumple la prueba de permutación.
+	Como referencia sobre la adecuación muestral del componente humano de RQ1, se calculó a priori la potencia estadística requerida para un contraste bilateral de dos muestras independientes con tamaño de efecto convencional pequeño-mediano (Cohen's $d=0{,}5$), $\alpha=0{,}05$ y potencia objetivo de $0{,}80$: el cálculo arroja $n=64$ por grupo ($n=128$ en total) \cite{faul2007}. Las diez sesiones de validación disponibles al corte no alcanzan ese tamaño; este cálculo es, por tanto, una referencia de diseño y no una afirmación de que la muestra actual tenga potencia suficiente para el contraste de P1, limitación que se retoma en la Sección \ref{sec:amenazas}.
+	Para P2, un RF Must se contabiliza como cubierto únicamente cuando la prueba técnica automatizada correspondiente pasa sobre la versión final del MVP con datos sintéticos. El script y la salida en formato JSON se conservan en \texttt{06\_Experimento/scripts\_analisis/} y \texttt{06\_Experimento/resultados/}. El protocolo fue prerregistrado en OSF (DOI: 10.17605/OSF.IO/DTYNC); las desviaciones de ejecución respecto del plan prerregistrado, incluida la presente, se documentan en \texttt{osf\_deviations.pdf}.
 	
 	\section{Resultados}
 	\subsection{RQ1 --- Validación de requisitos mediante el prototipo}
@@ -161,6 +163,38 @@
 	
 	Respecto de la proposición P2, en la verificación técnica del MVP 20 de 22 requisitos Must alcanzaron estado de cierre reproducible, equivalente a 90,91\,\% (Fig. \ref{fig:cobertura}), superando el umbral académico de 80\,\%. Los RF no cerrados son RF-09 y RF-18. Este resultado no es una medida de satisfacción, usabilidad ni aceptación de participantes, sino de cobertura funcional reproducible.
 	
+	\begin{table}[H]
+		\centering
+		\caption{Cobertura técnica de los 22 RF Must}
+		\begin{tabular}{cll}
+			\hline
+			RF & Requisito & Estado \\\hline
+			RF-01 & Registrar historia clínica digital & PASA \\
+			RF-02 & Agendar cita médica & PASA \\
+			RF-03 & Buscar pacientes por criterios & PASA \\
+			RF-06 & Cancelar / modificar cita médica & PASA \\
+			RF-09 & Autenticación de usuarios & \textbf{NO PASA} \\
+			RF-10 & Gestionar permisos y roles & PASA \\
+			RF-11 & Enviar notificaciones automáticas & PASA \\
+			RF-12 & Registrar auditoría de acciones & PASA \\
+			RF-13 & Consultar disponibilidad de horarios & PASA \\
+			RF-17 & Gestionar perfil del personal médico & PASA \\
+			RF-18 & Asignar/consultar turnos del personal & \textbf{NO PASA} \\
+			RF-19 & Consultar disponibilidad del personal & PASA \\
+			RF-21 & Emitir comprobante interno de pago & PASA \\
+			RF-22 & Registrar pagos totales o parciales & PASA \\
+			RF-24 & Configurar horarios por área médica & PASA \\
+			RF-26 & Signos vitales y atención de enfermería & PASA \\
+			RF-27 & Búsqueda de paciente por cédula & PASA \\
+			RF-28 & Registro de datos personales del paciente & PASA \\
+			RF-30 & Restricción de acceso por rol & PASA \\
+			RF-33 & Registrar cobro por área de atención & PASA \\
+			RF-34 & Asignación de turno de atención & PASA \\
+			RF-38 & Consulta rápida de paciente registrado & PASA \\ \hline
+		\end{tabular}
+	\end{table}
+	
+	
 	\begin{figure}[H]\centering
 		\includegraphics[width=.7\linewidth]{cobertura_rf_must.png}
 		\caption{Cobertura técnica reproducible de requisitos Must (20/22, 90,91\,\%).}
@@ -169,7 +203,7 @@
 	
 	La coexistencia de observaciones humanas y pruebas técnicas explica por qué una función puede haber generado una dificultad durante el walkthrough y, posteriormente, aparecer corregida en la versión final. En esos casos la evidencia humana conserva el hallazgo original, mientras que la prueba técnica documenta exclusivamente el estado posterior del MVP.
 	
-	Como referencia sobre la adecuación muestral del componente humano de RQ3, se calculó a priori la potencia estadística requerida para un contraste bilateral de dos muestras independientes con tamaño de efecto convencional pequeño-mediano (Cohen's $d=0{,}5$), $\alpha=0{,}05$ y potencia objetivo de $0{,}80$: el cálculo arroja $n=64$ por grupo ($n=128$ en total) \cite{faul2007}. Las diez sesiones de validación disponibles al corte no alcanzan ese tamaño; este cálculo es, por tanto, una referencia de diseño y no una afirmación de que la muestra actual tenga potencia suficiente para el contraste de P1, limitación que se retoma en la Sección \ref{sec:amenazas}.
+	El cálculo de potencia estadística a priori para este contraste se reporta en la Sección de Metodología (\S\ref{sec:procedimiento-analisis}) --- ver también las limitaciones derivadas en la Sección \ref{sec:amenazas}.
 	
 	\section{Discusión}
 	\subsection{Implicaciones para la investigación}
