@@ -4,6 +4,8 @@ Todos los cambios relevantes del proyecto se documentan en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/)
 y el proyecto utiliza [versionado semántico](https://semver.org/lang/es/).
 
+
+
 ## [4.3.3] - 2026-09-17 — Cierre final: documenta últimas correcciones de Fichas 1-3
 
 ### Corregido
