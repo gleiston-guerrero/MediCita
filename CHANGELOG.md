@@ -63,7 +63,7 @@ cierre anteriores.
   (`b180e5b`).
 - §15 Inventario EXIF: se añadieron a `10_Autoria/exif_inventario.csv` las
   5 filas faltantes de `10_Autoria/correspondencia/evidencia_entrevista/`,
-  completando 34 de 34 fotografías reales del expediente.
+  completando 34 de 34 elementos fotográficos del expediente (29 fotografías de cámara y 5 capturas de pantalla de Google Forms).
   — *Jamileth Gamarra Zárate* (`a01b93f`).
 - Recompilación del PDF de `01_ERS/ERS_SRS_2B_V2.0.pdf` con XeLaTeX+BibTeX
   (el depositado antes se había generado por error con pdfTeX, que no
@@ -353,7 +353,3 @@ final evaluado. Ver `[4.1.0]` para el cierre completo.
 [4.2.0]: https://github.com/gleiston-guerrero/MediCita_ISR401/releases/tag/cierre-examen-suspenso-20260916
 [4.1.0]: https://github.com/gleiston-guerrero/MediCita_ISR401/releases/tag/cierre-examen-suspenso-20260915
 [4.0.1]: https://github.com/gleiston-guerrero/MediCita_ISR401/releases/tag/vFinal
-[4.0.0]: https://github.com/gleiston-guerrero/MediCita_ISR401/releases/tag/v4.0.0
-[3.0.0]: https://github.com/gleiston-guerrero/MediCita_ISR401/releases/tag/v3.0.0
-[2.0.0]: https://github.com/gleiston-guerrero/MediCita_ISR401/releases/tag/v2.0.0
-[1.0.0]: https://github.com/gleiston-guerrero/MediCita_ISR401/releases/tag/v1.0.0
