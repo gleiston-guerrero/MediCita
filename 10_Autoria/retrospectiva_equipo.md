@@ -101,10 +101,12 @@ realmente a `generar_checksums.sh`, pese a haberse documentado antes de crear el
 corrigieron ambos datos en `10_Autoria/aporte_individual.md`, `10_Autoria/Readme.md` y
 `generar_checksums.sh`/`checksums.sha256`. Como este archivo (§16), el CHANGELOG (§2) y el
 README deben declarar la misma etiqueta que el commit vigente (§3), y ese commit avanzó un paso
-más allá de `cierre-examen-suspenso-20260917d`, se creó una nueva etiqueta anotada,
-`cierre-examen-suspenso-20260917e`, sobre este commit de fe de erratas, y se actualizó el README
-para declararla como línea base vigente en lugar de reutilizar la etiqueta anterior sin mover
-sobre un commit distinto al que apunta.
+más allá de `cierre-examen-suspenso-20260917d`, se planeó crear una nueva etiqueta anotada,
+`cierre-examen-suspenso-20260917e`, sobre este commit de fe de erratas. **Corrección (agregada
+al cerrar `[4.3.8]`):** esa etiqueta se documentó como creada pero nunca se ejecutó el
+`git push origin cierre-examen-suspenso-20260917e` — verificado con `git ls-remote --tags`
+directo contra el repositorio remoto, no existe. La línea base pasó de `d` directamente a `f`
+(ver la sección siguiente), sin `e` intermedia.
 
 ## Reproducibilidad real de los resultados y nueva línea base — 2026-09-17 (`[4.3.8]`)
 
