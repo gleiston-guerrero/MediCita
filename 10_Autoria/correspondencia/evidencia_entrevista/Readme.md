@@ -1,4 +1,3 @@
-
 <div align="center">
 
 # 📷 Evidencia fotográfica de las entrevistas de elicitación
@@ -20,7 +19,8 @@ Fotografías tomadas por el equipo durante la ronda de elicitación (entrevistas
 la marca de fecha/hora de estas dos fotos (17/07/2026) corresponde a una
 **revisita del equipo al centro médico para fotografiar el espacio**, posterior
 a las entrevistas P06 y P07 (realizadas el 07/07/2026, según consta en la nota
-manuscrita, la bitácora de sesiones y la transcripción de cada una). La foto
+manuscrita, la bitácora de sesiones y la transcripción de cada una — ver
+`10_Autoria/notas_campo/` y `10_Autoria/bitacora_sesiones.csv`). La foto
 documenta el entorno físico donde ocurrió la sesión, no el momento exacto de
 la entrevista — por eso su fecha no coincide con la de la sesión y no debe
 leerse como tal.
