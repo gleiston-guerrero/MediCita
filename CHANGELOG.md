@@ -4,6 +4,14 @@ Todos los cambios relevantes del proyecto se documentan en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/)
 y el proyecto utiliza [versionado semántico](https://semver.org/lang/es/).
 
+## [4.3.2] - 2026-09-17 — Documenta correcciones de datos, manuscrito y retrospectiva omitidas en [4.3.0]/[4.3.1]
+
+### Corregido
+- `10_Autoria/exif_inventario.csv`: se agregaron/actualizaron filas del inventario EXIF (commits `8e99d71`, `a47b450`) — *Jamileth Gamarra Zárate*, *Mayummy Trujillo Vega*.
+- `07_Publicacion/manuscrito_final.tex`: cálculo de potencia movido a Metodología y tabla de cobertura RF Must incorporada (commit `7e25c92`) — *Paul Tigasi Sampedro*.
+- `10_Autoria/retrospectiva_equipo.md`: revisión de fecha y detalle de aportes (commits `51ee739`, `9fb9957`) — *Jamileth Gamarra Zárate*.
+- `10_Autoria/notas_campo/notas_campo.md` y `10_Autoria/correspondencia/evidencia_entrevista/Readme.md`: aclaraciones adicionales (commits `6ad4abe`, `efe60d0`) — *Paul Tigasi Sampedro*.
+
 ## [4.3.1] - 2026-09-17 — Declara línea base vigente y corrige V09/manifiesto de datos
 
 Segundo ajuste el mismo día, tras una segunda verificación estricta post-`[4.3.0]`.
