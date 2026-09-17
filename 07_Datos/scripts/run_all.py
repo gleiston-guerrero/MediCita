@@ -19,9 +19,10 @@ Qué hace este script, en orden:
      observaciones_validacion_procesadas.csv y
      observacion_requisito_long.csv (antes eran estáticos, ver
      generar_procesados.py), y sobrescribe en su propio destino final
-     (07_Datos/) los demás archivos que calcula: resumen_descriptivo.csv,
-     cobertura_RF_Must_final.csv, resultados_estadisticos.json y
-     power_calculation.csv.
+     (07_Datos/) los archivos que calcula: resumen_descriptivo.csv,
+     resultados_estadisticos.json y power_calculation.csv.
+     cobertura_RF_Must_final.csv es un insumo fijo de verificación técnica
+     manual (no se recalcula en este pipeline): el script solo lo lee.
   4. Verifica que todo lo esperado haya quedado en su lugar.
 
 Si algún archivo falta, el script se detiene con un mensaje claro en
