@@ -4,6 +4,29 @@ Todos los cambios relevantes del proyecto se documentan en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/)
 y el proyecto utiliza [versionado semántico](https://semver.org/lang/es/).
 
+## [4.3.6] - 2026-09-17 — Última ronda: evidencia de fecha en EXIF y recuento final de commits
+
+### Corregido
+
+- `10_Autoria/exif_inventario.csv`: las notas de las filas de `2026-07-17_recepcion.png` y
+  `2026-07-17_enfermeria.png` afirmaban que eran una revisita fotográfica posterior a las
+  entrevistas P07/P06 (07/07/2026) sin citar evidencia. Se agregó la referencia explícita a la
+  nota de campo manuscrita correspondiente (`10_Autoria/notas_campo/2026-07-07_P07_recepcion-recaudacion_notas-campo.pdf`
+  y `2026-07-07_P06_enfermeria_notas-campo.pdf`), escrita el mismo día de cada sesión, como la
+  fuente que confirma que el 07/07/2026 es la fecha real de las entrevistas. (commit `9ac5854`)
+  — *Thais Herrera Ramos*.
+- `10_Autoria/aporte_individual.md` y `10_Autoria/Readme.md`: conteo de commits recontado por
+  última vez, sobre un clon completo con `.mailmap` aplicado (`git shortlog -sne HEAD`), en el
+  commit `9ac5854`: 1.804 commits totales. Este es el recuento final — no se sube nada más
+  después de este punto.
+- `checksums.sha256`: regenerado para reflejar los archivos corregidos en esta entrada.
+
+### Línea base
+
+Esta es la última entrada de contenido antes de crear la etiqueta anotada
+`cierre-examen-suspenso-20260917d` declarada en `[4.3.5]` — ningún archivo se edita después de
+este commit.
+
 ## [4.3.5] - 2026-09-17 — Declara `cierre-examen-suspenso-20260917d` como línea base vigente
 
 ### Corregido
