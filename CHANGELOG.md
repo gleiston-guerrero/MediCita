@@ -4,6 +4,27 @@ Todos los cambios relevantes del proyecto se documentan en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/)
 y el proyecto utiliza [versionado semántico](https://semver.org/lang/es/).
 
+## [4.3.1] - 2026-09-17 — Declara línea base vigente y corrige V09/manifiesto de datos
+
+Segundo ajuste el mismo día, tras una segunda verificación estricta post-`[4.3.0]`.
+
+### Corregido
+- `10_Autoria/notas_campo/notas_campo.md`: la fila V09 — Psicología atribuía
+  la nota a Paul Tigasi Sampedro; el escaneo tiene el campo de responsable
+  vacío y `bitacora_sesiones.csv` declara "no consta" — corregido a
+  "No consta" para eliminar la contradicción.
+- `07_Datos/checksums_datos.sha256`: quedó desactualizado tras corregir el
+  docstring de `run_all.py`; regenerado (23 entradas, verificado limpio).
+- `07_Datos/scripts/run_all.py`: `cobertura_RF_Must_final.csv` seguía
+  listado en `RESULTADOS_GENERADOS_POR_PIPELINE`, contradiciendo su propio
+  docstring; movido a `RESULTADOS_ESTATICOS_ESPERADOS`.
+
+### Línea base
+Esta entrada se publica bajo la etiqueta anotada de cierre
+`cierre-examen-suspenso-20260917`, que reemplaza a
+`cierre-examen-suspenso-20260916` como línea base vigente.
+
+
 ## [4.3.0] - 2026-09-17 — Corrección de atribuciones falsas señaladas en el informe del examen suspenso (5,68/10)
 
 Responde al `Informe de evaluación del examen suspenso` del docente (17/09/2026,
