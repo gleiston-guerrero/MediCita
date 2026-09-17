@@ -7,7 +7,11 @@ y el proyecto utiliza [versionado semántico](https://semver.org/lang/es/).
 
 ## [4.3.8] - 2026-09-17 — Reproducibilidad real de `resultados_estadisticos.json` (§12), y alcance del inventario EXIF (§15), y nueva etiqueta `cierre-examen-suspenso-20260917f`
 
-Esta entrada se agrega **después** de `cierre-examen-suspenso-20260917e` (`[4.3.7]`).
+Esta entrada se agrega **después** del commit de `[4.3.7]`. **Corrección:** `[4.3.7]` declaraba
+que ese commit quedaba etiquetado como `cierre-examen-suspenso-20260917e`; verificado ahora con
+`git ls-remote --tags` contra el repositorio remoto, esa etiqueta nunca se publicó. La línea base
+pasa de `cierre-examen-suspenso-20260917d` directamente a la nueva etiqueta de esta entrada, sin
+`e` intermedia (ver nota de fe de erratas al final de la entrada `[4.3.7]`).
 
 ### Corregido
 
@@ -57,22 +61,24 @@ Hay exactamente 14 archivos de imagen en el repositorio que no están en ese inv
 
 ### Corregido — recuento de commits
 
-- `10_Autoria/aporte_individual.md` y `10_Autoria/Readme.md`: la corrección de
-  `resultados_estadisticos.json` y de `generar_checksums.sh` se subió en un commit propio
-  (`6a464a6a83bb3e7338303eeb38689102c8442f88`) antes de esta entrada, así que el conteo de
-  `[4.3.6]` (1.804 commits, sobre `9ac5854`) quedó desactualizado por ese commit. Recontado sobre
-  `git shortlog -sne HEAD` en un clon completo con `.mailmap` aplicado, en el commit
-  `6a464a6a83bb3e7338303eeb38689102c8442f88` (verificado contra `origin/main`): **1.818 commits
-  totales**. A diferencia de `[4.3.6]`, esta cifra no se declara "recuento final" — se declara
-  vigente a partir de ese commit específico, para no quedar falsa en cuanto el repositorio reciba
-  el siguiente commit (el de esta misma entrada de documentación).
+- `10_Autoria/aporte_individual.md` y `10_Autoria/Readme.md`: el conteo de `[4.3.6]` (1.804
+  commits, sobre `9ac5854`) quedó desactualizado por los commits de cierre posteriores a esa
+  entrada. Se recontó tres veces durante este mismo cierre, cada vez sobre el commit real más
+  reciente en ese momento (`git shortlog -sne HEAD`, clon completo, `.mailmap` aplicado):
+  1.818 sobre `6a464a6`, luego 1.822 sobre `6db08a1` tras subir la documentación de esta misma
+  entrada. La cifra vigente, sobre la que se creó la etiqueta `cierre-examen-suspenso-20260917f`,
+  es **1.822**, declarada en `10_Autoria/aporte_individual.md` y `10_Autoria/Readme.md`. Ninguna
+  de las cifras intermedias (1.818) se declaró "recuento final" — cada una se ató a un commit
+  específico, precisamente para que quedar desactualizada por el siguiente commit no la
+  convirtiera en una afirmación falsa, a diferencia del error de `[4.3.6]`.
 
 ### Línea base
 
 Esta entrada se publica bajo la nueva etiqueta anotada `cierre-examen-suspenso-20260917f`, creada
-sobre el commit de esta entrada, que reemplaza a `cierre-examen-suspenso-20260917e` como línea
-base vigente. `cierre-examen-suspenso-20260917e` y todas las etiquetas de cierre anteriores se
-conservan sin modificar como referencia histórica.
+sobre el commit de esta entrada, que reemplaza a `cierre-examen-suspenso-20260917d` como línea
+base vigente (`e` nunca existió como etiqueta publicada — ver la fe de erratas al final de
+`[4.3.7]`). `cierre-examen-suspenso-20260917d` y todas las etiquetas de cierre anteriores
+realmente publicadas se conservan sin modificar como referencia histórica.
 
 ## [4.3.7] - 2026-09-17 — Fe de erratas post-etiqueta: `[4.3.6]` no era el recuento final, reproducibilidad de figuras, y nueva etiqueta `cierre-examen-suspenso-20260917e`
 
@@ -119,6 +125,17 @@ El contenido y los resultados de la investigación (datos, análisis, manuscrito
 esta entrada — lo único corregido es la exactitud de dos documentos que describen el propio
 repositorio (el conteo de commits y el alcance real del manifiesto de integridad), y la
 sincronización de la etiqueta de cierre con el commit vigente.
+
+### Fe de erratas (agregada en `[4.3.8]`) — la etiqueta `e` nunca se publicó
+
+Esta entrada declaraba que se creaba `cierre-examen-suspenso-20260917e` "sobre el commit de esta
+entrada". Verificado con `git ls-remote --tags` directo contra el repositorio remoto: **esa
+etiqueta nunca se subió** (`git push origin cierre-examen-suspenso-20260917e` no se ejecutó, o
+se ejecutó localmente sin hacer push). El README, este mismo CHANGELOG y la retrospectiva
+llegaron a declarar `cierre-examen-suspenso-20260917e` como preservada "de referencia
+histórica", lo cual era una afirmación falsa sobre el estado real del repositorio — no existía
+nada que preservar. Se corrige en `[4.3.8]`: la línea base pasa de `d` directamente a `f`, sin
+`e` intermedia, y las tres referencias a `e` como etiqueta preservada se retiran.
 
 ## [4.3.6] - 2026-09-17 — Última ronda: evidencia de fecha en EXIF y recuento final de commits
 
