@@ -50,13 +50,14 @@ bitácora, por lo que no se contrastan una a una contra ella.
 
 ## ⚠️ Declaración sobre el momento real de escritura de cada nota
 
-El historial de Git muestra que los 18 PDF de esta carpeta (P01–P08 y
-V01–V10) se subieron al repositorio en un único commit, el **2026-09-15 a
-las 14:53** ("Add files via upload"), muchas semanas después de la fecha de
-cada sesión (la más antigua, P01, es del 04/06/2026; la más reciente, V10,
-del 30/08/2026). Esa fecha de subida es la del **escaneo/carga del PDF**, no
-la de la escritura de la nota manuscrita en papel, que se detalla en la
-tabla siguiente.
+El historial de Git muestra que los 18 PDF de esta carpeta se subieron en
+**18 commits independientes, en dos tandas**: las 8 notas de elicitación
+(P01–P08) el **2026-09-05 entre las 20:22 y las 20:25**, y las 10 notas de
+validación por walkthrough (V01–V10) el **2026-09-15 entre las 14:53 y las
+14:57** — no en un único commit, como decía una versión anterior de esta
+declaración. Ambas fechas son las del **escaneo/carga del PDF**, muchas
+semanas después de la fecha de cada sesión (la más antigua, P01, es del
+04/06/2026; la más reciente, V10, del 30/08/2026).
 
 **Aclaración específica sobre el campo "duración" (el punto que señaló el
 docente):** el contenido de cada nota — observaciones, hallazgos,
