@@ -33,3 +33,11 @@
 # sin importar quién o desde dónde se clone el repositorio.
 07_Datos/**/*.csv -text binary
 07_Publicacion/dataset_zenodo/*.csv -text binary
+
+# Mismo problema, mismo motivo: resultados_estadisticos.json se genera con
+# Path.write_text() en 06_Experimento/scripts_analisis/generar_resultados.py.
+# A partir de la corrección de [4.3.8] el script fija newline="\n" de forma
+# explícita, pero esta línea es la segunda defensa: aunque alguien lo
+# regenere con una versión vieja del script en Windows, Git no debe
+# reescribir los finales de línea al clonar ni al hacer commit.
+07_Datos/resultados/resultados_estadisticos.json -text binary
