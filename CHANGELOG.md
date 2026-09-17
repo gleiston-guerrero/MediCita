@@ -4,6 +4,16 @@ Todos los cambios relevantes del proyecto se documentan en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/)
 y el proyecto utiliza [versionado semántico](https://semver.org/lang/es/).
 
+## [4.3.3] - 2026-09-17 — Cierre final: documenta últimas correcciones de Fichas 1-3
+
+### Corregido
+- `07_Publicacion/manuscrito_final.tex`: referencia cruzada "Sección~5.3" corregida a "Sección~4.6" (commit `41f0b46`) — *Mayummy Trujillo Vega*.
+- `10_Autoria/exif_inventario.csv`: "Readmi"→"Redmi" y fecha de `Area_Informacion.jpeg` corregida (commits `4d46910`, `3fe0442`) — *Thais Herrera Ramos*.
+- `10_Autoria/fuentes_editables/README.md`: ruta de imagen de `CU-06_Registrar_signos_vitales` corregida (commit `33ba2e2`) — *Thais Herrera Ramos*.
+- `04_Trazabilidad/Readme.md`: badge de filas corregido de 72 a 75 (commit `153668f`) — *Jamileth Gamarra Zárate*.
+- `10_Autoria/aporte_individual.md` y `10_Autoria/Readme.md`: conteo de commits actualizado (commits `7406af1`, `ee8cf16`, `8cd6cdf`) — *Jamileth Gamarra Zárate*.
+- `07_Datos/resultados/run_all_output.json`, `checksums.sha256`, `07_Datos/checksums_datos.sha256`: regenerados tras las correcciones anteriores (commit `4411179`) — *Paul Tigasi Sampedro*.
+
 ## [4.3.2] - 2026-09-17 — Documenta correcciones de datos, manuscrito y retrospectiva omitidas en [4.3.0]/[4.3.1]
 
 ### Corregido
