@@ -4,7 +4,15 @@ Todos los cambios relevantes del proyecto se documentan en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/)
 y el proyecto utiliza [versionado semántico](https://semver.org/lang/es/).
 
+## [4.3.4] - 2026-09-17 — Recompila manuscrito_final.pdf (PDF no coincidía con el .tex corregido en 4.3.3)
 
+### Corregido
+- `07_Publicacion/manuscrito_final.pdf`: recompilado desde `manuscrito_final.tex` (commit `41f0b46`, no reflejado en el PDF depositado hasta ahora); ambas referencias a "Sección~4.6" ahora coinciden en el PDF. — *Thais Herrera Ramos*
+- `checksums.sha256`: regenerado tras recompilar (commit anterior `11a12de` quedó con un hash desactualizado de `CHANGELOG.md` por regenerarse antes de este cambio).
+
+### Corregido
+- `07_Publicacion/manuscrito_final.pdf`: recompilado desde `manuscrito_final.tex` (commit `41f0b46`, no reflejado en el PDF hasta ahora); ambas referencias a "Sección~4.6" ahora coinciden en el PDF. — *Thais Herrera Ramos*
+- `checksums.sha256`, `07_Datos/checksums_datos.sha256`: regenerados tras recompilar.
 
 ## [4.3.3] - 2026-09-17 — Cierre final: documenta últimas correcciones de Fichas 1-3
 
