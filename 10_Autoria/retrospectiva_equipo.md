@@ -54,6 +54,8 @@ cambios efectivamente aplicados al repositorio.
 
 **Cobertura de RF Must y cálculo de potencia (§16).** Se incorporó al manuscrito el cálculo de potencia a priori (Cohen's *d* = 0,5, α = 0,05, potencia = 0,80, *n* = 128) como referencia de diseño frente a las diez sesiones de validación disponibles, y se reforzó la sección de amenazas a la validez con esa comparación explícita. El párrafo del cálculo de potencia a priori (Cohen's *d* = 0,5, α = 0,05, potencia = 0,80, *n* = 128) fue redactado por Mayummy Jailly Trujillo Vega y ubicado en la sección de Metodología del manuscrito, no en Resultados. El manuscrito se recompiló desde el `.tex` versionado.
 
+**Consistencia de la línea base y evidencia de fecha (§2, §3, §15) — última ronda.** El README, el CHANGELOG y esta misma retrospectiva declaraban etiquetas de cierre distintas entre sí en momentos distintos del día; se sincronizaron los tres para declarar `cierre-examen-suspenso-20260917d` como línea base vigente. En `10_Autoria/exif_inventario.csv`, las notas sobre `2026-07-17_recepcion.png` y `2026-07-17_enfermeria.png` afirmaban que eran una revisita fotográfica posterior a las entrevistas P07/P06, sin citar de dónde salía esa fecha; se agregó la referencia explícita a la nota de campo manuscrita de cada sesión (escrita el mismo día) como la evidencia que confirma el 07/07/2026. Se recontaron los commits por última vez (`git shortlog -sne HEAD` sobre clon completo, `.mailmap` aplicado): 1.804 commits totales, en `10_Autoria/aporte_individual.md` y `10_Autoria/Readme.md`. `checksums.sha256` se regeneró después de cada uno de estos cambios, como último paso.
+
 ---
 
 ## 💡 Qué aprendimos
