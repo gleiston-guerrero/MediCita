@@ -41,12 +41,11 @@ Notas manuscritas escaneadas de cada sesión de elicitación, con la fecha visib
 ## ✅ Estado
 
 Completo — 8 sesiones de elicitación (P01–P08) y 10 sesiones de validación
-por walkthrough (V01–V10) con nota manuscrita escaneada. Nota:
-`10_Autoria/bitacora_sesiones.csv` registra únicamente las sesiones de
-trabajo interno del equipo derivadas de commits (programación,
-organización, redacción); las sesiones de campo aquí listadas son
-sesiones con participantes externos y no están duplicadas en esa
-bitácora, por lo que no se contrastan una a una contra ella.
+por walkthrough (V01–V10) con nota manuscrita escaneada.
+Nota: `10_Autoria/bitacora_sesiones.csv` incluye las 18 sesiones de campo
+(columnas `tipo` y `ruta_nota_campo`, con enlace directo a la nota
+manuscrita de cada una), junto a las 28 filas de trabajo interno del
+equipo — 46 filas en total.
 
 ## ⚠️ Declaración sobre el momento real de escritura de cada nota
 
