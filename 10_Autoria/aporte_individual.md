@@ -28,16 +28,16 @@ La tabla de días cuenta en cuántas fechas distintas aparece cada integrante, *
 
 ## ✅ Conteo total de commits — confirmado con clon completo (`git shortlog -sne HEAD`)
 
-| Integrante | Commits totales | % del total (1.705) |
+| Integrante | Commits totales | % del total (1.778) |
 |---|---:|---:|
-| Paul Alexander Tigasi Sampedro | 345 | 20,23 % |
-| Thais Melanie Herrera Ramos | 344 | 20,18 % |
-| Jamileth Estefanía Gamarra Zárate | 342 | 20,06 % |
-| Steven Santiago Díaz Pontón | 340 | 19,94 % |
-| Mayummy Jailly Trujillo Vega | 334 | 19,59 % |
-| **Total** | **1.705** | **100 %** |
+| Paul Alexander Tigasi Sampedro | 364 | 20,47 % |
+| Thais Melanie Herrera Ramos | 363 | 20,42 % |
+| Jamileth Estefanía Gamarra Zárate | 359 | 20,19 % |
+| Mayummy Jailly Trujillo Vega | 352 | 19,80 % |
+| Steven Santiago Díaz Pontón | 340 | 19,12 % |
+| **Total** | **1.778** | **100 %** |
 
-El reparto se mantiene parejo entre los cinco integrantes (19,60 % a 20,25 %). Verificado el 15/09/2026 (cierre del examen suspenso) sobre `git shortlog -sne HEAD` sobre un clon completo, con `.mailmap` aplicado. **Nota:** este número sube con cada commit posterior (incluida la propia subida de esta corrección); recontar con `git shortlog -sne HEAD` si se sube algo más después de esta fecha, idealmente como el último paso antes de la defensa.
+El reparto se mantiene parejo entre los cinco integrantes (19,12 % a 20,47 %). Recontado el 17/09/2026 sobre `git shortlog -sne HEAD` sobre un clon completo, con `.mailmap` aplicado, en el commit `b86afaa` (línea base vigente `cierre-examen-suspenso-20260917`). **Nota:** este número sube con cada commit posterior; recontar si se sube algo más después de esta fecha, idealmente como el último paso antes de la defensa.
 
 ## 🔍 Comparación con la vista "Contributors" de GitHub
 
