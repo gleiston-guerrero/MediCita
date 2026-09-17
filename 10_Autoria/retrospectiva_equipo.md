@@ -66,7 +66,7 @@ sistema operativo), y se recompiló `07_Publicacion/manuscrito_final.pdf` para
 que su commit quedara posterior a esta última regeneración de resultados.
 
 Se actualizó también la etiqueta de línea base declarada en el README para
-que apunte al commit final real de este segundo cierre (`cierre-examen-suspenso-20260915`),
+que apunte al commit final real de este segundo cierre (`cierre-examen-suspenso-20260917c`),
 dejando `vFinal` como referencia histórica del primer intento. Se corrigió
 `generar_checksums.sh`, que solo cubría imágenes, video, audio, PDF y `.7z`
 y dejaba fuera del manifiesto raíz cerca de 290 archivos de código y datos
