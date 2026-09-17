@@ -6,7 +6,7 @@
 
 ![Progreso](https://img.shields.io/badge/Progreso-12_de_12_completos-success?style=for-the-badge)
 ![Criterio](https://img.shields.io/badge/Criterio_de_piso-P7-success?style=for-the-badge)
-![Actualizado](https://img.shields.io/badge/Actualizado-15/09/2026-informational?style=for-the-badge)
+![Actualizado](https://img.shields.io/badge/Actualizado-17/09/2026-informational?style=for-the-badge)
 
 </div>
 
@@ -38,7 +38,7 @@ qué hizo cada integrante y qué se corrigió en esta ronda de cierre.
 | — | [`doble_observacion_sesiones/`](doble_observacion_sesiones/) | 🟢 Completo | Requisito adicional de la Sección 5 de la Guía de Desarrollo: doble observación independiente de 2 de 8 sesiones de validación (25%, sobre el mínimo del 20%). Kappa = -0,0714 (sin acuerdo por desbalance de categorías, explicado en detalle en `resultado_kappa_observacion.md`); acuerdo bruto real 70%. No sustituye a A7 — es un elemento distinto, sobre sesiones de validación, no sobre codificación temática de transcripciones. |
 | A8 | [`correspondencia/README.md`](correspondencia/README.md) | 🟢 Completo | Las 4 comunicaciones confirmadas y firmadas. |
 | A9 | [`declaracion_uso_ia.md`](declaracion_uso_ia.md) | 🟢 Completo | Firmado por los 5 integrantes (03-05/09/2026). |
-| A10 | [`aporte_individual.md`](aporte_individual.md) | 🟢 Completo | Conteo real de commits (1.778 totales) y detalle cualitativo por integrante, basado en la bitácora A1. |
+| A10 | [`aporte_individual.md`](aporte_individual.md) | 🟢 Completo | Conteo real de commits (1.804 totales, cierre definitivo) y detalle cualitativo por integrante, basado en la bitácora A1. |
 | A11 | [`exif_inventario.csv`](exif_inventario.csv) | 🟢 Completo | 34 de 34 elementos del expediente (29 fotografías y 5 capturas de pantalla), distribuidos en Fotos_Entorno, Fotos_Aplicacion, Fotos_equipos y correspondencia/evidencia_entrevista, con EXIF real, inferido por contexto, o marcado explícitamente `SIN_EXIF` cuando no aplica (p. ej. capturas de pantalla o fotos sin metadato tras compartirse por WhatsApp). |
 | A12 | `.mailmap` | 🟢 Completo | Atribuye los 8 commits de `MediCita Team` a Thais Melanie Herrera Ramos. |
 
@@ -71,11 +71,11 @@ Fuente: `git shortlog -sne HEAD` sobre un clon completo (historial íntegro, fil
 
 | Integrante | Commits | % del total |
 |---|---:|---:|
-| Paul Alexander Tigasi Sampedro | 364 | 20,47 % |
-| Thais Melanie Herrera Ramos | 363 | 20,42 % |
-| Jamileth Estefanía Gamarra Zárate | 359 | 20,19 % |
-| Mayummy Jailly Trujillo Vega | 352 | 19,80 % |
-| Steven Santiago Díaz Pontón | 340 | 19,12 % |
-| **Total** | **1.778** | **100 %** |
+| Paul Alexander Tigasi Sampedro | 374 | 20,73 % |
+| Thais Melanie Herrera Ramos | 369 | 20,46 % |
+| Jamileth Estefanía Gamarra Zárate | 365 | 20,23 % |
+| Mayummy Jailly Trujillo Vega | 356 | 19,73 % |
+| Steven Santiago Díaz Pontón | 340 | 18,85 % |
+| **Total** | **1.804** | **100 %** |
 
 El reparto es notablemente parejo entre los cinco integrantes (19,12 % a 20,47 %).
