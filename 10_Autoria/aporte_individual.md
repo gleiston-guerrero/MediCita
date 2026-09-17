@@ -28,16 +28,16 @@ La tabla de días cuenta en cuántas fechas distintas aparece cada integrante, *
 
 ## ✅ Conteo total de commits — confirmado con clon completo (`git shortlog -sne HEAD`)
 
-| Integrante | Commits totales | % del total (1.804) |
+| Integrante | Commits totales | % del total (1.818) |
 |---|---:|---:|
-| Paul Alexander Tigasi Sampedro | 374 | 20,73 % |
-| Thais Melanie Herrera Ramos | 369 | 20,46 % |
-| Jamileth Estefanía Gamarra Zárate | 365 | 20,23 % |
-| Mayummy Jailly Trujillo Vega | 356 | 19,73 % |
-| Steven Santiago Díaz Pontón | 340 | 18,85 % |
-| **Total** | **1.804** | **100 %** |
+| Paul Alexander Tigasi Sampedro | 375 | 20,63 % |
+| Thais Melanie Herrera Ramos | 373 | 20,52 % |
+| Jamileth Estefanía Gamarra Zárate | 369 | 20,30 % |
+| Mayummy Jailly Trujillo Vega | 361 | 19,86 % |
+| Steven Santiago Díaz Pontón | 340 | 18,70 % |
+| **Total** | **1.818** | **100 %** |
 
-El reparto se mantiene parejo entre los cinco integrantes (18,85 % a 20,73 %). Recontado el 17/09/2026 sobre `git shortlog -sne HEAD` sobre un clon completo, con `.mailmap` aplicado, en el commit `9ac5854` — el último commit antes de la defensa, con el manifiesto raíz (`checksums.sha256`) regenerado sobre este mismo commit. **Este es el recuento final: no se subió nada más después de este punto.**
+El reparto se mantiene parejo entre los cinco integrantes (18,70 % a 20,63 %). Recontado el 17/09/2026 sobre `git shortlog -sne HEAD` sobre un clon completo, con `.mailmap` aplicado, sobre el commit `6a464a6a83bb3e7338303eeb38689102c8442f88` (`origin/main`, verificado), con el manifiesto raíz (`checksums.sha256`) regenerado sobre ese mismo commit. Esta cifra es correcta a partir de ese commit; si el repositorio recibe commits nuevos después, deja de ser el total vigente — no se declara aquí como "recuento final" para no repetir el error de `[4.3.6]`, donde esa palabra quedó falsa en cuanto se subió el siguiente cierre correctivo.
 
 ## 🔍 Comparación con la vista "Contributors" de GitHub
 

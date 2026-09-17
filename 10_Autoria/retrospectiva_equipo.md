@@ -88,3 +88,36 @@ y dejaba fuera del manifiesto raíz cerca de 290 archivos de código y datos
 (`.py`, `.md`, `.csv`, `.drawio`, `.tex`, entre otros) presentes en
 `checksums.sha256`. Se corrigieron además dos datos desactualizados en el
 README (páginas del ERS y número de consentimientos pixelados).
+
+## Fe de erratas post-etiqueta y nueva línea base — 2026-09-17 (`[4.3.7]`)
+
+Tras crear la etiqueta `cierre-examen-suspenso-20260917d`, se detectaron dos afirmaciones
+falsas hechas en la ronda anterior (`[4.3.6]`): el recuento de "1.804 commits, recuento final"
+ya estaba desactualizado en 8 commits para el momento del propio tag (el recuento correcto sobre
+el commit real del tag, `a0fcc55`, es 1.812), y la exclusión de las dos figuras no reproducibles
+de matplotlib (`estado_tareas_validacion.png`, `cobertura_rf_must.png`) nunca llegó a aplicarse
+realmente a `generar_checksums.sh`, pese a haberse documentado antes de crear el tag. Se
+corrigieron ambos datos en `10_Autoria/aporte_individual.md`, `10_Autoria/Readme.md` y
+`generar_checksums.sh`/`checksums.sha256`. Como este archivo (§16), el CHANGELOG (§2) y el
+README deben declarar la misma etiqueta que el commit vigente (§3), y ese commit avanzó un paso
+más allá de `cierre-examen-suspenso-20260917d`, se creó una nueva etiqueta anotada,
+`cierre-examen-suspenso-20260917e`, sobre este commit de fe de erratas, y se actualizó el README
+para declararla como línea base vigente en lugar de reutilizar la etiqueta anterior sin mover
+sobre un commit distinto al que apunta.
+
+## Reproducibilidad real de los resultados y nueva línea base — 2026-09-17 (`[4.3.8]`)
+
+`resultados_estadisticos.json` fallaba de forma reproducible en `sha256sum -c
+checksums_datos.sha256 --quiet` al regenerarse en Linux, porque se escribía sin fijar el
+separador de línea y el archivo depositado se había generado en Windows. Se corrigió
+`generar_resultados.py` para fijar `newline="\n"` explícitamente y se protegió el archivo en
+`.gitattributes`, igual que ya se hacía con los `.csv` de `07_Datos/`. Verificado corriendo la
+orden única dos veces seguidas desde una copia limpia: ambas veces el manifiesto de `07_Datos/`
+queda en silencio total. También se revisaron las 14 imágenes del repositorio que no están en
+`exif_inventario.csv` (documentado en el CHANGELOG `[4.3.8]`): 5 son artefactos derivados o
+ejemplos ilustrativos, correctamente fuera; 9 son consentimientos pixelados de la validación por
+walkthrough, evidencia real que queda fuera solo por el alcance que el propio equipo declaró —
+no se agregaron al inventario en esta ronda para no introducir EXIF sin verificar, pero queda
+documentado como pendiente abierto, no como omisión silenciosa. Se creó la etiqueta anotada
+`cierre-examen-suspenso-20260917f` sobre este commit y se actualizó el README para declararla
+como línea base vigente.
