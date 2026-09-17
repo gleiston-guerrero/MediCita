@@ -4,9 +4,21 @@
 
 ### Proyecto MediCita (SICM) — ISR-401
 
+
+
 ![Estado](https://img.shields.io/badge/Estado-Completo-success?style=for-the-badge)
+
+
+
+
 ![Fuente](https://img.shields.io/badge/Fuente-git_log_%2B_commits_reales-informational?style=for-the-badge)
+
+
+
+
 ![Actualizado](https://img.shields.io/badge/Actualizado-17/09/2026-blue?style=for-the-badge)
+
+
 
 </div>
 
@@ -17,7 +29,7 @@
 Cubre el trabajo realizado desde el lunes 2026-09-14 hasta el cierre del
 examen suspenso, en respuesta directa a la Guía de cierre y rúbrica del
 examen suspenso, con línea base vigente en la etiqueta anotada
-`cierre-examen-suspenso-20260917`. El detalle por integrante se
+`cierre-examen-suspenso-20260917d`. El detalle por integrante se
 construyó cruzando el historial real de commits (`git log`) con los
 cambios efectivamente aplicados al repositorio.
 
@@ -50,6 +62,7 @@ cambios efectivamente aplicados al repositorio.
 - Reportar un resultado (como la cobertura de RF Must) no basta si el cálculo que lo acompaña —en este caso, la potencia estadística— se queda solo en el archivo de datos y no llega al manuscrito: el evaluador lee el informe, no el JSON.
 - Cerrar entregables de a uno, verificando con el comando exacto de la guía antes de pasar al siguiente, evitó reabrir trabajo ya dado por terminado.
 - Verificar en la propia máquina de desarrollo no basta cuando la evaluación se hace en otro sistema operativo: una ruta con `\` en vez de `/` es invisible al ojo pero rompe un hash. La lección es regenerar el manifiesto raíz como el último paso, después de cualquier otro cambio de contenido — no antes.
+- Declarar la etiqueta de línea base "vigente" en tres archivos distintos (README, CHANGELOG y esta retrospectiva) hizo que, dos veces seguidas, se corrigiera uno y se olvidaran los otros dos al crear la siguiente etiqueta. La lección es la misma que con los archivos de `resultados/`: la etiqueta debe ser siempre el último paso, después de confirmar que los tres documentos ya dicen lo mismo — no algo que se cree primero y se documente después.
 
 ---
 
@@ -66,7 +79,7 @@ sistema operativo), y se recompiló `07_Publicacion/manuscrito_final.pdf` para
 que su commit quedara posterior a esta última regeneración de resultados.
 
 Se actualizó también la etiqueta de línea base declarada en el README para
-que apunte al commit final real de este segundo cierre (`cierre-examen-suspenso-20260917c`),
+que apunte al commit final real de este segundo cierre (`cierre-examen-suspenso-20260915`),
 dejando `vFinal` como referencia histórica del primer intento. Se corrigió
 `generar_checksums.sh`, que solo cubría imágenes, video, audio, PDF y `.7z`
 y dejaba fuera del manifiesto raíz cerca de 290 archivos de código y datos
