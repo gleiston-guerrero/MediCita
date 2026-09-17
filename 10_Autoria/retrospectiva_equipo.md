@@ -29,7 +29,8 @@
 Cubre el trabajo realizado desde el lunes 2026-09-14 hasta el cierre del
 examen suspenso, en respuesta directa a la Guía de cierre y rúbrica del
 examen suspenso, con línea base vigente en la etiqueta anotada
-`cierre-examen-suspenso-20260917d`. El detalle por integrante se
+`cierre-examen-suspenso-20260917f` (ver sección "Reproducibilidad real de los
+resultados y nueva línea base" más abajo). El detalle por integrante se
 construyó cruzando el historial real de commits (`git log`) con los
 cambios efectivamente aplicados al repositorio.
 
