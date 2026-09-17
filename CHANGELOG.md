@@ -4,6 +4,16 @@ Todos los cambios relevantes del proyecto se documentan en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/)
 y el proyecto utiliza [versionado semántico](https://semver.org/lang/es/).
 
+## [4.3.5] - 2026-09-17 — Declara `cierre-examen-suspenso-20260917d` como línea base vigente
+
+### Corregido
+- El README (§ "Entrega vigente y alcance de la evaluación") y esta
+  retrospectiva (`10_Autoria/retrospectiva_equipo.md`) seguían declarando
+  `cierre-examen-suspenso-20260917` como línea base vigente después de
+  las correcciones de `[4.3.3]` y `[4.3.4]`. Ambos se actualizan en este
+  commit, antes de crear la etiqueta `cierre-examen-suspenso-20260917d`
+  sobre él, para que la etiqueta no quede desincronizada de nuevo.
+
 ## [4.3.4] - 2026-09-17 — Recompila manuscrito_final.pdf (PDF no coincidía con el .tex corregido en 4.3.3)
 
 ### Corregido
