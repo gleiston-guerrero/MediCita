@@ -5,7 +5,7 @@
 ### Proyecto MediCita (SICM) — ISR-401
 
 ![Estado](https://img.shields.io/badge/Estado-Completo-success?style=for-the-badge)
-![Filas](https://img.shields.io/badge/Matriz-72_filas-informational?style=for-the-badge)
+![Filas](https://img.shields.io/badge/Matriz-75_filas-informational?style=for-the-badge)
 
 </div>
 
