@@ -1,3 +1,4 @@
+
 # Historial de cambios
 
 Todos los cambios relevantes del proyecto se documentan en este archivo.
@@ -34,8 +35,10 @@ este commit.
   retrospectiva (`10_Autoria/retrospectiva_equipo.md`) seguían declarando
   `cierre-examen-suspenso-20260917` como línea base vigente después de
   las correcciones de `[4.3.3]` y `[4.3.4]`. Ambos se actualizan en este
-  commit, antes de crear la etiqueta `cierre-examen-suspenso-20260917d`
-  sobre él, para que la etiqueta no quede desincronizada de nuevo.
+  commit. **Nota (agregada en `[4.3.6]`):** la etiqueta no se creó todavía
+  sobre este commit — hubo una ronda más de correcciones después (ver
+  `[4.3.6]`); la etiqueta `cierre-examen-suspenso-20260917d` se crea sobre
+  el commit de esa entrada, no sobre este.
 
 ## [4.3.4] - 2026-09-17 — Recompila manuscrito_final.pdf (PDF no coincidía con el .tex corregido en 4.3.3)
 
