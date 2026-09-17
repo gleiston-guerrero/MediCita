@@ -6,7 +6,7 @@
 
 ![Estado](https://img.shields.io/badge/Estado-Completo-success?style=for-the-badge)
 ![Fuente](https://img.shields.io/badge/Fuente-git_log_%2B_bitácora_A1-informational?style=for-the-badge)
-![Actualizado](https://img.shields.io/badge/Actualizado-15/09/2026_(cierre)-blue?style=for-the-badge)
+![Actualizado](https://img.shields.io/badge/Actualizado-17/09/2026_(cierre_definitivo)-blue?style=for-the-badge)
 
 </div>
 
@@ -28,16 +28,16 @@ La tabla de días cuenta en cuántas fechas distintas aparece cada integrante, *
 
 ## ✅ Conteo total de commits — confirmado con clon completo (`git shortlog -sne HEAD`)
 
-| Integrante | Commits totales | % del total (1.778) |
+| Integrante | Commits totales | % del total (1.804) |
 |---|---:|---:|
-| Paul Alexander Tigasi Sampedro | 364 | 20,47 % |
-| Thais Melanie Herrera Ramos | 363 | 20,42 % |
-| Jamileth Estefanía Gamarra Zárate | 359 | 20,19 % |
-| Mayummy Jailly Trujillo Vega | 352 | 19,80 % |
-| Steven Santiago Díaz Pontón | 340 | 19,12 % |
-| **Total** | **1.778** | **100 %** |
+| Paul Alexander Tigasi Sampedro | 374 | 20,73 % |
+| Thais Melanie Herrera Ramos | 369 | 20,46 % |
+| Jamileth Estefanía Gamarra Zárate | 365 | 20,23 % |
+| Mayummy Jailly Trujillo Vega | 356 | 19,73 % |
+| Steven Santiago Díaz Pontón | 340 | 18,85 % |
+| **Total** | **1.804** | **100 %** |
 
-El reparto se mantiene parejo entre los cinco integrantes (19,12 % a 20,47 %). Recontado el 17/09/2026 sobre `git shortlog -sne HEAD` sobre un clon completo, con `.mailmap` aplicado, en el commit `b86afaa` (línea base vigente `cierre-examen-suspenso-20260917`). **Nota:** este número sube con cada commit posterior; recontar si se sube algo más después de esta fecha, idealmente como el último paso antes de la defensa.
+El reparto se mantiene parejo entre los cinco integrantes (18,85 % a 20,73 %). Recontado el 17/09/2026 sobre `git shortlog -sne HEAD` sobre un clon completo, con `.mailmap` aplicado, en el commit `9ac5854` — el último commit antes de la defensa, con el manifiesto raíz (`checksums.sha256`) regenerado sobre este mismo commit. **Este es el recuento final: no se subió nada más después de este punto.**
 
 ## 🔍 Comparación con la vista "Contributors" de GitHub
 
