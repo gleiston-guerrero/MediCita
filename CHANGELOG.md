@@ -4,6 +4,35 @@ Todos los cambios relevantes del proyecto se documentan en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/)
 y el proyecto utiliza [versionado semántico](https://semver.org/lang/es/).
 
+## [4.3.0] - 2026-09-17 — Corrección de atribuciones falsas señaladas en el informe del examen suspenso (5,68/10)
+
+Responde al `Informe de evaluación del examen suspenso` del docente (17/09/2026,
+00:40, nota 5,68/10 sobre `cierre-examen-suspenso-20260916`), que detectó
+atribuciones incorrectas introducidas en `[4.2.0]` al intentar cerrar
+`[4.1.0]`.
+
+### Corregido
+
+- §2 de `[4.2.0]` atribuía a *Steven Díaz Pontón* la subida de las notas de
+  campo V01–V10 citando el commit `8e0f8165`. Verificado con
+  `git show --stat 8e0f8165`: ese commit solo modifica `CHANGELOG.md`. Las
+  10 notas V01–V10 las subió *Jamileth Gamarra Zárate* (usuario `Jami1405`)
+  el 15/09/2026 entre las 14:53 y las 14:57, en 10 commits independientes
+  (`6935a33` a `69f125e`); las 8 notas P01–P08 también las subió ella, el
+  05/09/2026 entre las 20:22 y las 20:25, en 8 commits independientes.
+- §2 de `[4.2.0]` atribuía a *Paul Tigasi Sampedro* la corrección de rutas
+  del script de resultados citando el commit `3b3cace`. Verificado con
+  `git show --stat 3b3cace`: ese commit solo modifica
+  `resultados_estadisticos.json` y los manifiestos de checksums. La
+  corrección real de `generar_resultados.py` es de *Jamileth Gamarra
+  Zárate*, commit `0688bac`.
+- Enlaces a etiquetas `v1.0.0`–`v4.0.0` al pie de este archivo, que no
+  existen en el repositorio remoto, retirados.
+- "34 fotografías reales" (README y este archivo) corregido a "34
+  fotografías del expediente, de las cuales 5 son capturas de pantalla de
+  Google Forms sin EXIF de cámara", para no implicar que las 34 son tomas
+  de cámara.
+
 ## [4.2.0] - 2026-09-16 — Cierre final tras revisión del docente (7,12/10)
 
 Publicado bajo la etiqueta anotada `cierre-examen-suspenso-20260916`, sobre
