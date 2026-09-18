@@ -29,8 +29,7 @@
 Cubre el trabajo realizado desde el lunes 2026-09-14 hasta el cierre del
 examen suspenso, en respuesta directa a la Guía de cierre y rúbrica del
 examen suspenso, con línea base vigente en la etiqueta anotada
-`cierre-examen-suspenso-20260917f` (ver sección "Reproducibilidad real de los
-resultados y nueva línea base" más abajo). El detalle por integrante se
+`cierre-examen-suspenso-20260917g` (ver la sección final de este documento). El detalle por integrante se
 construyó cruzando el historial real de commits (`git log`) con los
 cambios efectivamente aplicados al repositorio.
 
@@ -124,3 +123,18 @@ no se agregaron al inventario en esta ronda para no introducir EXIF sin verifica
 documentado como pendiente abierto, no como omisión silenciosa. Se creó la etiqueta anotada
 `cierre-examen-suspenso-20260917f` sobre este commit y se actualizó el README para declararla
 como línea base vigente.
+
+## Corrección de la etiqueta `e` falsa y nueva línea base — 2026-09-17 (`[4.3.9]`)
+
+Después de crear `cierre-examen-suspenso-20260917f`, se detectó (verificando con `git ls-remote
+--tags` directo contra el repositorio remoto) que `cierre-examen-suspenso-20260917e` —que este
+mismo README, el CHANGELOG y este documento citaban como creada y preservada de referencia
+histórica— **nunca se publicó**. El `git push origin cierre-examen-suspenso-20260917e` planeado
+en `[4.3.7]` no se ejecutó, o se ejecutó solo en un repositorio local sin llegar al remoto. Se
+corrigieron los tres documentos para retirar esa afirmación falsa. Esta corrección en sí misma
+avanzó el commit vigente 2 pasos más allá de `cierre-examen-suspenso-20260917f`, dejando a esa
+etiqueta apuntando a un commit ya superado — el mismo defecto de etiqueta desincronizada
+señalado y corregido varias veces antes (`[4.3.1]`–`[4.3.7]`). Por eso se crea una nueva etiqueta
+anotada, `cierre-examen-suspenso-20260917g`, sobre el commit de esta entrada, que reemplaza a
+`cierre-examen-suspenso-20260917f` como línea base vigente. `cierre-examen-suspenso-20260917f` se
+conserva sin modificar como referencia histórica.
