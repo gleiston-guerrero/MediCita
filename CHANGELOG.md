@@ -5,6 +5,30 @@ Todos los cambios relevantes del proyecto se documentan en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/)
 y el proyecto utiliza [versionado semántico](https://semver.org/lang/es/).
 
+## [4.3.9] - 2026-09-17 — Corrige la afirmación falsa de que `cierre-examen-suspenso-20260917e` existía, y nueva etiqueta `cierre-examen-suspenso-20260917g`
+
+Esta entrada se agrega **después** de `cierre-examen-suspenso-20260917f` (`[4.3.8]`).
+
+### Corregido
+
+- `README.md`, este `CHANGELOG.md` y `10_Autoria/retrospectiva_equipo.md` afirmaban que
+  `cierre-examen-suspenso-20260917e` existía y se conservaba como referencia histórica.
+  Verificado con `git ls-remote --tags` directo contra el repositorio remoto: esa etiqueta
+  **nunca se publicó** (el `git push origin cierre-examen-suspenso-20260917e` planeado en
+  `[4.3.7]` no se ejecutó, o se ejecutó solo localmente). Se corrigen los tres documentos para
+  que ya no la citen como existente; la línea base pasa de `d` directamente a `f` y ahora a esta
+  entrada, sin `e` intermedia.
+
+### Línea base
+
+**Esta corrección hizo que `cierre-examen-suspenso-20260917f` quedara desactualizada** — `f`
+apunta a `fceb6c35d8aa0c57980c9cb256fac2e4f042220c`, y esta misma corrección agregó 2 commits más
+después de ese punto. Por eso esta entrada crea una nueva etiqueta anotada,
+`cierre-examen-suspenso-20260917g`, sobre el commit que la contiene, que reemplaza a
+`cierre-examen-suspenso-20260917f` como línea base vigente. `cierre-examen-suspenso-20260917f` se
+conserva sin modificar como referencia histórica (igual que `d`, `c` y las anteriores). Ningún
+archivo de contenido se edita después de crear esta etiqueta.
+
 ## [4.3.8] - 2026-09-17 — Reproducibilidad real de `resultados_estadisticos.json` (§12), y alcance del inventario EXIF (§15), y nueva etiqueta `cierre-examen-suspenso-20260917f`
 
 Esta entrada se agrega **después** del commit de `[4.3.7]`. **Corrección:** `[4.3.7]` declaraba
