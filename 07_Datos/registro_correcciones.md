@@ -13,7 +13,7 @@ Regla seguida: cada corrección es un commit independiente; ningún dato persona
 - **Corrección:** se cubrió con un rectángulo opaco (no un recuadro superpuesto en un editor de PDF — el PDF se regeneró reemplazando el flujo JPEG embebido dentro del mismo objeto `/Im1`, mismas dimensiones 1019×1543, misma página A4) el nombre y la edad, con margen adicional para cubrir descendentes de letra (ej. la "p" de "Sampedro"). Se verificó pixel por pixel que no quedan trazos visibles en los bordes de la máscara, y que `pdftotext` sigue devolviendo cero texto extraíble tras la regeneración (no hay capa de texto que pudiera "seguir debajo").
 - **Evidencia:** verificación visual antes/después + `pdfinfo`/`pdfimages -list`/`pdftotext` antes y después, ejecutados el 19/09/2026.
 - **Original sin enmascarar:** no se sube al repositorio público; debe conservarse únicamente en el contenedor restringido cifrado del equipo.
-- **Commit:** `<pendiente-de-commit-1>`
+- **Commit:** `febb377`
 
 ## 2. Ubicación GPS de 7 fotografías
 
@@ -28,7 +28,7 @@ Regla seguida: cada corrección es un commit independiente; ningún dato persona
 - **Qué contenían:** bloque EXIF `GPSInfo` completo (latitud, longitud, altitud, marca de tiempo GPS) — verificado con Pillow antes de la corrección.
 - **Corrección:** se eliminó únicamente el IFD GPS con `piexif` (`exif_dict["GPS"] = {}`, re-serializado y reinsertado en el JPEG). Se conservaron `DateTimeOriginal`/`DateTime`, `Make` y `Model`, que son la evidencia declarada en el inventario EXIF. Verificado de forma independiente con Pillow (`_getexif()`) tras la corrección: GPS ausente, fecha y modelo intactos, dimensiones de imagen sin cambios.
 - **Nota técnica:** en las 3 fotos Xiaomi, `piexif.dump` fallaba por un tag EXIF no esencial malformado (tag 41729, `SceneCaptureType`, valor `0` mal tipado — defecto conocido del firmware de cámara, no relacionado con GPS/fecha/modelo); se descartó únicamente ese tag para poder reserializar. No afecta ningún dato usado como evidencia.
-- **Commit:** `<pendiente-de-commit-2>`
+- **Commit:** `e66a8c3`
 
 ## 3. Fachada del establecimiento: rótulo institucional visible
 
@@ -37,15 +37,15 @@ Regla seguida: cada corrección es un commit independiente; ningún dato persona
   - `10_Autoria/Fotos_equipos/verificacion_automatica/2026_09_04_Facha_Establecimiento.jpg_DETECCION.jpg` (derivada de detección de rostros)
 - **Qué contenía:** además del GPS (corrección #2), la fotografía muestra de frente el rótulo institucional completo (escudo + texto "...GESTIÓN.../...SOCIAL") sobre la fachada.
 - **Corrección:** se optó por **tapar el rótulo** (no retirar la foto), para conservar la evidencia de visita presencial del equipo (2 integrantes identificables, ver `Fotos_equipos.md`) que exige el criterio de aceptación de G1/10_Autoria. Se cubrió con un rectángulo opaco la franja completa del rótulo (escudo + texto), verificado visualmente que no quedan letras ni el escudo visibles y que los rostros de los integrantes (y las cajas verdes de detección en la derivada) quedan intactos.
-- **Pendiente de decisión del equipo:** confirmar que "tapar" (no "retirar") es la opción preferida; si prefieren retirar la foto en su lugar, avisar antes de aplicar este commit.
+- **Decisión del equipo:** se confirmó tapar el rótulo (no retirar la foto); aplicado el 19/09/2026 en el commit de abajo.
 - **Nota adicional (fuera de alcance de G1, para su conocimiento):** la placa del motociclista al fondo es parcialmente legible; el correo de G1 no pide actuar sobre esto, se deja constancia por si el equipo quiere revisarlo aparte.
-- **Commit:** `<pendiente-de-commit-2>` (mismo commit que el resto de fotos GPS, ver arriba)
+- **Commit:** `e66a8c3` (mismo commit que el resto de fotos GPS, ver arriba)
 
 ## 4. Inventario EXIF actualizado
 
 - **Archivo:** `10_Autoria/exif_inventario.csv`
 - **Corrección:** se actualizó `hash_sha256` de las 7 filas correspondientes a las fotos corregidas (arriba) con el hash del archivo ya sin GPS, y se anotó en `estado_y_metodo` la fecha y el método de eliminación del GPS (y, para la fachada, que también se cubrió el rótulo).
-- **Commit:** `<pendiente-de-commit-2>`
+- **Commit:** `e66a8c3`
 
 ## 5. Nombre de la organización
 
@@ -63,7 +63,7 @@ Regla seguida: cada corrección es un commit independiente; ningún dato persona
 - **NO se tocó** (fuera del alcance explícito de G1 — requiere decisión aparte del equipo, marcado aquí para que no se pierda):
   - El nombre de archivo `Oficio_Respaldo_Institucional_DGDS.pdf` (referenciado en `08_Etica/Readme.md:60` y `10_Autoria/correspondencia/README.md:24`) sigue conteniendo "DGDS". Renombrar el archivo físico afecta enlaces y (potencialmente) el aval firmado por la organización — G2 dice explícitamente que "cualquier corrección del aval la firma la organización", así que no se renombró sin decisión del equipo/docente.
   - `CHANGELOG.md:527`: el código de oficio `(DGDS-069-2026)` identifica el documento físico real; cambiarlo podría romper la trazabilidad al oficio original. Se deja para decisión explícita.
-- **Commit:** `<pendiente-de-commit-3>` (después de que el equipo fije el seudónimo)
+- **Commit:** `5559817`
 
 ## 6. CSV público del cuestionario: edad exacta → rangos
 
@@ -84,17 +84,15 @@ Regla seguida: cada corrección es un commit independiente; ningún dato persona
   | 35-44 | 6 | 2 |
   | 45+ | 3 | 2 |
 
-- **PENDIENTE — acción del equipo (no puedo hacerla yo):** el crudo con la edad exacta debe salir del repositorio público y vivir solo en el contenedor restringido cifrado. En `02_Evidencias/00_Restringido/` ya existe `Resultado_Cuestionario_IR_SGICM_restringido.7z` (protegido con contraseña que no tengo). El equipo debe:
-  1. Verificar/actualizar ese `.7z` para que contenga el crudo con la edad exacta (dejé una copia de referencia en `repo-limpieza-work/PARA_CONTENEDOR_RESTRINGIDO_NO_SUBIR/Resultado_Cuestionario_IR_SGICM_crudo_edad_exacta.csv` — **no subir esa carpeta al repo**).
-  2. Guardar esa misma ruta (o una copia) fuera del repo, y usarla como `--crudo` al correr el script cada vez que haga falta regenerar el CSV público.
-- **Commit:** `<pendiente-de-commit-4>`
+- **RESUELTO — 19/09/2026:** el crudo con edad exacta (`Resultado_Cuestionario_IR_SGICM_crudo_edad_exacta.csv`, con `Codigo_Participante` tipo `ENC-01` en vez de nombres) se agregó dentro de `02_Evidencias/00_Restringido/Resultado_Cuestionario_IR_SGICM_restringido.7z`, protegido con la contraseña ya existente de ese archivo. El `.7z` ya contenía previamente `Resultado_Cuestionario_IR_SGICM_restringido.csv` (versión de agosto/2026, con nombres reales de los participantes, sin ningún tratamiento) — ambos CSV son complementarios, distintas etapas de tratamiento del mismo dato, y quedan dentro del mismo contenedor cifrado. La copia de referencia temporal que se dejó en `repo-limpieza-work/PARA_CONTENEDOR_RESTRINGIDO_NO_SUBIR/` puede borrarse localmente; nunca se subió al repositorio.
+- **Commit:** `f46d874` (CSV público + script) / commit de este mismo documento (ver `checksums.sha256`) para el archivado del `.7z`
 
 ## 7. Manifiestos
 
 - Tras aplicar los commits anteriores, correr desde la raíz del repo:
-  ```bash
+```bash
   sh generar_checksums.sh
   git add checksums.sha256
   git commit -m "chore(datos): regenerar checksums.sha256 tras correcciones G1 parte 1"
-  ```
-- **Commit:** `<pendiente-de-commit-5>`
+```
+- **Commit:** `b83396e`
