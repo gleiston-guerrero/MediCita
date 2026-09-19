@@ -14,7 +14,7 @@
 
 ## 📌 Sobre esta carpeta
 
-Fotografías del equipo trabajando en la organización cooperante (Centro Médico Municipal, DGDS), como evidencia de que el trabajo de campo fue realizado presencialmente por integrantes reales del equipo.
+Fotografías del equipo trabajando en la organización cooperante (Centro Médico Municipal Piloto), como evidencia de que el trabajo de campo fue realizado presencialmente por integrantes reales del equipo.
 
 ## 📋 Requisitos de cada fotografía
 
@@ -34,13 +34,13 @@ AAAA-MM-DD_integrantes_lugar.jpg
 
 | Archivo | Fecha (EXIF) | Dispositivo | Integrantes identificables | Lugar |
 |---|---|---|---|---|
-| `2026_09_04_Facha_Establecimiento.jpg` | 04/09/2026 08:21:31 | Redmi Note 13 (23129RA5FL) | 2 | Fachada de la DGDS |
+| `2026_09_04_Facha_Establecimiento.jpg` | 04/09/2026 08:21:31 | Redmi Note 13 (23129RA5FL) | 2 | Fachada de Centro Médico Municipal Piloto |
 | `2026_09_04_Area_Recepción(Recaudación).jpg` | 04/09/2026 08:19:21 | Redmi Note 13 (23129RA5FL) | 2 | Área de Recepción/Recaudación |
 | `2026_09_04_Pasillo_Entrda(principal).jpg` | 04/09/2026 08:18:44 | Redmi Note 13 (23129RA5FL) | 2 | Pasillo de entrada principal |
 
 ✅ **3 de 3 fotografías cumplen los requisitos**: EXIF real verificado, 2 integrantes identificables, en la organización cooperante.
 
-**Nota sobre la cantidad:** la guía de cierre menciona una referencia de 8 fotografías del equipo entre las 35 del expediente total. El equipo únicamente tomó 3 fotografías durante la visita presencial del 04/09/2026 a la DGDS (fachada, pasillo de entrada, área de recepción/recaudación); no existen más fotografías del equipo en ninguna otra carpeta del repositorio. Las 3 cumplen individualmente los requisitos (EXIF real, 2 integrantes identificables cada una, verificación por software en `verificacion_automatica/`), por lo que se prioriza la calidad y verificabilidad de la evidencia disponible antes que completar un número con capturas que no correspondan a una visita real.
+**Nota sobre la cantidad:** la guía de cierre menciona una referencia de 8 fotografías del equipo entre las 35 del expediente total. El equipo únicamente tomó 3 fotografías durante la visita presencial del 04/09/2026 a Centro Médico Municipal Piloto (fachada, pasillo de entrada, área de recepción/recaudación); no existen más fotografías del equipo en ninguna otra carpeta del repositorio. Las 3 cumplen individualmente los requisitos (EXIF real, 2 integrantes identificables cada una, verificación por software en `verificacion_automatica/`), por lo que se prioriza la calidad y verificabilidad de la evidencia disponible antes que completar un número con capturas que no correspondan a una visita real.
 
 ## 🔗 Relación con `10_Autoria/exif_inventario.csv`
 
@@ -65,7 +65,7 @@ Se revisó el contenido real de los tres archivos y se contrastó contra el comm
 
 | Archivo | Contenido visible | Fecha/hora EXIF | Dispositivo | ¿Hash igual al commit evaluado? |
 |---|---|---|---|---|
-| `2026_09_04_Facha_Establecimiento.jpg` | 2 integrantes del equipo, de frente, rostro visible, frente a la fachada de la DGDS | 04/09/2026 08:21:31 | Redmi Note 13 (23129RA5FL) | Sí — mismo blob |
+| `2026_09_04_Facha_Establecimiento.jpg` | 2 integrantes del equipo, de frente, rostro visible, frente a la fachada de Centro Médico Municipal Piloto | 04/09/2026 08:21:31 | Redmi Note 13 (23129RA5FL) | Sí — mismo blob |
 | `2026_09_04_Pasillo_Entrda(principal).jpg` | 2 integrantes del equipo, de frente, rostro visible, en el pasillo de entrada principal | 04/09/2026 08:18:44 | Redmi Note 13 (23129RA5FL) | Sí — mismo blob |
 | `2026_09_04_Area_Recepción(Recaudación).jpg` | 2 integrantes del equipo, de frente, rostro visible, en el área de recepción/recaudación | 04/09/2026 08:19:21 | Redmi Note 13 (23129RA5FL) | Sí — mismo blob |
 

@@ -121,7 +121,7 @@ Los hashes SHA-256 de cada archivo, declarados en `fichas_tecnicas.csv`, corresp
 
 **SICM — Sistema de Gestión Inteligente para un Centro Médico**, denominado también **MediCita**, es una propuesta de sistema orientada a centralizar y apoyar los principales procesos clínicos y administrativos de un centro médico ambulatorio.
 
-El proyecto fue desarrollado a partir de evidencia de campo obtenida durante el proceso de Ingeniería de Requisitos, en colaboración con el Centro Médico Municipal de la Dirección de Gestión de Desarrollo Social (DGDS) del GAD Municipal de Quevedo.
+El proyecto fue desarrollado a partir de evidencia de campo obtenida durante el proceso de Ingeniería de Requisitos, en colaboración con Centro Médico Municipal Piloto.
 
 Las áreas consideradas incluyen: Medicina General, Enfermería, Odontología, Psicología, Nutrición, Terapia Física, Recepción y Recaudación, Coordinación, y Paciente.
 

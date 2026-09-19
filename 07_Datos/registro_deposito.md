@@ -46,7 +46,7 @@ Ninguno de los tres depósitos anteriores (Zenodo, OSF, Software Heritage) inclu
 
 | Origen | Cantidad de videos | Cantidad de audios | Fecha |
 |---|---:|---:|---|
-| Ronda de elicitación (8 personas reales del Centro Médico Municipal) | 9 *(Medicina General se dividió en 2 partes)* | 9 | Junio–julio 2026 |
+| Ronda de elicitación (8 personas reales del Centro Médico Municipal Piloto) | 9 *(Medicina General se dividió en 2 partes)* | 9 | Junio–julio 2026 |
 | Ronda de validación walkthrough (8 personas externas + 2 sesiones del propio equipo) | 10 | 9 | Agosto 2026 |
 | **Total** | **19** | **18** | |
 

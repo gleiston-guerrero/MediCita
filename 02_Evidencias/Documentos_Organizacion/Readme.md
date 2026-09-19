@@ -12,7 +12,7 @@
 
 ## 📌 Sobre esta carpeta
 
-Contiene `solicitud_entrevista.pdf`, la solicitud formal enviada a la Dirección de Gestión de Desarrollo Social (DGDS) para iniciar la elicitación de requisitos en el Centro Médico Municipal.
+Contiene `solicitud_entrevista.pdf`, la solicitud formal enviada a la Centro Médico Municipal Piloto para iniciar la elicitación de requisitos en el Centro Médico Municipal Piloto.
 
 El resto de la correspondencia posterior (avales, oficio de respaldo) está documentada cronológicamente en `10_Autoria/correspondencia/README.md`.
 

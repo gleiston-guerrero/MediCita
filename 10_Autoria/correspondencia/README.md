@@ -5,7 +5,7 @@
 ### Proyecto MediCita (SICM) — ISR-401
 
 ![Estado](https://img.shields.io/badge/Estado-Completo-success?style=for-the-badge)
-![Organización](https://img.shields.io/badge/Organización-DGDS_Quevedo-003366?style=for-the-badge)
+![Organización](https://img.shields.io/badge/Organización-Centro_Medico_Municipal_Piloto-003366?style=for-the-badge)
 ![Última actualización](https://img.shields.io/badge/Actualizado-13/09/2026-informational?style=for-the-badge)
 
 </div>
@@ -18,10 +18,10 @@ Los 4 documentos están depositados como copia local en esta misma carpeta (ante
 
 | # | Fecha | Tipo | De | Para | Medio | Archivo local | Estado |
 |---|---|---|---|---|---|---|:---:|
-| 1 | **28/05/2026** | Solicitud | Paul Alexander Tigasi Sampedro | Ing. Rosa Andrade Rivas, Directora General DGDS | Oficio físico, firmado, sello de recepción (8:19 am) | [`solicitud_entrevista.pdf`](solicitud_entrevista.pdf) | 🟢 Completo |
-| 2 | **22/07/2026** | Aval institucional | Sergio Antonio Yepez Rizzo (Coordinador DGDS) | Vicerrector Académico UTEQ | Oficio físico, firmado | [`A5_Aval_Institucional.pdf`](A5_Aval_Institucional.pdf) | 🟢 Completo |
-| 3 | **20/08/2026** | Aval específico del establecimiento | Sergio Antonio Yepez Rizzo (Coordinador DGDS) | Ing. Gleiston Guerrero Ulloa / Rosa Andrade Rivas | Oficio físico, firmado | [`CategoriaA_A3_Aval_Establecimiento.pdf`](CategoriaA_A3_Aval_Establecimiento.pdf) | 🟢 Completo |
-| 4 | **04/09/2026** | Oficio de respaldo institucional | DGDS (Sergio Antonio Yepez Rizzo) | Ing. Gleiston Guerrero Ulloa | Oficio físico, firmado | [`Oficio_Respaldo_Institucional_DGDS.pdf`](Oficio_Respaldo_Institucional_DGDS.pdf) | 🟢 Completo |
+| 1 | **28/05/2026** | Solicitud | Paul Alexander Tigasi Sampedro | Ing. Rosa Andrade Rivas, Directora General Centro Médico Municipal Piloto | Oficio físico, firmado, sello de recepción (8:19 am) | [`solicitud_entrevista.pdf`](solicitud_entrevista.pdf) | 🟢 Completo |
+| 2 | **22/07/2026** | Aval institucional | Sergio Antonio Yepez Rizzo (Coordinador Centro Médico Municipal Piloto) | Vicerrector Académico UTEQ | Oficio físico, firmado | [`A5_Aval_Institucional.pdf`](A5_Aval_Institucional.pdf) | 🟢 Completo |
+| 3 | **20/08/2026** | Aval específico del establecimiento | Sergio Antonio Yepez Rizzo (Coordinador Centro Médico Municipal Piloto) | Ing. Gleiston Guerrero Ulloa / Rosa Andrade Rivas | Oficio físico, firmado | [`CategoriaA_A3_Aval_Establecimiento.pdf`](CategoriaA_A3_Aval_Establecimiento.pdf) | 🟢 Completo |
+| 4 | **04/09/2026** | Oficio de respaldo institucional | Centro Médico Municipal Piloto (Sergio Antonio Yepez Rizzo) | Ing. Gleiston Guerrero Ulloa | Oficio físico, firmado | [`Oficio_Respaldo_Institucional_DGDS.pdf`](Oficio_Respaldo_Institucional_DGDS.pdf) | 🟢 Completo |
 
 **Leyenda:** 🟢 Completo y verificado
 

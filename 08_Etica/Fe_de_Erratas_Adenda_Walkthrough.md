@@ -59,7 +59,7 @@ Con esta aclaración ya resuelta, el conteo total de participantes externos dist
 
 | Grupo | Cantidad | Ronda | Base documental |
 |---|---:|---|---|
-| Personal del Centro Médico Municipal | 8 | Elicitación (junio-julio 2026) | `02_Evidencias/Consentimientos/` |
+| Personal del Centro Médico Municipal Piloto | 8 | Elicitación (junio-julio 2026) | `02_Evidencias/Consentimientos/` |
 | Personas externas ajenas al centro médico, con rol asignado | 8 | Validación walkthrough (agosto 2026) | A.13.1 — `Validacion_Walkthrough/Consentimientos_validacion/` |
 | **Total participantes externos distintos** | **16** | | Ninguna persona se repite entre ambas rondas |
 
