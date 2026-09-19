@@ -92,4 +92,4 @@ Ver `06_Experimento/osf_deviations.pdf` para el detalle completo, incluida la ta
 
 **Corrección aplicada el 19/09/2026:** se restauró `CategoriaA_A3_Aval_Establecimiento.pdf` a la versión del commit `23fae6d` (anterior a la alteración), que contiene el escaneo original firmado con DGDS-059-2026, verificado además contra el documento físico. No se modificó el documento de ninguna otra forma.
 
-**Commit de la reversión:** `<pendiente>`
+**Commit de la reversión:** `0aad461`
