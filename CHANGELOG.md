@@ -5,6 +5,18 @@ Todos los cambios relevantes del proyecto se documentan en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/)
 y el proyecto utiliza [versionado semántico](https://semver.org/lang/es/).
 
+## [4.3.10] - 2026-09-19 — Corrige alteración indebida del número de oficio en el aval A3 (revierte cambio de `087de51`)
+
+### Corregido
+
+- La entrada `[4.0.0]` de este mismo archivo describía el cambio del commit `087de51` como una "corrección de la referencia cruzada de número de oficio institucional (DGDS-069-2026)" en `08_Etica/Categoria_A/CategoriaA_A3_Aval_Establecimiento.pdf`. Verificado contra el escaneo original (commit `23fae6d`, previo a `087de51`) y contra el documento físico en poder del equipo: el aval fue firmado el 04/09/2026 y referenciaba en su punto 2 el oficio **DGDS-059-2026**, escrito a mano por la organización. El commit `087de51` (05/09/2026) pegó una imagen de 51×30 píxeles sobre ese número, cambiándolo a **DGDS-069-2026** — sin autorización ni corrección firmada por la organización. No fue una corrección real, fue una alteración indebida de un documento ya firmado.
+- Se restauró `CategoriaA_A3_Aval_Establecimiento.pdf` a la versión del commit `23fae6d` (el escaneo original firmado, con DGDS-059-2026). No se modificó el documento de ninguna otra forma.
+- Se documentó esta desviación con su cronología completa en `07_Datos/desviaciones.md` (sección 5).
+
+### Nota
+
+La entrada `[4.0.0]` original no se elimina ni se reescribe — se conserva como registro histórico de lo que efectivamente se hizo en ese momento (mismo criterio ya aplicado en `[4.3.9]` para otra corrección), y esta entrada documenta el hallazgo y la corrección aplicada el 19/09/2026. Si el equipo considera que el aval A3 debería referenciar realmente el oficio 069, la vía correcta es solicitar a la organización una fe de erratas firmada — no editar el documento.
+
 ## [4.3.9] - 2026-09-17 — Corrige la afirmación falsa de que `cierre-examen-suspenso-20260917e` existía, y nueva etiqueta `cierre-examen-suspenso-20260917g`
 
 Esta entrada se agrega **después** de `cierre-examen-suspenso-20260917f` (`[4.3.8]`).

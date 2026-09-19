@@ -74,3 +74,22 @@ Se declara esta desviación explícitamente, siguiendo el mismo criterio de la s
 ## 📄 Documento fuente completo
 
 Ver `06_Experimento/osf_deviations.pdf` para el detalle completo, incluida la tabla de aspecto prerregistrado / estado / tratamiento.
+
+---
+
+## 5. Alteración indebida del número de oficio referenciado en el aval A3 (revertido 19/09/2026)
+
+| | Original (firmado 04/09/2026, texto impreso fecha 20/08/2026) | Alterado (commit `087de51`, 05/09/2026) | Estado actual (19/09/2026) |
+|---|---|---|---|
+| Documento | `08_Etica/Categoria_A/CategoriaA_A3_Aval_Establecimiento.pdf`, punto 2 | mismo documento | revertido al original |
+| Número de oficio referenciado | DGDS-059-2026 (escrito a mano en el original) | DGDS-069-2026 (imagen de 51×30 px pegada sobre el escaneo) | DGDS-059-2026 (restaurado) |
+
+**Qué pasó:** el aval A3 fue firmado y sellado el 04/09/2026 (misma fecha y hora del sello — 10:12 a.m. — que el oficio de respaldo institucional, ambos firmados en la misma sesión con el coordinador de DGDS), y en su punto 2 hace referencia al oficio **DGDS-059-2026**, escrito a mano en el espacio en blanco del formato. El commit `087de51` (05/09/2026, autor `jgamarraz@uteq.edu.ec`) modificó el PDF pegando una imagen de 51×30 píxeles sobre ese número, cambiándolo a **DGDS-069-2026**.
+
+**Verificación contra el documento físico (19/09/2026):** el equipo confirmó, contra el papel original en su poder, que el número escrito a mano por la organización es efectivamente **059**, no 069. El cambio a 069 no proviene de ningún documento físico ni de una corrección de la organización — fue una edición digital hecha por el equipo, pensando (de buena fe, pero de forma indebida) que ambos documentos debían coincidir en el número.
+
+**Por qué fue un error:** editar el escaneo de un documento ya firmado para cambiar su contenido —aunque sea un solo número— altera un documento oficial sin autorización de quien lo firmó. Si el equipo considera que el aval A3 debería referenciar el oficio 069, la vía correcta es solicitar a la organización (DGDS) una fe de erratas o corrección firmada por ellos — nunca editar el documento ya firmado, ni en papel ni digitalmente.
+
+**Corrección aplicada el 19/09/2026:** se restauró `CategoriaA_A3_Aval_Establecimiento.pdf` a la versión del commit `23fae6d` (anterior a la alteración), que contiene el escaneo original firmado con DGDS-059-2026, verificado además contra el documento físico. No se modificó el documento de ninguna otra forma.
+
+**Commit de la reversión:** `<pendiente>`
